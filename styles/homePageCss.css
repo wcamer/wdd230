@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Tinos:wght@700&display=swap');
+/* 
+font-family: 'Radio Canada', sans-serif;
+font-family: 'Tinos', serif; */
+
+/* primary color #219ebc */
+/* background color #023047
+font color #ffb703*/
+
+#nameTitle, #portalDiv h1, footer{
+    font-family:'Radio Canada', sans-serif;
+}
+
+#portalDiv{
+    font-family: 'Tinos', serif;
+}
+
+
+
 body{
     width: 100%;
     margin: 0 auto;
@@ -6,7 +25,8 @@ body{
 .top {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: pink;
+    background-color: #023047;
+    color: #ffb703;
     border-color: black;
     border: 50px;
     padding: 0;
@@ -34,8 +54,10 @@ body{
     grid-template-rows: 1fr; */
     display: flex;
     flex-direction: column;
-    
+    background-color: #219ebc;
+    color: #ffb703;
     align-items: center;
+    padding: 2%;
 }
 
 /* #portalDiv h1, ul{
@@ -58,7 +80,8 @@ body{
 
 
 footer {
-    background-color: lime;
+    background-color: #023047;
+    color: #ffb703;
     display: grid;
     grid-template-columns: repeat(4fr);
     grid-template-rows: repeat(3fr);
@@ -66,7 +89,7 @@ footer {
 
 #footerDate{
     grid-column: 1/2;
-    text-align: center;
+    text-align: right;
 }
 
 #footerName {
@@ -76,7 +99,7 @@ footer {
 
 #footerLocation{
     grid-column: 3/4;
-    text-align: center;
+    text-align: left;
 }
 
 #lastUpdated {
