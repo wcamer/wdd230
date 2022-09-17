@@ -1,18 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Tinos:wght@700&display=swap');
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Radio+Canada&family=Roboto+Slab:wght@600&family=Tinos:wght@700&display=swap');
+
+/* font-family: 'Mukta', sans-serif;
 font-family: 'Radio Canada', sans-serif;
+font-family: 'Roboto Slab', serif;
 font-family: 'Tinos', serif; */
+
+
 
 /* primary color #219ebc */
 /* background color #023047
 font color #ffb703*/
 
 #nameTitle, #portalDiv h1, footer{
-    font-family:'Radio Canada', sans-serif;
+    /* font-family:'Radio Canada', sans-serif; */
+    font-family: 'Roboto Slab', serif;
 }
 
 #portalDiv{
-    font-family: 'Tinos', serif;
+    /* font-family: 'Tinos', serif; */
+    font-family: 'mukta', sans-serif;
 }
 
 
