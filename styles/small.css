@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Radio+Canada&family=Roboto+Slab:wght@600&family=Tinos:wght@700&display=swap');
+
+/* font-family: 'Mukta', sans-serif;
+font-family: 'Radio Canada', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Tinos', serif; */
+
+
+
+/* primary color #219ebc */
+/* background color #023047
+font color #ffb703*/
+
+#nameTitle, #portalDiv h1, footer{
+    /* font-family:'Radio Canada', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+
+    font-family: 'Tinos', serif; /*change 3 */
+    font-weight: bolder; /*change 1 */
+}
+
+#portalDiv{
+    /* font-family: 'Tinos', serif; */
+    font-family: 'mukta', sans-serif;
+}
+
+
+
+body{
+    width: 100%;
+    margin: 0 auto;
+
+}
+#top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr; /*change 2*/
+    background-color: #023047;
+    color: #ffb703;
+    border-color: black;
+    border: 50px;
+    padding: 0;
+    place-items: center;
+    /* align-items: center; */
+    padding: 2%
+    
+}
+
+#headerPhoto {
+    grid-column: 2/3; /*change 2*/
+    height: 100%;
+    
+    /* padding: 10% */
+}
+
+#nameTitle {
+    grid-row: 2; /*change 2*/
+    grid-column: 1/4; /*change 2*/
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#portalDiv{
+    /* display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr; */
+    display: flex;
+    flex-direction: column;
+    background-color: #219ebc;
+    color: #ffb703;
+    align-items: center;
+    padding: 2%;
+}
+
+/* #portalDiv h1, ul{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#portalDiv ul {
+    grid-row: 2/3
+} */
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #023047;
+    color: #ffb703;
+    display: grid;
+    grid-template-columns: repeat(4fr);
+    grid-template-rows: repeat(3fr);
+}
+
+#footerDate{
+    grid-column: 1/2;
+    text-align: right;
+}
+
+#footerName {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#footerLocation{
+    grid-column: 3/4;
+    text-align: left;
+}
+
+#lastUpdated {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+
+}
