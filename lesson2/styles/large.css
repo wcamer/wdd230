@@ -1,25 +1,29 @@
-@media only screen and (min-width: 784px) {
+
+
+
+@media only screen and (min-width: 600px) {
     main{
         grid-template-columns: 1fr 1fr 1fr;
         
         
         
     }
-}
 
-#whiteSpace #hick #thirds{
-    width: 100%;
-    height: 100%;
-}
-
-#thirds {
-    grid-column: 3/4;
-    grid-row: 1/1;
-    height: 95%;
-}
-
-#thirds img {
-    object-fit: none;
-    height: 100%;
+    #whiteSpace #hick #thirds{
+        width: 100%;
+        height: 100%;
+    }
     
-}  
+    #thirds {
+        grid-column: 3/4;
+        grid-row: 1/1;
+        height: 95%;
+    }
+    
+    #thirds img {
+        object-fit: none;
+        height: 100%;
+        
+    }  
+}
+
