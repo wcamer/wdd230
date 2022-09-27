@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex auto;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+
+
+    
+
+    
+
+    background-color: green;
+}
+
+
+nav a {
+    
+    width: 100%;
+    font-size: 25px;
+   
+}
+
+
+
+
+nav ul{
+    margin: .9em;
+    padding: .9em;
+}
+
+li{
+    display: block;
+
+}
+
+nav li:hover{
+    background-color: pink;
+}
