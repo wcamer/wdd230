@@ -1,6 +1,24 @@
+/* fonts headings arvo
+paragrapsh fira sans 
+
+font-family: 'Arvo', serif;
+font-family: 'Fira Sans', sans-serif;
+
+colors
+#003049 0, 48,73
+#d62828 214, 40 ,40
+#f77f00 247, 127, 0
+#fcbf49 252, 191, 73
+eae2b7 234.226,183 */
+
+
 body{
     text-align: center;
     margin: 0 auto;
+    background-color: #eae2b7;
+    color: #003049;
+    padding: 1%;
+    margin: 1%;
 }
 
 
@@ -9,14 +27,14 @@ nav{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
+    color:#003049;
 
 
     
 
     
 
-    background-color: green;
+    background-color: #003049;
 }
 
 
@@ -24,6 +42,12 @@ nav a {
     
     width: 100%;
     font-size: 25px;
+    display: block;
+    padding: 1%;
+    margin: 1%;
+    text-decoration: none;
+    color:#f77f00;
+
    
 }
 
@@ -35,11 +59,72 @@ nav ul{
     padding: .9em;
 }
 
-li{
+main a{
     display: block;
+    padding: 1%;
+    margin: 1%;
+    text-decoration: none;
+    color:#003049;
 
 }
 
-nav li:hover{
-    background-color: pink;
+nav a:hover{
+    background-color: #f77f00;
+    color:#003049;
 }
+
+
+/*Typography page */
+
+
+
+
+
+
+
+
+/*color scheme */
+
+#sampleContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    border:2px;
+    border-style:solid;
+    border-color: black;
+
+}
+
+#blue{
+    background-color: #003049;
+    color: white;
+}
+
+#red{
+    background-color: #d62828;
+    color: white;
+}
+
+#orange{
+    background-color: #f77f00;
+}
+
+#yellow{
+    background-color: #fcbf49;
+}
+
+#lemon{
+    background-color: #eae2b7;
+}
+
+
+#colorSampleHeadings{
+    display: none;
+    /* display: none;
+    flex-direction: row; */
+    
+}
+
+
+
+
+
