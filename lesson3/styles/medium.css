@@ -55,7 +55,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
         margin: .9em;
         padding: .9em;
-        border: 2%;
+        border: 2px;
         border-style: solid;
         border-color: black;
     } 
@@ -67,7 +67,7 @@
         align-items: center;
         justify-content: center;
         
-        border: 2%;
+        border: 2px;
         border-style: solid;
         border-color: black;
     
@@ -88,7 +88,7 @@
         
         align-items: center;
         justify-content: center;
-        border: 2%;
+        border: 2px;
         border-style: solid;
         border-color: black;
     }

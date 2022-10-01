@@ -17,15 +17,14 @@ body{
     margin: 0 auto;
     background-color: #eae2b7;
     color: #003049;
-    padding: 1%;
-    margin: 1%;
+   
 }
 
 h1,h2{
     font-family: 'Arvo', serif;
 }
 
-#headingSample{
+.headingSample{
     font-family: 'Arvo', serif;
 }
 
@@ -34,7 +33,7 @@ p , a{
 }
 
 nav{
-    display: flex auto;
+    display: block;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -66,12 +65,6 @@ nav a {
 nav a:hover{
     background-color: #f77f00;
     color:#003049;
-}
-
-
-nav ul{
-    margin: .9em;
-    padding: .9em;
 }
 
 
