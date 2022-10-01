@@ -21,6 +21,17 @@ body{
     margin: 1%;
 }
 
+h1,h2{
+    font-family: 'Arvo', serif;
+}
+
+#headingSample{
+    font-family: 'Arvo', serif;
+}
+
+p , a{
+    font-family: 'Fira Sans', sans-serif;
+}
 
 nav{
     display: flex auto;
@@ -52,12 +63,19 @@ nav a {
 }
 
 
+nav a:hover{
+    background-color: #f77f00;
+    color:#003049;
+}
 
 
 nav ul{
     margin: .9em;
     padding: .9em;
 }
+
+
+
 
 main a{
     display: block;
@@ -66,18 +84,114 @@ main a{
     text-decoration: none;
     color:#003049;
 
+    
+
 }
 
-nav a:hover{
-    background-color: #f77f00;
-    color:#003049;
+
+
+/*Home page*/
+
+
+#homeContent{
+    border:2px;
+    border-style:solid;
+    border-color: black;
+    background-color: #fcbf49;
+    padding: 1%;
+    margin: 1%;
+    
 }
+
+#homeContent p{
+    text-align: left;
+    padding: 2%;
+    margin: 2%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/*Audience*/
+
+#audienceContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: left;
+    background-color: #fcbf49;
+
+}
+
+#audienceContent p, li{
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+#audienceContent h3{
+    font-size: 22px;
+    font-family: 'Arvo', serif;
+}
+
+#audienceSection , #scenariosSection, #personaSection {
+  padding: 1%;
+  margin: 1%;
+}
+
+#audienceContent h2{
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 /*Typography page */
+#typoSampleContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1%;
+    margin: 1%;
+    font-size: 20px;
+    
+    
+    background-color: #fcbf49;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 
 
+}
 
+#typoSampleHeadings, #typoHeadingsOne, #typoHeadingsTwo, #typoHeadingsThree, #typoParagraph, #typoNav, #typoList{
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+#typoSampleHeadings{
+    border-bottom: 2px ;
+    border-style: solid;
+    border-color: black;
+}
+
+#typoSampleHeadings p, #typoHeadingsOne p, #typoHeadingsTwo p, #typoHeadingsThree p, #typoParagraph p, #typoNav p, #typoList p{
+    display: block;
+    width: 100%;
+}
+
+    
 
 
 
@@ -119,11 +233,28 @@ nav a:hover{
 
 #colorSampleHeadings{
     display: none;
-    /* display: none;
-    flex-direction: row; */
+    
     
 }
 
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+
+    background-color: #003049;
+}
+
+footer p{
+    color:#f77f00;
+    display: block;
+    width: 100%;
+}
 
 
 

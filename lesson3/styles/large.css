@@ -1,6 +1,6 @@
 @media only screen and (min-width:800px ) {
     body{
-    background-color: lime;
+    background-color: #eae2b7;
   }
 
     nav{
@@ -9,16 +9,64 @@
 
         padding: 1%;
         margin: 1%;
+        
     } 
 
+    nav a{
+      font-size: 30px;
+    }
+    
+    h1{
+      font-size: 35px;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+
+    /*Home Page*/
+
+    #homeContent p{
+      font-size: 25px;
+
+    
+    }
+
+
+
+     /*Audience*/
+    
+     #audienceContent p, #audienceContent li{
+      font-size: 25px;
+    }
+
+    #audienceContent h3 {
+      font-size: 27px;
+    }
+
+
+
+
+    /*Typography*/
+    #typoSampleHeadings p, #typoHeadingsOne p, #typoHeadingsTwo p, #typoHeadingsThree p, #typoParagraph p, #typoNav p, #typoList p{
+      font-size: 25px;
+
+    }
+
+    
 
 
 
     /*color scheme*/
 
+    p{
+      font-size: 25px;
+    }
    
+    
+    
 
-
-
+   
 
 }
