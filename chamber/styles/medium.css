@@ -1,0 +1,107 @@
+@media only screen and (min-width: 35rem){
+    body{
+        background-color: yellow;
+    }
+
+
+
+    /*---------Main---------*/
+
+
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+
+    #heroSection, #weatherSection, #newsSection, #spotlightSection{
+        grid-column: 1/ span 3;
+        fill: black;
+    }
+
+    #eventSection{
+        grid-column: 1/ span 2;
+        order:5;
+    }
+
+    #weatherSection{
+        order:6;
+        grid-column: 3/ span 1;
+        
+        background-color: red;
+    }
+
+    #heroSection{
+        order: 1;
+    }
+
+    #newsSection{
+        order: 2;
+    }
+
+    #spotlightSection{
+        order: 3;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #joinSection{
+        display: block;
+        order: 4;
+    }
+
+    
+
+
+
+
+
+
+    /*---------Footer---------*/
+
+    /* footer{
+        display: grid;
+        background-color: blue;
+
+
+    }
+
+    #topFooter{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+
+    }
+
+    #footerLogo{
+        display: block;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #nameFooter, #address{
+        grid-column: 2/3;
+        margin: 0;
+        text-align: left;
+        align-items: center;
+    } */
+
+    #topFooter{
+        display: flex;
+        justify-content: space-between;
+    }
+    #topFootFirst{
+        display: flex;
+    }
+
+    
+    #bottomFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+
+
+
+
+}

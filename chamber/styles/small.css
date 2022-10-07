@@ -1,0 +1,277 @@
+body{
+    margin: 0 auto;
+    background-color: aqua;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*-------------Top section---------------*/
+#top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 1%;
+    padding: 1%;
+    
+    
+    margin-bottom: .3rem;
+    background-color: pink;;
+   
+}
+
+#topPart {
+    display: grid; 
+    grid-template-columns: 1fr auto auto;
+    padding: 1%;
+    background-color: violet;
+    /* justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: azure; */
+    
+    /*flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    grid-template-columns: .5fr 3fr 1fr 1fr ;
+    grid-template-rows: 2fr;
+
+    display: flex;
+    flex-direction: row; 
+    padding: 1rem;
+    margin: 1rem; */
+}
+
+
+/* #topPart{
+    display: block;
+} */
+
+/* #top{
+    display: inline;
+    justify-content: center;
+
+
+
+} */
+
+#topLogo{
+   
+    
+    align-items: center;
+    justify-content: center;
+}
+
+
+#city{
+    font-size: 1.5rem;
+}
+
+/* #headLogo{
+    display:flex;
+} */
+
+#socialLinks{
+    display: flex;
+    height: 50%;
+    
+}
+
+
+nav {
+    display: block;
+    grid-column: 1/5; 
+    text-align: center;
+    background-color: lime;
+    
+    
+}
+
+nav section{display:none;}
+nav section.open{display: block;}
+
+
+
+/* nav button{
+    margin: .2rem 2vw;
+    font-size: 2rem;
+    background: transparent;
+
+}
+
+nav #hamburgerButton span:nth-child(1) {display: block;}
+nav #hamburgerButton span:nth-child(2) {display: none;}
+
+nav #hamburgerButton.open span:nth-child(1) {display: none;}
+nav #hamburgerButton.open span:nth-child(2) {display: block; color: red;} */
+
+button{
+    grid-column: 4/5;
+    margin: .2rem 2vw;
+    font-size: 2rem;
+    background: transparent;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hamburgerButton span:nth-child(1) {display: block;}
+#hamburgerButton span:nth-child(2) {display: none;}
+
+#hamburgerButton.open span:nth-child(1) {display: none;}
+#hamburgerButton.open span:nth-child(2) {display: block; color: red;}
+
+
+nav a{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+
+
+
+nav a:hover{
+    background-color: red;
+}
+
+
+
+
+
+#bottompart{
+    /* grid-row: 2/3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#headerDate{
+    display: block;
+    padding: .5rem;
+    margin: .5rem;
+    /* grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+
+    
+    /* grid-column: 2/4; */
+    text-align: center;
+    background-color: grey;
+    
+    
+
+}
+
+
+
+
+
+
+
+/*----------------Main-------------*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr ;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: lime;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 2fr; */
+    /* border: 3px;
+    border-style: solid;
+    border-color: black; */
+
+    
+
+}
+
+
+
+#heroSection, #eventSection, #weatherSection, #newsSection, #spoltlightSection{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: lime;
+    height: 100%;
+    
+
+
+}
+
+#joinSection{
+    display: none;
+}
+
+#spotlightSection{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    
+    gap: 30px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    
+
+
+
+
+}
+
+
+
+#spotlightSection {
+    display:grid;
+    grid-template-columns: 1fr;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    
+
+
+}
+
+#spotThree {
+    display:none;
+}
+
+/*-------------Footer--------------*/
+
+footer{
+    /* display: flex;
+    flex-direction: column;
+    background-color: lime;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: yellow;
+    
+
+
+}
+
+#topFooter{
+    background-color: gray;
+}
+
+#bottomFooter{
+ border-top: .1rem black solid;
+    
+    
+    background-color: aliceblue;
+}
+#nameFooter{
+    font-size: 1.5rem;
+}
