@@ -1,8 +1,20 @@
 @media only screen and (min-width: 35rem){
-    body{
-        background-color: yellow;
+    /* body{
+        background-color: white;
+        
+        
+
+    }
+ */
+
+    #city{
+        font-size: 2.5rem;
+
     }
 
+    #title{
+        font-size: 1.2rem;
+    }
 
 
     /*---------Main---------*/
@@ -11,6 +23,15 @@
 
     main{
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 10px;
+        margin-bottom: 100px;
+
+        border: 5px;
+        border-style: solid;
+        border-color: black;
+        margin: 10px;
+        padding: 10px;
+        
        
     }
 
@@ -28,7 +49,7 @@
         order:6;
         grid-column: 3/ span 1;
         
-        background-color: red;
+        
     }
 
     #heroSection{
@@ -41,13 +62,19 @@
 
     #spotlightSection{
         order: 3;
-        display: flex;
-        justify-content: space-around;
+        grid-template-columns: 1fr 1fr;
     }
 
     #joinSection{
         display: block;
+        grid-column: 1/4;;
         order: 4;
+        background-color: #fcbf49;
+        border: 3px;
+        border-style: solid;
+        border-color: black;
+        
+        
     }
 
     
@@ -84,24 +111,65 @@
         text-align: left;
         align-items: center;
     } */
+    
+    
 
     #topFooter{
-        display: flex;
-        justify-content: space-between;
+        display:  grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
     }
+
+
     #topFootFirst{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    #footerLogo{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #email, #phone, #map {
+        align-items: center;
+    
     }
 
     
+    
+
+
+
+
+
     #bottomFooter{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        display: grid;
+        
 
     }
 
+    #footerTitle{
+        grid-column: 1/2;
+        
+        text-align: right;
+    }
 
+    #footerName{
+        grid-column: 2/3;
+    }
 
+    #projectName{
+        grid-column: 3/4;
+        text-align: left;
+    }
 
+    #lastUpdated{
+        grid-column: 1/4;
+        letter-spacing: .3rem;
+    }
 }

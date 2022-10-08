@@ -32,9 +32,10 @@ document.querySelector("#todayDate").textContent = currentDate
 
 
 // footer section
-
-document.querySelector("#footerTitle").textContent = `${currentYear} Happy Valley Chamber of Commerce`;
+//document.querySelector("#footerTitle").innerHTML = copyWrite;
+//document.querySelector("#footerTitle").textContent = `${currentYear} Happy Valley Chamber of Commerce`;
 document.querySelector("#footerName").textContent = author;
+
 document.querySelector("#footerDate").innerHTML = copyWrite + currentYear; //`${copyYear} ${author}`;
 
 function toggleMenu() {

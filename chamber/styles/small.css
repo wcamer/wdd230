@@ -1,9 +1,20 @@
+/* font-family: 'Bitter', serif; */
+
+
+
+
 body{
     margin: 0 auto;
-    background-color: aqua;
+    background-color: #eae2b7;
+    display: grid;
+    grid-template-rows: 1fr 7fr 2fr;
+    font-family: 'Bitter',serif;
+    
+}
 
-    padding: 1rem;
-    margin: 1rem;
+
+main{
+    grid-row: 2/3;
 }
 
 /*-------------Top section---------------*/
@@ -16,68 +27,64 @@ body{
     
     
     margin-bottom: .3rem;
-    background-color: pink;;
+    background-color: #fcbf49;
    
 }
 
 #topPart {
     display: grid; 
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 3fr 1fr 1fr ;
     padding: 1%;
-    background-color: violet;
-    /* justify-content: center;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: azure; */
     
-    /*flex-direction: row;
+    
     justify-content: center;
     align-items: center;
-    width: 100%;
 
 
-    grid-template-columns: .5fr 3fr 1fr 1fr ;
-    grid-template-rows: 2fr;
-
-    display: flex;
-    flex-direction: row; 
-    padding: 1rem;
-    margin: 1rem; */
 }
 
 
-/* #topPart{
-    display: block;
-} */
-
-/* #top{
-    display: inline;
-    justify-content: center;
-
-
-
-} */
 
 #topLogo{
    
-    
+    display: block;
     align-items: center;
     justify-content: center;
+    max-height: 70px;
 }
 
 
 #city{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-/* #headLogo{
+#title{
+    font-size: .8rem;
+}
+
+#headLogo{
     display:flex;
-} */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#name p{
+    margin: 0;
+}
 
 #socialLinks{
     display: flex;
-    height: 50%;
     
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#socialLinks img{
+    max-height: 30px;
+
 }
 
 
@@ -85,13 +92,14 @@ nav {
     display: block;
     grid-column: 1/5; 
     text-align: center;
-    background-color: lime;
+    background-color: #d62828;
+    
     
     
 }
 
-nav section{display:none;}
-nav section.open{display: block;}
+nav div{display:none;}
+nav div.open{display: block;}
 
 
 
@@ -109,11 +117,12 @@ nav #hamburgerButton.open span:nth-child(1) {display: none;}
 nav #hamburgerButton.open span:nth-child(2) {display: block; color: red;} */
 
 button{
-    grid-column: 4/5;
+    grid-column: 3/4;
+    /* grid-column: 4/5; */
     margin: .2rem 2vw;
     font-size: 2rem;
     background: transparent;
-    background-color: blue;
+    /* background-color: blue; */
     align-items: center;
     justify-content: center;
 
@@ -134,13 +143,14 @@ nav a{
     padding: .8rem 2vw;
     text-decoration: none;
     border-top: 1px solid rgba(0,0,0,0.5);
+    color: white;
 }
 
 
 
 
 nav a:hover{
-    background-color: red;
+    background-color: #003049;
 }
 
 
@@ -168,7 +178,8 @@ nav a:hover{
     
     /* grid-column: 2/4; */
     text-align: center;
-    background-color: grey;
+    background-color: #003049;
+    color: #eae2b7;
     
     
 
@@ -188,7 +199,11 @@ main{
     border: 3px;
     border-style: solid;
     border-color: black;
-    background-color: lime;
+    /* background-color: lime; */
+    gap: 10px;
+    margin-bottom: 40px;
+    margin: 2%;
+    padding: 2%;
     /* grid-template-rows: 1fr 1fr 1fr 1fr 2fr; */
     /* border: 3px;
     border-style: solid;
@@ -200,12 +215,13 @@ main{
 
 
 
-#heroSection, #eventSection, #weatherSection, #newsSection, #spoltlightSection{
+
+#heroSection, #eventSection, #weatherSection, #newsSection, #spotlightSection{
     border: 3px;
     border-style: solid;
     border-color: black;
-    background-color: lime;
-    height: 100%;
+    background-color: #fcbf49;
+    
     
 
 
@@ -215,32 +231,36 @@ main{
     display: none;
 }
 
-#spotlightSection{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    
-    gap: 30px;
-    border: 3px;
-    border-style: solid;
-    border-color: black;
-    
 
-
-
-
-}
 
 
 
 #spotlightSection {
+    
     display:grid;
     grid-template-columns: 1fr;
     border: 3px;
     border-style: solid;
     border-color: black;
+    /* background-color: red; */
+    padding: 2%;
+    
+    
     
 
 
+}
+
+#spotlightSection p{
+   
+    margin: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    
+
+    
+    
 }
 
 #spotThree {
@@ -255,23 +275,47 @@ footer{
     background-color: lime;
     justify-content: center;
     align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
-    background-color: yellow;
+    
+    margin: 1%;
+    padding: 1%;
     
 
 
 }
 
 #topFooter{
-    background-color: gray;
+    background-color:#003049;
+    color:#eae2b7;
 }
 
-#bottomFooter{
- border-top: .1rem black solid;
-    
-    
-    background-color: aliceblue;
-}
 #nameFooter{
     font-size: 1.5rem;
 }
+
+#map{
+    text-decoration: none;
+    color:#eae2b7;
+   
+    
+}
+
+
+
+#bottomFooter{
+ border-top: 2px #eae2b7 solid;
+ line-height: .5rem;
+    
+    
+    background-color: #003049;
+    color:#eae2b7;
+}
+
+#footerName{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+

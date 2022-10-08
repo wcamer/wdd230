@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    
+    
     <title>Happy Valley Chamber of Commerce Home Page</title>
 
 
@@ -28,61 +32,61 @@
 
 
     <header id="top">
-        <section id="topPart" >
+        <div id="topPart" >
             <!-- <p>testing</p> -->
             
-            <!-- <div id="headLogo">
-                <img id="topLogo" src="images/facebook_icon.png">
+            <div id="headLogo">
+                <img id="topLogo" src="images/hpvLogo2.png" alt="Logo for Happy Valley Chamber of Commerce">
 
-                <section id="name">
+                <div id="name">
                     <p id="city">Happy Valley</p>
                     <p id="title">Chamber of Commerce</p>
 
-                </section>
+                </div>
 
-            </div> -->
+            </div>
 
-            <img id="topLogo" src="images/facebook_icon.png">
+            <!-- <img id="topLogo" src="images/hpvLogo2.png">
 
-            <section id="name">
+            <div id="name">
                 <p id="city">Happy Valley</p>
                 <p id="title">Chamber of Commerce</p>
 
-            </section>
+            </div> -->
 
             
 
-            <section id="socialLinks">
-                <img id="fbLink" src="images/facebook_icon.png">
-                <img id="inLink" src="images/linkedin_icon.png">
-            </section>
+            <div id="socialLinks">
+                <img id="fbLink" src="images/facebook_icon.png" alt="Facebook icon">
+                <img id="inLink" src="images/linkedin_icon.png" alt="LinkedIn icon">
+            </div>
             
             <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
             <nav>
                 
-                <section id="primaryNav">
+                <div id="primaryNav">
                     <a href="#">Home</a>
                     <a href="#">Discover</a>
                     <a href="#">Directory</a>
                     <a href="#">Join</a>
                     <a href="#">Contact</a>
 
-                </section>
+                </div>
                 
         
             </nav>
-        </section>
+        </div>
 
         <!-- <nav>
                 
-            <section id="primaryNav">
+            <div id="primaryNav">
                 <a id="home" href="#">Home</a>
                 <a href="#">Discover</a>
                 <a href="#">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Contact</a>
 
-            </section>
+            </div>
             
     
         </nav> -->
@@ -90,16 +94,16 @@
 
 
 
-        <section id="bottomPart">
+        <div id="bottomPart">
 
-            <section id="headerDate">
+            <div id="headerDate">
                 <!-- <p id="dayName"></p></p><p id="dayNum"></p><p id="monthName"></p><p id="year"></p>
                  -->
                 <p id="todayDate"></p>
 
-            </section>
+            </div>
 
-        </section>
+        </div>
         
 
 
@@ -111,56 +115,56 @@
 
     <main>
         
-        <section id="heroSection">
+        <div id="heroSection">
             <p>Hero section</p>
 
 
 
-        </section>
+        </div>
 
 
 
-        <section id="eventSection">
+        <div id="eventSection">
             <p>Event</p>
 
 
 
 
-        </section>
+        </div>
 
 
 
-        <section id="weatherSection">
+        <div id="weatherSection">
             <p>Weather</p>
 
 
 
-        </section>
+        </div>
 
 
 
-        <section id="newsSection">
+        <div id="newsSection">
             <p>News Release</p>
 
 
 
-        </section>
+        </div>
 
 
 
-        <section id="spotlightSection">
+        <div id="spotlightSection">
             <p id="spotOne">Spotlight 1</p>
             <p id="spotTwo">Spotlight 2</p>
             <p id="spotThree">Spotlight 3</p>
 
 
 
-        </section>
+        </div>
 
-        <section id ="joinSection">
+        <div id ="joinSection">
             <p>Join us</p>
 
-        </section>
+        </div>
 
 
 
@@ -171,10 +175,10 @@
 
     <footer>
         
-        <section id="topFooter">
+        <div id="topFooter">
             <div id="topFootFirst">
-                <img id="footerLogo" src="images/hpvLogo2.png">
-                <div>
+                <img id="footerLogo" src="images/hpvLogo2.png" alt="Logo for Happy Valley Chamber of Commerce">
+                <div id="footerLogoName">
                     <h1 id="nameFooter">Happy Valley Chamber of Commerce</h1>
                     <a id="address">50 S University Ave, Provo, UT 84601</a>
                 </div>
@@ -184,28 +188,29 @@
             <div id="topFootSecond">
                 <p id="email">info@happyvalley.org</p>
                 <p id="phone">(123)-456-7890</p>
-                <p id="map">location map</p>
-
+                <a id="map" href="https://www.google.com/maps/place/Provo+City+Center+Temple/@40.232676,-111.6615056,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9753f01c3b83:0x5d2cd1f074758bb7!8m2!3d40.232676!4d-111.6593169"><span class="material-icons">pin_drop</span>Location map</a>
+                    
             </div>
             
             
 
-        </section>
+        </div>
         
 
-        <section id="bottomFooter">
-            &copy; <p id="footerTitle"></p>
+        <div id="bottomFooter">
+            <!-- &copy;  -->
+            <p id="footerTitle"><span id="footerDate"></span> Happy Valley Chamber</p>
 
-            <p id="footerName"></p>
-            <p>WDD 230 Project</p>
+            <p id="footerName">William Cameron</p>
+            <p id="projectName">WDD 230 Project</p>
             <!-- <p>&copy; 2015 RapidTables.com</p> -->
 
             <p id="lastUpdated"></p>
 
-            <p id="footerDate"></p>
+            <!-- <p id="footerDate"></p> -->
            
 
-        </section>
+        </div>
 
     </footer>
 
