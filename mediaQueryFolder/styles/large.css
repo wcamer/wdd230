@@ -1,0 +1,41 @@
+@media screen and (min-width: 800px){
+    body{
+       
+        justify-content: space-around;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+
+
+   #containerThree{
+    background-color: green;
+    color: white;
+    grid-column: 1/3;
+    grid-row: 2/3;
+   }
+
+    
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    #containerOne p, #containerTwo p, #containerThree.notActive{
+        display: none;
+    }
+
+
+
+    #containerOne .notActive, #containerTwo .notActive{
+        display:block;
+    }
+
+    #containerThree p{
+        display: block;
+    }
+
+
+
+
+}

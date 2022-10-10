@@ -1,0 +1,34 @@
+#containerOne, #containerTwo, #containerThree{
+    border: 5px solid black;
+    margin: 5%;
+    padding: 5%;
+}
+
+    #containerOne{
+        background-color: orange;
+        color: black;
+        text-align: center;
+    }
+
+    p{
+        font-size: 3rem;
+    }
+
+    #hidTwo, #hidThree{
+        display: none;
+    }
+
+    #containerTwo p, #containerThree p, #containerOne .notActive{
+        display: none;
+    }
+
+    #containerTwo .notActive, #containerThree .notActive{
+        display:block;
+    }
+
+
+
+
+
+
+

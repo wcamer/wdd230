@@ -1,0 +1,51 @@
+
+/* @media  screen and (min-width: 700px ) and (orientation: landscape){ */
+@media print, screen and (min-width: 700px){
+    body{
+        background-color: white;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 10px solid black;
+
+    }
+
+
+
+
+   
+
+    #containerTwo{
+        background-color: purple;
+        color: yellow;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    
+
+    
+
+    #containerOne p, #containerThree p, #containerTwo .notActive{
+        display: none;
+    }
+
+
+
+    #containerOne .notActive, #containerThree .notActive{
+        display:block;
+    }
+
+    #containerTwo p{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+}
