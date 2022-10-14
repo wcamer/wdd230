@@ -12,7 +12,7 @@ console.log(typeof(input.value)) //type returns a string
 
 //if(input.value =="" ){
 button.addEventListener('click', function() {
-    if(input.value == ""){
+    if(input.value === "" || input.value.trim() === ""){
         console.log('Please insert your favorite chapter')
     } 
     else{
