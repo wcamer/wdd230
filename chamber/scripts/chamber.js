@@ -48,4 +48,10 @@ const x = document.getElementById('hamburgerButton')
 
 x.onclick = toggleMenu;
 
+if(dayName == 'Thursday' || dayName == 'Monday' || dayName == 'Tuesday'){
+    document.getElementById('meeting').id=('reveal')
+}
+
+
+
 

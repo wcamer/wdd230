@@ -37,7 +37,7 @@
 
     #heroSection, #weatherSection, #newsSection, #spotlightSection{
         grid-column: 1/ span 3;
-        fill: black;
+        
     }
 
     #eventSection{
@@ -56,6 +56,11 @@
         order: 1;
     }
 
+    #heroSection .joinButton{
+        left: 30%;
+        bottom: 15%
+    }
+
     #newsSection{
         order: 2;
     }
@@ -63,22 +68,45 @@
     #spotlightSection{
         order: 3;
         grid-template-columns: 1fr 1fr;
+
+
     }
+
+
+    /*------------------Join section------------------*/
 
     #joinSection{
         display: block;
-        grid-column: 1/4;;
+        grid-column: 1/4;
         order: 4;
         background-color: #fcbf49;
         border: 3px;
         border-style: solid;
         border-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         
         
     }
 
     
 
+    .joinButton{
+        background-color: limegreen;
+        font-size: 3em;
+        margin: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+
+    
+    .joinButton:hover {
+        background-color:#003049;
+        color:#eae2b7
+    }
 
 
 

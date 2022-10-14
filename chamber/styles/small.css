@@ -5,35 +5,52 @@
 
 body{
     margin: 0 auto;
-    background-color: #eae2b7;
-    display: grid;
-    grid-template-rows: 1fr 7fr 2fr;
+    background-color: #eae2b7; 
+    /* display: grid; */
+    /*This part was stretching the body*/
+    /* grid-template-rows: 1fr 7fr 1fr;  */
     font-family: 'Bitter',serif;
+    text-align: center;
     
 }
 
 
-main{
-    grid-row: 2/3;
+/*-------------Top section---------------*/
+#meeting{
+    display:none;
 }
 
-/*-------------Top section---------------*/
+#reveal{
+    display: block;
+    background-color: #d62828;
+    color:#eae2b7;
+    text-align: center; 
+    font-size: 2em;
+
+}
+
 #top{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; */
     margin: 1%;
     padding: 1%;
     
     
     margin-bottom: .3rem;
     background-color: #fcbf49;
+    
    
 }
 
 #topPart {
     display: grid; 
-    grid-template-columns: 3fr 1fr 1fr ;
+    /*This is for the button is on the far right*/
+    /*grid-template-columns: 3fr 1fr 1fr ; */
+    /*This isf for when the button is on the far left.  Be sure to change it's position in the container*/
+    grid-template-columns: 1fr 3fr 1fr;
+    
+    
     padding: 1%;
     
     
@@ -51,6 +68,7 @@ main{
     align-items: center;
     justify-content: center;
     max-height: 70px;
+
 }
 
 
@@ -63,6 +81,7 @@ main{
 }
 
 #headLogo{
+    grid-column: 2/3;
     display:flex;
     align-items: center;
     justify-content: flex-start;
@@ -99,7 +118,7 @@ nav {
 }
 
 nav div{display:none;}
-nav div.open{display: block;}
+nav div.open{display: flex; flex-direction: column;}
 
 
 
@@ -117,8 +136,14 @@ nav #hamburgerButton.open span:nth-child(1) {display: none;}
 nav #hamburgerButton.open span:nth-child(2) {display: block; color: red;} */
 
 button{
-    grid-column: 3/4;
-    /* grid-column: 4/5; */
+    
+    /*This is for putting button on the right side*/
+    /*grid-column: 3/4; *?
+    
+    /*This is for putting the button on the left side*/
+    grid-column: 1/2; 
+    grid-row:1/2;
+
     margin: .2rem 2vw;
     font-size: 2rem;
     background: transparent;
@@ -204,7 +229,7 @@ main{
     margin-bottom: 40px;
     margin: 2%;
     padding: 2%;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 2fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  */
     /* border: 3px;
     border-style: solid;
     border-color: black; */
@@ -216,7 +241,10 @@ main{
 
 
 
-#heroSection, #eventSection, #weatherSection, #newsSection, #spotlightSection{
+#eventSection, #weatherSection, #newsSection, #spotlightSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    
     border: 3px;
     border-style: solid;
     border-color: black;
@@ -227,13 +255,83 @@ main{
 
 }
 
+
+
+#heroImg{
+    width: 100%;
+    
+    z-index: 1;
+    position: relative;
+    
+}
+
+#heroSection h2{
+    z-index: 2;
+    
+    text-align: left;
+    position: absolute;
+    margin: 10px;
+}
+
+#heroSection .joinButton{
+    position: relative;
+    font-size: 2em;
+    left: 20%;
+    bottom: 20%;
+    
+    background-color: limegreen;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: 3;
+    text-decoration: none;
+
+}
+
+#heroSection .joinButton:hover {
+    background-color:#003049;
+    color:#eae2b7
+}
+
+
 #joinSection{
     display: none;
 }
 
+/*-------------------Weather Section----------------*/
+.weatherContainerTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid black;
+    
+
+    
+}
+
+#degree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+#weatherDescription{
+    grid-column: 1/3;
+    text-align: right;
+}
+
+.weatherContainerBottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
 
 
-
+/*--------------------SpotlightSection--------------*/
 
 #spotlightSection {
     
@@ -244,6 +342,7 @@ main{
     border-color: black;
     /* background-color: red; */
     padding: 2%;
+    gap: 10px;
     
     
     
@@ -251,7 +350,7 @@ main{
 
 }
 
-#spotlightSection p{
+/* #spotlightSection p{
    
     margin: 0;
     border: 1px;
@@ -261,11 +360,41 @@ main{
 
     
     
+} */
+
+#spotOne, #spotTwo, #spotThree{
+    display:grid;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+    
 }
+
+.spotBottom{
+    border-top: 1px solid black;
+}
+
+#spotOne img{
+    width: 100%;
+}
+
+/* #spotTwo{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+} */
+
+#spotTwo img{
+    width: 100%;
+}
+
 
 #spotThree {
     display:none;
 }
+
+
+
+
 
 /*-------------Footer--------------*/
 
