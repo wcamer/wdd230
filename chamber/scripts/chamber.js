@@ -48,9 +48,19 @@ const x = document.getElementById('hamburgerButton')
 
 x.onclick = toggleMenu;
 
-if(dayName == 'Thursday' || dayName == 'Monday' || dayName == 'Tuesday'){
+if(dayName == 'Monday' || dayName == 'Tuesday'){
     document.getElementById('meeting').id=('reveal')
 }
+
+const clickMoreInfoGet = document.getElementById('clickMoreInfo')
+
+function moreInfoSwitch() {
+    clickMoreInfoGet.classList.toggle('active')
+
+}
+
+clickMoreInfoGet.onclick = moreInfoSwitch
+
 
 
 
