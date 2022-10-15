@@ -427,7 +427,8 @@ main{
     border-top: 1px solid black;
 }
 
-#spotOne img{
+#spotOne img, #spotTwo img{
+    max-height: 300px;
     width: 100%;
 }
 
@@ -437,9 +438,9 @@ main{
     
 } */
 
-#spotTwo img{
+/* #spotTwo img{
     width: 100%;
-}
+} */
 
 
 #spotThree {
