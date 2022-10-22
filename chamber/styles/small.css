@@ -219,8 +219,8 @@ nav a:hover{
 /*----------------Main-------------*/
 
 main{
-    display: grid;
-    grid-template-columns: 1fr ;
+    /* display: grid;
+    grid-template-columns: 1fr; */
     border: 3px;
     border-style: solid;
     border-color: black;
@@ -233,6 +233,7 @@ main{
     /* border: 3px;
     border-style: solid;
     border-color: black; */
+    /* background-color: pink; */
 
     
 
@@ -241,7 +242,9 @@ main{
 
 
 
+
 #eventSection, #weatherSection, #newsSection, #spotlightSection{
+    
     display: grid;
     grid-template-columns: 1fr;
     
@@ -249,20 +252,38 @@ main{
     border-style: solid;
     border-color: black;
     background-color: #fcbf49;
+    width: 100%;
+    margin-bottom: 2%;
     
     
 
 
 }
 
+#heroSection{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
 
+
+
+.heroImg{
+    width: 100%;
+    height: auto;
+    
+    z-index: 1;
+    
+    
+}
 
 #heroImg{
     width: 100%;
     height: auto;
     
     z-index: 1;
-    position: relative;
+    
     
 }
 
@@ -275,10 +296,10 @@ main{
 }
 
 #heroSection .joinButton{
-    position: relative;
-    font-size: 2em;
-    left: 10%;
-    bottom: 20%;
+    position: absolute;
+    font-size: 1.5em;
+    right: 20px;
+    bottom: 20px;
     
     background-color: limegreen;
     /* grid-column: 1/2;
@@ -301,6 +322,7 @@ main{
 
 #eventContainer{
     font-size: 1.5em;
+    width: 100%;
 }
 
 #eventContainer button{
@@ -349,6 +371,8 @@ main{
     
 }
 
+
+
 #degree{
     display: flex;
     justify-content: center;
@@ -394,7 +418,7 @@ main{
     border-style: solid;
     border-color: black;
     /* background-color: red; */
-    padding: 2%;
+    
     gap: 10px;
     font-size: 1.25em;
     
@@ -428,7 +452,7 @@ main{
 }
 
 #spotOne img, #spotTwo img{
-    max-height: 300px;
+    /* max-height: 300px; */
     width: 100%;
 }
 

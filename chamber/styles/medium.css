@@ -22,6 +22,7 @@
 
 
     main{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 10px;
         margin-bottom: 100px;
@@ -56,11 +57,7 @@
         order: 1;
     }
 
-    #heroSection .joinButton{
-        left: 30%;
-        bottom: 15%
-    }
-
+    
     #newsSection{
         order: 2;
     }
