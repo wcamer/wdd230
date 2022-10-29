@@ -16,7 +16,7 @@
         font-size: 1.2rem;
     }
 
-
+ 
     /*---------Main---------*/
 
 
@@ -197,4 +197,40 @@
         grid-column: 1/4;
         letter-spacing: .3rem;
     }
+
+
+
+
+    /*---------Discover Page--------*/
+
+    /* .stats{
+        background-color: lime;
+    } */
+    .slide{
+        transition: .5s;
+        z-index: 1;
+    }
+
+    .slide:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        z-index: 2;
+    }
+    
+    .blur{
+        filter:blur(10px);
+    }
+
+    .effect{
+        filter: unset;
+    }
+   
+
+    
+
+
+
+
+
+
 }

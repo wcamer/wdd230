@@ -135,7 +135,7 @@ nav #hamburgerButton span:nth-child(2) {display: none;}
 nav #hamburgerButton.open span:nth-child(1) {display: none;}
 nav #hamburgerButton.open span:nth-child(2) {display: block; color: red;} */
 
-button{
+#top button{
     
     /*This is for putting button on the right side*/
     /*grid-column: 3/4; *?
@@ -178,6 +178,10 @@ nav a:hover{
     background-color: #003049;
 }
 
+nav a.active{
+    background-color: #eae2b7;
+    color:#d62828;
+}
 
 
 
@@ -347,7 +351,6 @@ main{
 
 
 
-
 /*-------Join Section---------*/
 
 
@@ -367,7 +370,7 @@ main{
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid black;
     
-
+ 
     
 }
 
@@ -527,3 +530,179 @@ footer{
 }
 
 
+
+/*------------------Discover page---------*/
+
+/* .carousel{
+    position: relative;
+    
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: .5;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.backButton{
+    position: absolute;
+    background-color: #003049;
+    z-index: 2;
+} */
+
+
+
+#discoverContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background-color: #fcbf49;
+}
+
+.discoverBanner{
+    grid-column: 1/3;
+    background-color: #d62828;
+    color:#eae2b7;
+}
+
+.visitInfo{
+    grid-column: 1/3;
+    margin-bottom: 10px;
+    background-color: #003049;
+    color:#fcbf49;
+}
+
+
+
+.jobInfo{
+    border: 5px solid black;
+    
+}
+
+
+.jobTable li{
+    grid-column: 2/3;
+    line-height:1.5em;
+    text-align: left;
+    
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.stats{
+    border: 5px solid black;
+    margin: 10px 0px 10px 0px;
+    
+    /* background-color: green; */
+    align-items: center;
+    text-align: center;
+    
+}
+
+.statsSection{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: pink; */
+    text-align: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.stats img, .stats h4, .stats p, .stats button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 5px solid blue; */
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+#basicInfo1 span:nth-child(1){display: block;}
+#basicInfo1 span:nth-child(2){display: none;}
+#basicInfo1 span:nth-child(3){display: none;}
+
+#basicInfo1.active span:nth-child(1){display: none;}
+#basicInfo1.active span:nth-child(2){display: block;}
+#basicInfo1.active span:nth-child(3){display: block;}
+
+
+#basicInfo2 span:nth-child(1){display: block;}
+#basicInfo2 span:nth-child(2){display: none;}
+#basicInfo2 span:nth-child(3){display: none;}
+
+#basicInfo2.active span:nth-child(1){display: none;}
+#basicInfo2.active span:nth-child(2){display: block;}
+#basicInfo2.active span:nth-child(3){display: block;}
+
+#basicInfo3 span:nth-child(1){display: block;}
+#basicInfo3 span:nth-child(2){display: none;}
+#basicInfo3 span:nth-child(3){display: none;}
+
+#basicInfo3.active span:nth-child(1){display: none;}
+#basicInfo3.active span:nth-child(2){display: block;}
+#basicInfo3.active span:nth-child(3){display: block;}
+
+
+
+.description{
+    display: none;
+}
+
+.schoolCounter img{
+    max-height: 70px;
+}
+
+.schoolInfo {
+    border: 5px solid black;
+}
+.schoolCounter div{
+    border: 5px solid black;
+    margin: 2%;
+}
+
+/* .schoolCounter{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.gallery{
+    border: 5px solid black;
+    
+    
+}
+.slide{
+    
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 2%;
+    margin: 2%;
+    background-color: #003049;
+    color: #eae2b7;
+}
+
+
+
+
+.slide img{
+    width: 100%;
+    
+}
