@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Cameron">
+    <meta name="description" content="This is the main page for the Happy Valley Chamber of Commerce">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    
+    <title>Happy Valley Chamber of Commerce Home Page</title>
+
+
+
+
+
+
+
+</head>
+<body>
+    
+       <header id="top">
+        <div id="meeting">
+            <p ><span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</span></p>
+        </div>
+        <div id="topPart" >
+            
+            <div id="headLogo">
+                <!-- <picture >
+                    <source srcset="images/hpvLogo2.png" >
+                    <img src="images/hpvLogo2.png" alt="Logo for Happy Valley Chamber of Commerce">
+                </picture> -->
+                <img id ="topLogo" src="images/hpvLogo.webp" alt="Logo for Happy Valley Chamber of Commerce">
+                
+
+                <div id="name">
+                    <p id="city">Happy Valley</p>
+                    <p id="title">Chamber of Commerce</p>
+
+                </div>
+
+            </div>
+
+
+            <div id="socialLinks">
+                <img id="fbLink" src="images/facebook_icon.png" alt="Facebook icon">
+                <img id="inLink" src="images/linkedin_icon.png" alt="LinkedIn icon">
+            </div>
+            
+            <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+            <nav>
+                
+                <div id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="#">Directory</a>
+                    <a class="active" href="join.html">Join</a>
+                    <a href="#">Contact</a>
+
+                </div>
+                
+        
+            </nav>
+        </div>
+
+
+
+
+
+        <div id="bottomPart">
+
+            <div id="headerDate">
+                <!-- <p id="dayName"></p></p><p id="dayNum"></p><p id="monthName"></p><p id="year"></p>
+                 -->
+                <p id="todayDate"></p>
+
+            </div>
+
+        </div>
+        
+
+
+    </header>
+       <main class="joinMain">
+           
+           <form method="get" action="thanks.html">
+               <h1>Chamber Membership Application</h1>
+               <fieldset>
+                   <legend>Applicant Information</legend>
+                   <!-- <div>Personal Information</div> -->
+                   <label class="top">First Name*<br><input type="text" name="fname" required></label>
+                   <label class="top">Last Name*<br><input type="text" name="lname" required></label>
+                   <label class="top">Phone*<br><input type="tel" name="phone" required placeholder="1235551234"></label>
+                   <label class="top">Email*<br><input type="email" name="email" placeholder="yourbusiness@gmail.com" required></label>
+               </fieldset>
+
+               <fieldset>
+                   <legend>Business Information</legend>
+                   <label class="top">Business Name*<br><input type="text" name="bname" required placeholder="Business inc" ></label>
+                   <label class="top">Title/Position*<br><input type="text" name="bposition" placeholder="CEO" ></label>
+                   <!-- <label class="top">Business Description<input type="textarea" name="bdescription" placeholder="Give a brief description of your business"></label> -->
+                   <label class="top">Business Description<br><textarea id="textarea" name="bdescription" placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
+
+                   <!-- <label class="top">First Name*<input type="text" name="fname" required></label>
+                   <label class="top">Last Name*<input type="text" name="lname" required></label>
+                   <label class="top">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+                   <label class="top">Email*<input type="email" name="email" placeholder="yourbusiness@gmail.com" required></label>
+                   <label class="top">Business Name*<input type="text" name="website" required placeholder="Business inc" ></label> -->
+       
+               </fieldset>
+       
+               <fieldset>
+                   <legend>Membership Selection</legend>
+                   
+                   <label class="sbs"><input type="radio" name="membership" value="nonProfit"> Non-Profit Membership</label>
+                   <label class="sbs"><input type="radio" name="membership"  value="bronze"> Bronze Membership</label>
+                   <label class="sbs"><input type="radio" name="membership"  value="silver"> Silver Membership</label>
+                   <label class="sbs"><input type="radio" name="membership"  value="gold"> Gold Membership</label>
+       
+                   <!-- <div>Software Needed</div>
+                   <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                   <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                   <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                   <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label> -->
+       
+               </fieldset>
+
+               <input type="submit" value="Send Application" class="submitBtn">
+       
+       
+       
+       
+       
+           </form>
+
+               <div class="memberLevels">
+                    <h2>Membership Levels</h2>
+                    <div class="card">
+                        <div class="cardTop">
+                            <h3>Non-Profit level</h3>
+                            <h3>No Charge</h3>
+                            <p>Per Year</p>
+                        </div>
+
+                        <div class ="cardBottom">
+                            <p>&#x2714; Chamber Directory and Calander Access</p>
+                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2716; Buy Additional Sponserships</p>
+                            <p>&#x2716; Logo on Website and Printed Collateral</p>
+                            <p>&#x2716; Invitation to Chamber Committes</p>
+                            <p>&#x2716; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2716; Priority Invitations to Special Events</p>
+                            <p>&#x2716; Seat on Board of Directors AND Excecutive Roundtable</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="cardTop">
+                            <h3>Bronze level</h3>
+                            <h3>$3000</h3>
+                            <p>Per Year</p>
+
+                        </div>
+
+                        <div class ="cardBottom">
+                            <p>&#x2714; Chamber Directory and Calander Access</p>
+                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2714; Buy Additional Sponserships</p>
+                            <p>&#x2716; Logo on Website and Printed Collateral</p>
+                            <p>&#x2716; Invitation to Chamber Committes</p>
+                            <p>&#x2716; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2716; Priority Invitations to Special Events</p>
+                            <p>&#x2716; Seat on Board of Directors AND Excecutive Roundtable</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        
+                        <div class="cardTop">
+                            <h2>Silver level</h2>
+                            <h3>$5000</h3>
+                            <p>Per Year</p>
+                        </div>
+
+                        <div class ="cardBottom">
+                            <p>&#x2714; Chamber Directory and Calander Access</p>
+                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2714; Buy Additional Sponserships</p>
+                            <p>&#x2714; Logo on Website and Printed Collateral</p>
+                            <p>&#x2716; Invitation to Chamber Committes</p>
+                            <p>&#x2716; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2716; Priority Invitations to Special Events</p>
+                            <p>&#x2716; Seat on Board of Directors AND Excecutive Roundtable</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardTop">
+                            <h2>Gold level</h2>
+                            <h3>$10,000</h3>
+                            <p>Per Year</p>
+
+                        </div>
+
+                        <div class ="cardBottom">
+                            <p>&#x2714; Chamber Directory and Calander Access</p>
+                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2714; Buy Additional Sponserships</p>
+                            <p>&#x2714; Logo on Website and Printed Collateral</p>
+                            <p>&#x2714; Invitation to Chamber Committes</p>
+                            <p>&#x2716; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2716; Priority Invitations to Special Events</p>
+                            <p>&#x2716; Seat on Board of Directors AND Excecutive Roundtable</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="cardTop">
+                            <h2>Platnium level</h2>
+                            <h3>$20,000</h3>
+                            <p>Per Year</p>
+
+                        </div>
+
+                        <div class ="cardBottom">
+                            <p>&#x2714; Chamber Directory and Calander Access</p>
+                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2714; Buy Additional Sponserships</p>
+                            <p>&#x2714; Logo on Website and Printed Collateral</p>
+                            <p>&#x2714; Invitation to Chamber Committes</p>
+                            <p>&#x2714; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2714; Priority Invitations to Special Events</p>
+                            <p>&#x2714; Seat on Board of Directors AND Excecutive Roundtable</p>
+
+                        </div>
+                        
+                    </div>
+
+               </div>
+
+       
+               <!-- <fieldset>
+                   <legend>Funding</legend>
+                   <label class="top">Anticipated Completion Date<input type="date" name="completedDate"></label>
+                   <label class="top">Cource Subject
+                       <select name="subject">
+                       <option value="select"> Please Select &#9662;</option>
+                       <option value="software"> Software Development</option>
+                       <option value="creative"> Creative Professional</option>
+                       <option value="info"> Information Technology</option>
+                       <option value="data"> Data Professional</option>
+                       <option value="construction"> construction</option>
+                       <option value="Manufacturing"> Manufacturing</option>
+                       <option value="business"> business Professional</option>
+                       <option value="security"> Cyber Security</option>
+                       </select>
+       
+                   </label>
+       
+                   <label class="top">How Many Authors<input type="number" name="authors"></label>
+               </fieldset> -->
+               <!-- <input type="submit" value="Send Application" class="submitBtn">
+       
+       
+       
+       
+       
+           </form> -->
+               
+       
+                 
+               
+           </main>
+        
+           <footer>
+        
+            <div id="topFooter">
+                <div id="topFootFirst">
+                    <img id="footerLogo" src="images/hpvLogo.webp" alt="Logo for Happy Valley Chamber of Commerce">
+                    <div id="footerLogoName">
+                        <h1 id="nameFooter">Happy Valley Chamber of Commerce</h1>
+                        <a id="address">50 S University Ave, Provo, UT 84601</a>
+                    </div>
+    
+                </div>
+    
+                <div id="topFootSecond">
+                    <p id="email">info@happyvalley.org</p>
+                    <p id="phone">(123)-456-7890</p>
+                    <a id="map" href="https://www.google.com/maps/place/Provo+City+Center+Temple/@40.232676,-111.6615056,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9753f01c3b83:0x5d2cd1f074758bb7!8m2!3d40.232676!4d-111.6593169"><span class="material-icons">pin_drop</span>Location map</a>
+                        
+                </div>
+                
+                
+    
+            </div>
+            
+    
+            <div id="bottomFooter">
+                <!-- &copy;  -->
+                <p id="footerTitle"><span id="footerDate"></span> Happy Valley Chamber</p>
+    
+                <p id="footerName">William Cameron</p>
+                <p id="projectName">WDD 230 Project</p>
+                <!-- <p>&copy; 2015 RapidTables.com</p> -->
+    
+                <p id="lastUpdated"></p>
+    
+                <!-- <p id="footerDate"></p> -->
+               
+    
+            </div>
+    
+        </footer>
+    
+        <script src="scripts/chamber.js"></script>
+    
+</body>
+</html>
