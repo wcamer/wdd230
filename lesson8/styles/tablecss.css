@@ -16,10 +16,15 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+h1{
+    grid-column: 2/3;
+    border: 2px solid black;
+}
+
 table{
     /* border: 10px solid lime; */
     grid-column: 2/3;
-    margin: 100px;
+    
     border-collapse: collapse;
     box-shadow: 0 0 30px;
    
@@ -34,7 +39,8 @@ thead{
     background-color: #003049;
     color: #fcbf49;
     font-size: 2rem;
-    
+    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
 /* tbody{
