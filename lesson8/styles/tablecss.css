@@ -11,11 +11,21 @@ body{
     
     /* width: 100%;
     height: 100%; */
-    border: 20px solid pink;
+    /* border: 20px solid pink; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 table{
-    border: 10px solid lime;
+    /* border: 10px solid lime; */
+    grid-column: 2/3;
+    margin: 100px;
+    border-collapse: collapse;
+    box-shadow: 0 0 30px;
+   
+    border: 5px solid black;
+    
+    
     
 }
 
@@ -23,15 +33,17 @@ table{
 thead{
     background-color: #003049;
     color: #fcbf49;
+    font-size: 2rem;
     
 }
 
-tbody{
+/* tbody{
     border: 5px solid black;
-}
+} */
 
 tbody tr:nth-child(1){
     background-color: rgba(0,48,73,.5);
+    font-size: 1.5rem;
     
 }
 
@@ -41,8 +53,12 @@ tr:nth-child(3) td:nth-child(2){
 }
 
 td,th{
-    border: 1px solid red;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    padding: 7px 15px;
 }
+
+
 
 tr:nth-child(even) {
     background-color: rgba(234,226,183,.7);
@@ -55,5 +71,7 @@ tr:nth-child(even) {
 
 caption{
     caption-side: bottom;
+    font-size: 1.3rem;
+    margin: 10px;
 }
 
