@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="William Cameron">
-    <meta name="description" content="This is the main page for the Happy Valley Chamber of Commerce">
+    <meta name="description" content="This is the join page for the Happy Valley Chamber of Commerce where an application can be made for a specific membership level">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     
     
-    <title>Happy Valley Chamber of Commerce Home Page</title>
+    <title>Happy Valley Chamber of Commerce Join Page</title>
 
 
 
@@ -90,11 +90,15 @@
         
 
 
-    </header>
-       <main class="joinMain">
-           
-           <form method="get" action="thanks.html">
-               <h1>Chamber Membership Application</h1>
+        </header>
+        
+        
+        <!-- <main class="joinMain"> -->
+        <main id="joinPageMain">
+            <h1>Chamber Membership Application</h1>
+
+           <form method="get" action="thanks.html" class="joinMain">
+               <!-- <h1>Chamber Membership Application</h1> -->
                <fieldset>
                    <legend>Applicant Information</legend>
                    <!-- <div>Personal Information</div> -->
@@ -106,10 +110,10 @@
 
                <fieldset>
                    <legend>Business Information</legend>
-                   <label class="top">Business Name*<br><input type="text" name="bname" required placeholder="Business inc" ></label>
-                   <label class="top">Title/Position*<br><input type="text" name="bposition" placeholder="CEO" ></label>
+                   <label class="bname">Business Name*<br><input type="text" name="bname" required placeholder="Business inc" ></label>
+                   <label class="bposition">Title/Position*<br><input type="text" name="bposition" placeholder="CEO" ></label>
                    <!-- <label class="top">Business Description<input type="textarea" name="bdescription" placeholder="Give a brief description of your business"></label> -->
-                   <label class="top">Business Description<br><textarea id="textarea" name="bdescription" placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
+                   <label class="bdescription">Business Description<br><textarea id="textarea" name="bdescription" placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
 
                    <!-- <label class="top">First Name*<input type="text" name="fname" required></label>
                    <label class="top">Last Name*<input type="text" name="lname" required></label>
@@ -122,11 +126,12 @@
                <fieldset>
                    <legend>Membership Selection</legend>
                    
-                   <label class="sbs"><input type="radio" name="membership" value="nonProfit"> Non-Profit Membership</label>
-                   <label class="sbs"><input type="radio" name="membership"  value="bronze"> Bronze Membership</label>
-                   <label class="sbs"><input type="radio" name="membership"  value="silver"> Silver Membership</label>
-                   <label class="sbs"><input type="radio" name="membership"  value="gold"> Gold Membership</label>
-       
+                   <label class="sbs"><input type="radio" name="membership" value="nonProfit"> Non-Profit Membership<span class="checkmark"></span></label>
+                   <label class="sbs"><input type="radio" name="membership"  value="bronze"> Bronze Membership<span class="checkmark"></span></label>
+                   <label class="sbs"><input type="radio" name="membership"  value="silver"> Silver Membership<span class="checkmark"></span></label>
+                   <label class="sbs"><input type="radio" name="membership"  value="gold"> Gold Membership<span class="checkmark"></span></label>
+                   <label class="sbs"><input type="radio" name="membership"  value="platinum"> Platinum Membership<span class="checkmark"></span></label>
+
                    <!-- <div>Software Needed</div>
                    <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
                    <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
@@ -136,25 +141,22 @@
                </fieldset>
 
                <input type="submit" value="Send Application" class="submitBtn">
-       
-       
-       
-       
+               <input type="hidden" id="timeStamp">
        
            </form>
 
-               <div class="memberLevels">
+            <div class="memberLevels">
                     <h2>Membership Levels</h2>
                     <div class="card">
                         <div class="cardTop">
                             <h3>Non-Profit level</h3>
                             <h3>No Charge</h3>
-                            <p>Per Year</p>
+                            <h4>Per Year</h4>
                         </div>
 
                         <div class ="cardBottom">
                             <p>&#x2714; Chamber Directory and Calander Access</p>
-                            <p>&#x2714; Member Pricing at Events</p>
+                            <p>&#x2716; Member Pricing at Events</p>
                             <p>&#x2716; Buy Additional Sponserships</p>
                             <p>&#x2716; Logo on Website and Printed Collateral</p>
                             <p>&#x2716; Invitation to Chamber Committes</p>
@@ -170,7 +172,7 @@
                         <div class="cardTop">
                             <h3>Bronze level</h3>
                             <h3>$3000</h3>
-                            <p>Per Year</p>
+                            <h4>Per Year</h4>
 
                         </div>
 
@@ -193,7 +195,7 @@
                         <div class="cardTop">
                             <h2>Silver level</h2>
                             <h3>$5000</h3>
-                            <p>Per Year</p>
+                            <h4>Per Year</h4>
                         </div>
 
                         <div class ="cardBottom">
@@ -213,7 +215,7 @@
                         <div class="cardTop">
                             <h2>Gold level</h2>
                             <h3>$10,000</h3>
-                            <p>Per Year</p>
+                            <h4>Per Year</h4>
 
                         </div>
 
@@ -223,7 +225,7 @@
                             <p>&#x2714; Buy Additional Sponserships</p>
                             <p>&#x2714; Logo on Website and Printed Collateral</p>
                             <p>&#x2714; Invitation to Chamber Committes</p>
-                            <p>&#x2716; Seat on Board of Directors or Excecutive Roundtable</p>
+                            <p>&#x2714; Seat on Board of Directors or Excecutive Roundtable</p>
                             <p>&#x2716; Priority Invitations to Special Events</p>
                             <p>&#x2716; Seat on Board of Directors AND Excecutive Roundtable</p>
 
@@ -235,7 +237,7 @@
                         <div class="cardTop">
                             <h2>Platnium level</h2>
                             <h3>$20,000</h3>
-                            <p>Per Year</p>
+                            <h4>Per Year</h4>
 
                         </div>
 
@@ -253,7 +255,7 @@
                         
                     </div>
 
-               </div>
+            </div>
 
        
                <!-- <fieldset>
@@ -287,7 +289,7 @@
        
                  
                
-           </main>
+        </main>
         
            <footer>
         
@@ -330,7 +332,7 @@
     
         </footer>
     
-        <script src="scripts/chamber.js"></script>
+        <script src="scripts/join.js"></script>
     
 </body>
 </html>
