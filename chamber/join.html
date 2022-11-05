@@ -111,9 +111,9 @@
                <fieldset>
                    <legend>Business Information</legend>
                    <label class="bname">Business Name*<br><input type="text" name="bname" required placeholder="Business inc" ></label>
-                   <label class="bposition">Title/Position*<br><input type="text" name="bposition" placeholder="CEO" ></label>
+                   <label class="bposition">Title/Position*<br><input type="text" pattern="[A-Za-Z//-]{7,}" name="bposition"   placeholder="Chief Executive Office" ></label>
                    <!-- <label class="top">Business Description<input type="textarea" name="bdescription" placeholder="Give a brief description of your business"></label> -->
-                   <label class="bdescription">Business Description<br><textarea id="textarea" name="bdescription" placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
+                   <label class="bdescription">Business Description<br><textarea id="textarea" name="bdescription"  placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
 
                    <!-- <label class="top">First Name*<input type="text" name="fname" required></label>
                    <label class="top">Last Name*<input type="text" name="lname" required></label>

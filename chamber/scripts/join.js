@@ -28,12 +28,26 @@ console.log(currentDate)
 document.querySelector("#lastUpdated").textContent = `Last Updated: ${modifiedDate}`;
 document.querySelector("#todayDate").textContent = currentDate
 
+function toggleMenu() {
+    console.log('the menu has been toggled')
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerButton').classList.toggle('open');
+}
+
+const x = document.getElementById('hamburgerButton')
+
+x.onclick = toggleMenu;
+
 if(dayName == 'Monday' || dayName == 'Tuesday'){
     document.getElementById('meeting').id=('reveal')
 }
-
-timeStampGetter.innerHTML = timeStamp;
+//timeStampGetter.value = timeStamp;
 console.log(timeStamp,'this is the time')
+textarea = document.querySelector('#textarea')
+console.log(textarea)
+
+
+
 
 
 // footer section
