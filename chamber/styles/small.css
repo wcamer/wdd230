@@ -208,7 +208,7 @@ nav a.active{
 
 /*----------------Main-------------*/
 
-main{
+.homeMain{
     border: 3px;
     border-style: solid;
     border-color: black;
@@ -619,45 +619,138 @@ footer{
 
 
 /*--------------------JOIN PAGE---------------------------*/
-.joinMain{
+/* #joinPageMain{
     display: flex;
-    flex-direction: column;
+} */
+
+#joinPageMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column;
     justify-content: space-between;
-    border: unset;
+    border: unset; */
+
+    gap: 2px;
 }
 
 form{
     width: 100%;
+    align-items: center;
+    grid-column: 1/2;
+    background-color: #fcbf49;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
 }
 
 form label, form legend{
     text-align: left;
-    background-color: lime;
-    width: 100%;
+    background-color:#eae2b7;
+    
     /* padding: .5rem; */
-}
-
-form input{
-    height: 40px;
-    width: 100%;
     
 }
-/* fieldset{
-    margin: 20px;
-    padding: 20px;
+
+/*---controls the input field--*/
+form input{
+    height: 40px;
+    width: 95%;
+    font-size: 1.3rem;
+    
+    
+    
+}
+
+legend{
+    font-size: 1.2rem;
+    margin: 2%;
+    padding: 2%;
+}
+
+textarea{
+    width: 95%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+    background-color:#003049;
+}
+
+.sbs{
+    /* background-color:#d62828; */
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    font-size: 1.5rem;
+    border:  2px solid #fcbf49;
+    /* border-radius: 50%; */
+    
+    
+    
+
+}
+
+/* Controls the size of the radio buttons */
+input[type="radio"]{
+    height: 44px;
+    width: 44px;
+}
+
+/* .sbs .checkmark{
+    width: calc(100% -6px);
+    height: calc(100% -6px);
+    background-color: pink;
+    display: none;
+
+}
+
+
+
+.sbs input:checked + .checkmark  {
+    display: inline-block;
+    background-color: lime;
 } */
 
+.sbs ,.top{
+    
+    height: 70px;
+    width: 90%;
+    /* border: 5px solid black;
+    border-radius: 10px; */
+
+    
+}
+
+
+
+/* fieldset:nth-child(3) label{
+    appearance: none;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+}
+
+input{
+    height: 200px;
+} */
 
 
 label{
     display: block;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
+    margin: 2%;
+    padding: 2%;
+    
 }
 
 .submitBtn{
-    margin: 5%;
+    margin: 2% 0 5% 0;
     border-radius: 5px;
     height: 44px;
 
@@ -667,17 +760,22 @@ label{
 
 
 
-.memberLevels{
-    background-color: #fcbf49;
-    color:#eae2b7;
+.memberLevels {
+    background-color: #fcbf49; 
+    color:#003049;
     border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    /* background-color: lime; */
     
 }
 
 .card{
     margin: 2%;
     padding: 2%;
-    border: 2px solid blue;
+    border: 2px solid #003049;
+    border-radius: 10px;
+    background-color: #fcbf49;
 
 }
 
@@ -686,15 +784,30 @@ label{
     color:#eae2b7;
     margin: 2%;
     padding: 2%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .cardBottom{
     margin: 5%;
     padding: 5%;
-    background-color: #d62828;
+    background-color: #eae2b7;
+    border-radius: 10px; 
 }
 
 .card p{
     text-align: left;
+    font-size: 1.2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
 
