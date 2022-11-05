@@ -1,7 +1,7 @@
 const copyWrite = '&copy' 
 let modifiedDate = document.lastModified;
 let timeStamp = new Date()
-let timeStampGetter = document.querySelector('timeStamp')
+let timeStampGetter = document.querySelector('#timeStamp')
 let currentYear = new Date().getFullYear()
 const author = 'William Cameron'
 const authorLocation = 'Utah, USA'
@@ -38,13 +38,25 @@ const x = document.getElementById('hamburgerButton')
 
 x.onclick = toggleMenu;
 
+//console.log((timeStampGetter),'this is timestampgetter before the if statement')
+
 if(dayName == 'Monday' || dayName == 'Tuesday'){
     document.getElementById('meeting').id=('reveal')
 }
-//timeStampGetter.value = timeStamp;
-console.log(timeStamp,'this is the time')
-textarea = document.querySelector('#textarea')
-console.log(textarea)
+
+
+//if timeStampGetter doesn't exist then....
+if (timeStampGetter == null) {
+    console.log('timeStampGetter does not exist')
+
+} else{
+
+    timeStampGetter.setAttribute('value',timeStamp)
+    console.log(timeStamp,'this is the time')
+   // textarea = document.querySelector('#textarea')
+    //console.log(textarea)
+}
+
 
 
 
