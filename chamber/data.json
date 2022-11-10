@@ -1,7 +1,7 @@
 {
     "companies":[
         {
-        "logo" : "#",
+        "logo" : "images/directoryImages/tic_tac_toe_directory_100.jpg",
         "name" : "Heart-A-Tac Gaming Lounge",
         "address" : "1000 N. 1000 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3333",
@@ -10,7 +10,7 @@
     },
 
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/gas_pump_directory_100.jpg",
         "name" : "Gamers Pit Stop",
         "address" : "1100 N. 1100 E. Happy Valley, UT 84003",
         "phone": "+1(444)-555-6666",
@@ -18,7 +18,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/tech_brain_directory_100",
         "name" : "The Tech Shop",
         "address" : "1200 N. 1200 E. Happy Valley, UT 84003",
         "phone": "+1(777)-888-9999",
@@ -26,7 +26,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/hvmarekt_directory_100",
         "name" : "Happy Valley Market",
         "address" : "1300 N. 1300 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3434",
@@ -34,7 +34,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/hvhospital_directory_100",
         "name" : "Happy Valley Hosptial",
         "address" : "1400 N. 1400 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3455",
@@ -42,7 +42,7 @@
         "membership": "Gold"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/hvauto_directory_100",
         "name" : "H V Auto",
         "address" : "1500 N. 1500 E. Happy Valley, UT 84003",
         "phone": "+1(444)-555-6767",
@@ -50,7 +50,7 @@
         "membership": "Silver"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/vfr_directory_100",
         "name" : "Vila Feliz Realtors",
         "address" : "1600 N. 1600 E. Happy Valley, UT 84003",
         "phone": "+1(777)-888-9898",
@@ -58,7 +58,7 @@
         "membership": "Silver"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/hvbank_directory_100",
         "name" : "Bank of Happy Valley",
         "address" : "1700 N. 1700 E. Happy Valley, UT 84003",
         "phone": "+1(111)-233-4555",
@@ -66,7 +66,7 @@
         "membership": "Bronze"
     },
     {
-        "logo" : "#",
+        "logo" : "images/directoryImages/fh_directory_100",
         "name" : "Foundation of Happiness",
         "address" : "1800 N. 1800 E. Happy Valley, UT 84003",
         "phone": "+1(111)-333-5555",
