@@ -1,4 +1,4 @@
-const copyWrite = '&copy' 
+const copyWrite = '&copy'
 let modifiedDate = document.lastModified;
 let currentYear = new Date().getFullYear()
 const author = 'William Cameron'
@@ -11,6 +11,12 @@ const weekDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October', 'November', 'December']
 const dayName = weekDay[dayIndex];
 const monthName = monthList[monthIndex]
+
+const x = document.getElementById('hamburgerButton')
+
+const listSwitchGrabber = document.querySelector('#listSwitch')
+const gridSwitchGrabber = document.querySelector('#gridSwitch')
+
 console.log(dayName)
 console.log(dayNumber)
 
@@ -18,7 +24,14 @@ console.log(currentYear);
 const currentDate = `${dayName}, ${dayNumber} ${monthName} ${currentYear}`
 console.log(currentDate)
 
+const directorySign = document.querySelector('#directory')
+console.log(directorySign,'this is the sign')
+//const gridButton = document.querySelector('.directoryGrid')
+//const listButton = document.querySelector('.directoryList')
 
+//listButton.onclick() = directorySwitch
+//console.log('this is girdButton',gridButton)
+//console.log('this is girdButton',listButton)
 
 
 
@@ -44,22 +57,58 @@ function toggleMenu() {
     document.getElementById('hamburgerButton').classList.toggle('open');
 }
 
-const x = document.getElementById('hamburgerButton')
+function moreInfoSwitch() {
+    clickMoreInfoGet.classList.toggle('active')
 
-x.onclick = toggleMenu;
+}
+
+
+function directoryGridSwitch(){
+    if (directorySign.classList == 'directoryList'){
+        directorySign.classList.remove('directoryList')
+        directorySign.classList.add('directoryGrid')
+    }
+    
+    else{
+        directorySign.classList.remove('directoryList')
+        directorySign.classList.add('directoryGrid')
+    }
+}
+
+function directoryListSwitch(){
+    if (directorySign.classList == 'directoryGrid'){
+        directorySign.classList.remove('directoryGrid')
+        directorySign.classList.add('directoryList')
+    }
+}
+
+
+if (gridSwitchGrabber !== null && listSwitchGrabber !== null){
+    listSwitchGrabber.onclick = directoryListSwitch;
+    gridSwitchGrabber.onclick = directoryGridSwitch;
+}
+   
+
 
 if(dayName == 'Monday' || dayName == 'Tuesday'){
     document.getElementById('meeting').id=('reveal')
 }
 
 const clickMoreInfoGet = document.getElementById('clickMoreInfo')
+//console.log(clickMoreInfoGet,'here is clickmoreinfoget')
 
-function moreInfoSwitch() {
-    clickMoreInfoGet.classList.toggle('active')
+if (clickMoreInfoGet != null){
+    clickMoreInfoGet.onclick = moreInfoSwitch
+ }
+//else{
+//     console.log(clickMoreInfoGet,'here is clickmoreinfoget and it is null')
+// }
 
-}
 
-clickMoreInfoGet.onclick = moreInfoSwitch
+//clickMoreInfoGet.onclick = moreInfoSwitch
+
+x.onclick = toggleMenu;
+
 
 
 
