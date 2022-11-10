@@ -126,7 +126,7 @@ if (document.querySelector('#directoryMain')){
         logo.setAttribute('alt',`This is the logo for ${company.name}.`);
         logo.setAttribute('loading','lazy');
 
-        //card.appendChild(logo)
+        card.appendChild(logo)
         card.appendChild(heading3)
         card.appendChild(address)
         card.appendChild(number)
