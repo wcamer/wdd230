@@ -393,11 +393,56 @@
 
 
 
-/*--------------Thank You Page----------*/
+/*----------------------------------Thank You Page----------------------------------*/
 
-#thankYouMain{
+    #thankYouMain{
     grid-column: 2/3;
-}
+    
+    }
+
+
+
+
+
+/*----------------------------------- DIRECTORY PAGE ------------------------------*/
+
+
+    .directoryList img{
+        display: block;
+    }
+    .directoryList section{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    }
+
+    .directoryGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

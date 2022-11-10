@@ -332,6 +332,45 @@
 
 
 
+/*---------------------DIRECTORY PAGE-----------------*/
+
+
+
+
+.directoryList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.directoryList section{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.directoryList h2{
+    font-size: 1rem;
+}
+
+
+
+
+
+.directoryGrid{
+    
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+
 
 
 

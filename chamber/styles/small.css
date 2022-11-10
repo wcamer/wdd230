@@ -804,6 +804,68 @@ label{
 
 
 
+/*-----------------------DIRECTORY PAGE-------------------------*/
+#directoryMain{
+    margin: 2%;
+    padding: 2%;
+   
+}
+
+
+.switches{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2rem;
+    height: 44px;
+    
+}
+
+.directoryList{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 5px solid black;
+    margin: 2%;
+    
+}
+
+.directoryList img{
+    display: none;
+}
+
+.directoryList section:nth-child(odd){
+    background-color: lime;
+}
+
+.directoryList section{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.directoryGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.directoryGrid section{
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #003049;
+    box-shadow: 1px 1px 10px #d62828;
+
+}
+
+.directoryGrid section:nth-child(odd){
+    background-color: pink;
+
+}
+
+/* .member{
+    font-size: 2rem;
+} */
+
 
 
 
