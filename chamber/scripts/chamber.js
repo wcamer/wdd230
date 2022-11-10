@@ -17,6 +17,11 @@ const x = document.getElementById('hamburgerButton')
 const listSwitchGrabber = document.querySelector('#listSwitch')
 const gridSwitchGrabber = document.querySelector('#gridSwitch')
 
+const requestURL = 'https://wcamer.github.io/wdd230/chamber/data.json'
+
+
+
+
 console.log(dayName)
 console.log(dayNumber)
 
@@ -67,25 +72,91 @@ function directoryGridSwitch(){
     if (directorySign.classList == 'directoryList'){
         directorySign.classList.remove('directoryList')
         directorySign.classList.add('directoryGrid')
+        document.querySelector('#listSwitch').classList.remove('active')
+        document.querySelector('#gridSwitch').classList.add('active')
     }
     
-    else{
-        directorySign.classList.remove('directoryList')
-        directorySign.classList.add('directoryGrid')
-    }
+    
 }
 
 function directoryListSwitch(){
     if (directorySign.classList == 'directoryGrid'){
         directorySign.classList.remove('directoryGrid')
         directorySign.classList.add('directoryList')
+        document.querySelector('#gridSwitch').classList.remove('active')
+        document.querySelector('#listSwitch').classList.add('active')
     }
 }
+
+
+
+
+if (document.querySelector('#directoryMain')){
+    console.log('this id is present')
+
+    async function companyDataGetter(){
+        const response= await fetch(requestURL)
+        const data = await response.json()
+        companies = data['companies']
+        //console.log(prophets,'this is the more robust one')
+        console.log(companies)
+        return companies.forEach(displayCompanies)
+        
+        
+    }
+    
+    const displayCompanies = function(company){
+        let card = document.createElement('section');
+      
+        let logo = document.createElement('img');
+        let heading3 = document.createElement('h3')
+        let address = document.createElement('p');
+        let website = document.createElement('a');
+        let number = document.createElement('p');
+        let membership = document.createElement('p');
+        
+        
+        heading3.textContent = company.name
+
+        address.textContent = company.address
+        number.textContent = company.phone
+        membership.textContent = company.membership
+
+        logo.setAttribute('src',company.logo);
+        logo.setAttribute('alt',`This is the logo for ${company.name}.`);
+        logo.setAttribute('loading','lazy');
+
+        //card.appendChild(logo)
+        card.appendChild(heading3)
+        card.appendChild(address)
+        card.appendChild(number)
+        card.appendChild(website)
+        card.appendChild(membership)
+
+        document.querySelector('#directory').appendChild(card);
+        //companyDataGetter(displayCompanies)
+
+       // return companies.forEach(displayCompanies)
+      // companyDataGetter()
+    }
+    companyDataGetter()
+    
+}
+else{
+    console.log('it is not here')
+}
+
+
+
 
 
 if (gridSwitchGrabber !== null && listSwitchGrabber !== null){
     listSwitchGrabber.onclick = directoryListSwitch;
     gridSwitchGrabber.onclick = directoryGridSwitch;
+    console.log('listSwitchGrabber or gridSwitchGrabber is  present')
+}
+else{
+    console.log('listSwitchGrabber or gridSwitchGrabber are not present')
 }
    
 
@@ -108,6 +179,7 @@ if (clickMoreInfoGet != null){
 //clickMoreInfoGet.onclick = moreInfoSwitch
 
 x.onclick = toggleMenu;
+
 
 
 
