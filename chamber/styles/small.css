@@ -821,6 +821,22 @@ label{
     
 }
 
+#listSwitch.active, #gridSwitch.active{
+    background-color: #eae2b7;
+    color: #d62828;
+}
+#listSwitch:hover, #gridSwitch:hover{
+    background-color: #003049;
+    color: #eae2b7;
+
+}
+
+#gridSwitch, #listSwitch{
+    
+    background-color: #d62828;
+    color: #eae2b7;
+}
+
 .directoryList{
     display: flex;
     flex-direction: column;
@@ -841,6 +857,7 @@ label{
 .directoryList section{
     padding: 1rem;
     margin: 1rem;
+    border: 1px solid black;
 }
 
 .directoryGrid{

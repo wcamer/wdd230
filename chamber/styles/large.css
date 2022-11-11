@@ -1,12 +1,12 @@
 @media only screen and (min-width: 64rem){
-    body{
+    /* body{
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        /* grid-template-rows: 1fr 3fr 1fr; */
+        
         margin: 1%;
 
 
-    }
+    } */
 
     #top{
         grid-template-rows: 1fr 1fr;
@@ -148,7 +148,7 @@
 
     /*-------------------main section------------------*/
 
-    main{
+    .homeMain{
         grid-template-columns: 1fr 3fr 1fr;
         /* grid-template-rows: 1fr 1fr 1fr; */
         gap: 5px;
