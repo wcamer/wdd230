@@ -851,7 +851,10 @@ label{
 }
 
 .directoryList section:nth-child(odd){
-    background-color: lime;
+    background-color: rgba(252,191,79,1);
+}
+.directoryList section:nth-child(even){
+    background-color: rgba(252,191,79,.5);
 }
 
 .directoryList section{
@@ -870,18 +873,23 @@ label{
     padding: 1rem;
     margin: 1rem;
     border: 2px solid #003049;
-    box-shadow: 1px 1px 10px #d62828;
+    box-shadow: 1px 1px 20px #003049;
 
 }
 
 .directoryGrid section:nth-child(odd){
-    background-color: pink;
+    background-color: rgba(252,191,79,1);;
 
 }
 
-/* .member{
+.directoryGrid section:nth-child(even){
+    background-color: rgba(252,191,79,.5);;
+
+}
+
+.member{
     font-size: 2rem;
-} */
+}
 
 
 

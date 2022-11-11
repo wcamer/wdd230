@@ -22,15 +22,15 @@ const requestURL = 'https://wcamer.github.io/wdd230/chamber/data.json'
 
 
 
-console.log(dayName)
-console.log(dayNumber)
+//console.log(dayName)
+//console.log(dayNumber)
 
-console.log(currentYear);
+//console.log(currentYear);
 const currentDate = `${dayName}, ${dayNumber} ${monthName} ${currentYear}`
-console.log(currentDate)
+//console.log(currentDate)
 
 const directorySign = document.querySelector('#directory')
-console.log(directorySign,'this is the sign')
+//console.log(directorySign,'this is the sign')
 //const gridButton = document.querySelector('.directoryGrid')
 //const listButton = document.querySelector('.directoryList')
 
@@ -92,14 +92,13 @@ function directoryListSwitch(){
 
 
 if (document.querySelector('#directoryMain')){
-    console.log('this id is present')
+    //console.log('this id is present')
 
     async function companyDataGetter(){
         const response= await fetch(requestURL)
         const data = await response.json()
         companies = data['companies']
-        //console.log(prophets,'this is the more robust one')
-        console.log(companies)
+        //console.log(companies)
         return companies.forEach(displayCompanies)
         
         
@@ -114,20 +113,25 @@ if (document.querySelector('#directoryMain')){
         let website = document.createElement('a');
         let number = document.createElement('p');
         let membership = document.createElement('p');
+        //console.log('this is there membership level', company.membership)
         
         
         heading3.textContent = company.name
 
         address.textContent = company.address
         number.textContent = company.phone
+        website.setAttribute('href', '#')//company.website)
         website.textContent = company.website
-        membership.textContent = company.membership
+
+        membership.textContent = `${company.membership} Member`
+        membership.classList ='member'
         
 
         logo.setAttribute('src',company.logo);
         logo.setAttribute('alt',`This is the logo for ${company.name}.`);
         logo.setAttribute('loading','lazy');
 
+        card.classList = company.membership
         card.appendChild(logo)
         card.appendChild(heading3)
         card.appendChild(address)
@@ -144,9 +148,9 @@ if (document.querySelector('#directoryMain')){
     companyDataGetter()
     
 }
-else{
-    console.log('it is not here')
-}
+// else{
+//     console.log('it is not here')
+// }
 
 
 
@@ -155,11 +159,11 @@ else{
 if (gridSwitchGrabber !== null && listSwitchGrabber !== null){
     listSwitchGrabber.onclick = directoryListSwitch;
     gridSwitchGrabber.onclick = directoryGridSwitch;
-    console.log('listSwitchGrabber or gridSwitchGrabber is  present')
+    //console.log('listSwitchGrabber or gridSwitchGrabber is  present')
 }
-else{
-    console.log('listSwitchGrabber or gridSwitchGrabber are not present')
-}
+// else{
+//     console.log('listSwitchGrabber or gridSwitchGrabber are not present')
+// }
    
 
 
