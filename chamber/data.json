@@ -18,7 +18,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "images/directoryImages/tech_brain_directory_100",
+        "logo" : "images/directoryImages/tech_brain_directory_100.jpg",
         "name" : "The Tech Shop",
         "address" : "1200 N. 1200 E. Happy Valley, UT 84003",
         "phone": "+1(777)-888-9999",
@@ -26,7 +26,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "images/directoryImages/hvmarekt_directory_100",
+        "logo" : "images/directoryImages/hvmarekt_directory_100.jpg",
         "name" : "Happy Valley Market",
         "address" : "1300 N. 1300 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3434",
@@ -34,7 +34,7 @@
         "membership": "Platinum"
     },
     {
-        "logo" : "images/directoryImages/hvhospital_directory_100",
+        "logo" : "images/directoryImages/hvhospital_directory_100.jpg",
         "name" : "Happy Valley Hosptial",
         "address" : "1400 N. 1400 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3455",
@@ -42,7 +42,7 @@
         "membership": "Gold"
     },
     {
-        "logo" : "images/directoryImages/hvauto_directory_100",
+        "logo" : "images/directoryImages/hvauto_directory_100.jpg",
         "name" : "H V Auto",
         "address" : "1500 N. 1500 E. Happy Valley, UT 84003",
         "phone": "+1(444)-555-6767",
@@ -50,9 +50,9 @@
         "membership": "Silver"
     },
     {
-        "logo" : "images/directoryImages/vfr_directory_100",
+        "logo" : "images/directoryImages/vfr_directory_100.jpg",
         "name" : "Vila Feliz Realtors",
-        "address" : "1600 N. 1600 E. Happy Valley, UT 84003",
+        "address" : "1600 N. 1600 E. Happy Valley, UT 84003.jpg",
         "phone": "+1(777)-888-9898",
         "website":"http://www.vfrealtors.com",
         "membership": "Silver"
@@ -66,7 +66,7 @@
         "membership": "Bronze"
     },
     {
-        "logo" : "images/directoryImages/fh_directory_100",
+        "logo" : "images/directoryImages/fh_directory_100.jpg",
         "name" : "Foundation of Happiness",
         "address" : "1800 N. 1800 E. Happy Valley, UT 84003",
         "phone": "+1(111)-333-5555",
