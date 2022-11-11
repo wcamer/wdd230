@@ -120,7 +120,9 @@ if (document.querySelector('#directoryMain')){
 
         address.textContent = company.address
         number.textContent = company.phone
+        website.textContent = company.website
         membership.textContent = company.membership
+        
 
         logo.setAttribute('src',company.logo);
         logo.setAttribute('alt',`This is the logo for ${company.name}.`);
