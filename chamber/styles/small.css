@@ -893,6 +893,39 @@ label{
 
 
 
+/*------------------Wire frame page-----------------*/
+
+.wireMain{
+    border: 5px solid black;
+    margin: 1%;
+    padding: 2%;
+}
+
+.wireMain div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+    gap: 20px;
+ 
+    padding: 1%;
+    
+}
+
+.wireMain a{
+    background-color: #d62828;
+    color: #eae2b7;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.wireMain a:hover{
+    color: #eae2b7;
+    background-color: #003049;
+}
 
 
 

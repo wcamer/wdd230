@@ -374,4 +374,15 @@
 
 
 
+
+
+/*------------WIRE FRAME PAGE------------------*/
+
+.wireMain div{
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+
+
 }
