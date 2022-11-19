@@ -17,7 +17,8 @@ const x = document.getElementById('hamburgerButton')
 const listSwitchGrabber = document.querySelector('#listSwitch')
 const gridSwitchGrabber = document.querySelector('#gridSwitch')
 
-const requestURL = 'https://wcamer.github.io/wdd230/chamber/data.json'
+const companyURL = 'https://wcamer.github.io/wdd230/chamber/data.json'
+//const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?q=Provo,&units=imperial,&appid=7060c635b6a1fcc5f33f2a1f6092c70c'
 
 
 
@@ -95,9 +96,9 @@ if (document.querySelector('#directoryMain')){
     //console.log('this id is present')
 
     async function companyDataGetter(){
-        const response= await fetch(requestURL)
-        const data = await response.json()
-        companies = data['companies']
+        const companyResponse= await fetch(companyURL)
+        const companyData = await companyResponse.json()
+        companies = companyData['companies']
         //console.log(companies)
         return companies.forEach(displayCompanies)
         
@@ -185,6 +186,117 @@ if (clickMoreInfoGet != null){
 //clickMoreInfoGet.onclick = moreInfoSwitch
 
 x.onclick = toggleMenu;
+
+
+if (document.querySelector('#weatherSection')){
+    console.log('weatherSection is present')
+    const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?q=Provo&units=imperial&appid=7060c635b6a1fcc5f33f2a1f6092c70c'
+    async function weatherGetter(){
+        const weatherResponse = await fetch(weatherURL)
+        const weatherData = await weatherResponse.json()
+        console.log(weatherData)
+        displayWeather(weatherData)
+
+
+    }
+
+    const displayWeather = function(weatherInfo){
+       
+        tempK = weatherInfo.main.temp
+        tempC = weatherInfo.main.temp - 273.15 //for later just in case we need to see this option
+        tempF = (weatherInfo.main.temp - 273.15) * (9/5) + 32// for when degrees are in kelvin
+        currentTemp = document.createElement('p')
+        currentTemp.id = 'degree'
+        currentTemp.innerHTML = `<strong>${tempK.toFixed(0)} &#x2109;</strong>`
+        //currentTempC.innerHTML = `${tempC} &#x2103;`
+
+        weatherDescription = weatherInfo.weather[0].description.toUpperCase()
+        weatherCurrentDescription = document.createElement('p')
+        weatherCurrentDescription.id = 'weatherDescription'
+        weatherCurrentDescription.innerHTML = `<strong>${weatherDescription}</strong>`
+       
+        weatherImage = document.createElement('img')
+        weatherIconSrc = `https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`;
+        weatherImage.setAttribute('alt', weatherDescription)
+        weatherImage.setAttribute('src', weatherIconSrc)
+        //weatherImage.setAttribute('load','lazy')
+        
+        windSpeed = weatherInfo.wind.speed
+        if (tempK <= 50 && windSpeed > 3){
+            windChillValue = 35.74 + (0.6215 * tempK) - (35.75*(windSpeed ** 0.16)) + (0.4275*(tempK*(windSpeed ** .16)))
+            windChill = windChillValue.toFixed(0)
+            //windChill = weatherInfo.wind.deg.toFixed(0)
+
+        }else{
+            windChill = 'N/A'
+        }
+
+        
+
+        weatherTop = document.querySelector('.weatherContainerTop')
+        weatherHeader = document.createElement('h2')
+        weatherHeader.id = 'weatherHeader'
+        weatherHeader.innerHTML = '<strong>Weather</strong>'
+
+        weatherTop.appendChild(weatherHeader)
+        weatherTop.appendChild(weatherImage)
+        weatherTop.appendChild(currentTemp)
+        weatherTop.appendChild(weatherCurrentDescription)
+
+        weatherBottom = document.querySelector('.weatherContainerBottom')
+        
+        //actualWind = document.querySelector('#actualWindSpeed')
+        //actualWind.textContent = windSpeed
+        speed = document.createElement('P')
+        speed.id = 'windSpeed'
+        speed.innerHTML=`<strong>Wind Speed</strong>`
+        
+        // speedValue = document.createElement('span')
+        //speedValue.innerHTML = windSpeed
+        //speed.appendChild(speedValue)
+        speedValue = document.createElement('p')
+        speedValue.id = 'speedValue'
+        speedValue.innerHTML = `<strong>${windSpeed} MPH</strong>`
+        
+        
+        chill = document.createElement('p')
+        chill.id = 'windChill'
+        chill.innerHTML= `<strong>Wind Chill:</strong>`
+        
+        // chillValue= document.createElement('span')
+        // chillValue.innerHTML = windChill
+        // chill.appendChild(chillValue)
+
+        chillValue = document.createElement('p')
+        chillValue.id = 'chillValue'
+        chillValue.innerHTML = `<strong>${windChill}&#x2109;</strong>`
+
+        
+        //actualChill = document.querySelector('#actualWindChill')
+        //actualChill.textContent = windChill
+
+        
+
+        weatherTop.appendChild(weatherHeader)
+        weatherTop.appendChild(weatherImage)
+        weatherTop.appendChild(currentTemp)
+        weatherTop.appendChild(weatherCurrentDescription)
+        weatherTop.append(speed,speedValue)
+        weatherTop.append(chill,chillValue)
+
+
+
+         
+        
+
+    }
+
+    weatherGetter()
+
+}
+
+
+//Spotlight card construction
 
 
 
