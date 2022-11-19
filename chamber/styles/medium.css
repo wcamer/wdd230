@@ -24,14 +24,12 @@
     .homeMain{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 10px;
-        margin-bottom: 100px;
+    
 
         border: 5px;
         border-style: solid;
         border-color: black;
-        margin: 10px;
-        padding: 10px;
+        
         
        
     }
@@ -64,7 +62,8 @@
 
     #spotlightSection{
         order: 3;
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        /* grid-template-columns: 1fr 1fr; */
 
 
     }
@@ -91,7 +90,9 @@
     
 
     .joinButton{
-        background-color: limegreen;
+        background-color: #003049;
+        color: #eae2b7;
+        border: 5px solid #d62828;
         font-size: 3em;
         margin: 10px;
         border-radius: 10px;
@@ -101,8 +102,8 @@
 
     
     .joinButton:hover {
-        background-color:#003049;
-        color:#eae2b7
+        background-color:#eae2b7;
+        color:#003049;
     }
 
 
