@@ -92,29 +92,106 @@ function directoryListSwitch(){
 
 
 
-if (document.querySelector('#directoryMain')){
+if (document.querySelector('#directoryMain') || document.querySelector('#spotlightSection') ){
     //console.log('this id is present')
 
     async function companyDataGetter(){
         const companyResponse= await fetch(companyURL)
         const companyData = await companyResponse.json()
         companies = companyData['companies']
-        //console.log(companies)
+        if (document.querySelector('#directory') && document.querySelector('#spotlightSection') == null){
+
         return companies.forEach(displayCompanies)
         
-        
+        }
+        if (document.querySelector('#spotlightSection') && document.querySelector('#directory') == null){
+            drawing = []
+            randomEliminator = Math.floor(Math.random() * 3)
+            console.log(randomEliminator,'here is the random number')
+            for (i = 0; i < companies.length; i++){
+                if (companies[i].membership == 'Platinum'){
+                    drawing.push(companies[i])
+                    //drawing.pop(randomEliminator)
+                    //console.log(drawing,'this should have 4')
+                }
+                
+            }
+            console.log(drawing[randomEliminator].name,'...will be elimnated')
+            drawing.splice(randomEliminator,1)
+            console.log(drawing,'this should only ahve 3')
+            for (i = 0; i < drawing.length; i++){
+            company = drawing[i]
+            
+            let card = document.createElement('div');
+            card.id = `spot${i}`
+            if (card.id == 'spot1'){
+                card.id = 'spotOne'
+            } else if (card.id == 'spot2'){
+                card.id = 'spotTwo'
+            } else{
+                card.id = 'spotThree'
+            }
+            let heading3 = document.createElement('h3');
+            let address = document.createElement('p');
+            let website = document.createElement('a');
+            let number = document.createElement('p');
+            let membership = document.createElement('p');
+            let logo = document.createElement('img');
+            let pictureTag = document.createElement('picture')
+
+            let sourceTag = document.createElement('source')
+            sourceTag.setAttribute('media','(min-width: 1020px)')
+            sourceTag.setAttribute('srcset', company.largeImage)
+
+            let smallImage = document.createElement('img');
+            smallImage.setAttribute('src', company.smallImage);
+            smallImage.setAttribute('alt',`Logo for ${company.name}`)
+            smallImage.setAttribute('loading','lazy')
+
+            heading3.textContent = company.name
+
+            address.textContent = company.address
+            number.textContent = company.phone
+            website.setAttribute('href', '#')//company.website)
+            website.textContent = company.website
+
+            membership.textContent = `${company.membership} Member`
+            membership.classList ='member'
+            
+            
+            card.classList = company.membership
+
+    
+            
+            card.appendChild(heading3)
+            pictureTag.appendChild(sourceTag)
+            pictureTag.appendChild(smallImage)
+            card.appendChild(pictureTag)
+            card.appendChild(address)
+            card.appendChild(number)
+            card.appendChild(website)
+            
+
+            document.querySelector('#spotlightSection').appendChild(card);
+  
+         }
+        }
+
+
     }
     
     const displayCompanies = function(company){
         let card = document.createElement('section');
-      
-        let logo = document.createElement('img');
-        let heading3 = document.createElement('h3')
+        let heading3 = document.createElement('h3');
         let address = document.createElement('p');
         let website = document.createElement('a');
         let number = document.createElement('p');
         let membership = document.createElement('p');
-        //console.log('this is there membership level', company.membership)
+        let logo = document.createElement('img');
+        logo.setAttribute('src',company.logo);
+        logo.setAttribute('alt',`This is the logo for ${company.name}.`);
+        logo.setAttribute('loading','lazy');
+
         
         
         heading3.textContent = company.name
@@ -127,31 +204,27 @@ if (document.querySelector('#directoryMain')){
         membership.textContent = `${company.membership} Member`
         membership.classList ='member'
         
-
-        logo.setAttribute('src',company.logo);
-        logo.setAttribute('alt',`This is the logo for ${company.name}.`);
-        logo.setAttribute('loading','lazy');
-
+        
         card.classList = company.membership
+
+
         card.appendChild(logo)
         card.appendChild(heading3)
         card.appendChild(address)
         card.appendChild(number)
         card.appendChild(website)
         card.appendChild(membership)
-
         document.querySelector('#directory').appendChild(card);
-        //companyDataGetter(displayCompanies)
 
-       // return companies.forEach(displayCompanies)
-      // companyDataGetter()
-    }
-    companyDataGetter()
     
+    }
+
+    companyDataGetter()
+ 
+
+
 }
-// else{
-//     console.log('it is not here')
-// }
+
 
 
 
@@ -297,10 +370,17 @@ if (document.querySelector('#weatherSection')){
 
 
 //Spotlight card construction
+// if (document.querySelector('#spotlightSection')){
+//     console.log('SpoltlightSection is present')
+//     spotOne = document.createElement('div')
+//     spotOne.id = 'spotOne'
+//     spotTwo = document.createElement('div')
+//     spotTwo.id = 'spotTwo'
+//     spotThree = document.createElement('div')
+//     spotThree.id = 'spotThree'
 
 
-
-
+// }
 
 
 
