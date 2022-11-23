@@ -2,6 +2,9 @@
     "companies":[
         {
         "logo" : "images/directoryImages/tic_tac_toe_directory_100.jpg",
+        "smallImage": "images/tic_tac_toe_smallview_470.jpg",
+        "largeImage": "images/tic_tac_toe_largeview_282.jpg",
+        "imageAlt" : "Picture of a tic tac toe board with hearts. Credit: pixel2013 / 2471 on pixabay.com",
         "name" : "Heart-A-Tac Gaming Lounge",
         "address" : "1000 N. 1000 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3333",
@@ -11,6 +14,9 @@
 
     {
         "logo" : "images/directoryImages/gas_pump_directory_100.jpg",
+        "smallImage": "images/gas_pump_smallview_470.jpg",
+        "largeImage": "images/gas_pump_largeview_282.jpg",
+        "imageAlt" : "Picture of a gas pump for cars.  Credit: OpenClipart-Vectors / 27376images on pixabay.com" ,
         "name" : "Gamers Pit Stop",
         "address" : "1100 N. 1100 E. Happy Valley, UT 84003",
         "phone": "+1(444)-555-6666",
@@ -19,6 +25,9 @@
     },
     {
         "logo" : "images/directoryImages/tech_brain_directory_100.jpg",
+        "smallImage": "images/tech_brain_smallview_470.jpg",
+        "largeImage": "images/tech_brain_largeview_282.jpg",
+        "imageAlt" : "A brain shaped like a light bulb with half a rainbow color and the other half is a computer component Credit: brunomathiaslima on pixabay.com",
         "name" : "The Tech Shop",
         "address" : "1200 N. 1200 E. Happy Valley, UT 84003",
         "phone": "+1(777)-888-9999",
@@ -27,6 +36,9 @@
     },
     {
         "logo" : "images/directoryImages/hvmarket_directory_100.jpg",
+        "smallImage": "images/hvmarket_smallview_470.jpg",
+        "largeImage": "images/hvmarket_largeview_282",
+        "imageAlt" : "Picture of a tic tac toe board with hearts. Credit: pixel2013 / 2471 on pixabay.com",
         "name" : "Happy Valley Market",
         "address" : "1300 N. 1300 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3434",
@@ -35,6 +47,8 @@
     },
     {
         "logo" : "images/directoryImages/hvhospital_directory_100.jpg",
+        "smallImage": "#",
+        "largeImage": "#",
         "name" : "Happy Valley Hosptial",
         "address" : "1400 N. 1400 E. Happy Valley, UT 84003",
         "phone": "+1(111)-222-3455",
@@ -43,6 +57,8 @@
     },
     {
         "logo" : "images/directoryImages/hvauto_directory_100.jpg",
+        "smallImage": "#",
+        "largeImage": "#",
         "name" : "H V Auto",
         "address" : "1500 N. 1500 E. Happy Valley, UT 84003",
         "phone": "+1(444)-555-6767",
@@ -51,6 +67,8 @@
     },
     {
         "logo" : "images/directoryImages/vfr_directory_100.jpg",
+        "smallImage": "#",
+        "largeImage": "#",
         "name" : "Vila Feliz Realtors",
         "address" : "1600 N. 1600 E. Happy Valley, UT 84003.jpg",
         "phone": "+1(777)-888-9898",
@@ -59,6 +77,8 @@
     },
     {
         "logo" : "images/directoryImages/hvbank_directory_100.jpg",
+        "smallImage": "#",
+        "largeImage": "#",
         "name" : "Bank of Happy Valley",
         "address" : "1700 N. 1700 E. Happy Valley, UT 84003",
         "phone": "+1(111)-233-4555",
@@ -67,6 +87,8 @@
     },
     {
         "logo" : "images/directoryImages/fh_directory_100.jpg",
+        "smallImage": "#",
+        "largeImage": "#",
         "name" : "Foundation of Happiness",
         "address" : "1800 N. 1800 E. Happy Valley, UT 84003",
         "phone": "+1(111)-333-5555",
