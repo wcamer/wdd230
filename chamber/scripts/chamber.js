@@ -106,7 +106,7 @@ if (document.querySelector('#directoryMain') || document.querySelector('#spotlig
         }
         if (document.querySelector('#spotlightSection') && document.querySelector('#directory') == null){
             drawing = []
-            randomEliminator = Math.floor(Math.random() * 3)
+            randomEliminator = Math.floor(Math.random() * 4)
             console.log(randomEliminator,'here is the random number')
             for (i = 0; i < companies.length; i++){
                 if (companies[i].membership == 'Platinum'){
