@@ -444,20 +444,7 @@ nav a.active{
     
 }
 
-.spotBottom{
-    border-top: 1px solid black;
-    
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2%;
-    gap: 3px;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 
 #spotOne img, #spotTwo img{
     /* max-height: 300px; */
