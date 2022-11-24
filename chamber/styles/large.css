@@ -395,7 +395,7 @@
 
 
 
-/*----------------------------------Thank You Page----------------------------------*/
+    /*----------------------------------Thank You Page----------------------------------*/
 
     #thankYouMain{
     grid-column: 2/3;
@@ -403,10 +403,32 @@
     }
 
 
+    /*-----------------------CONTACT PAGE-------------*/
+    #contactUsMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #contactUsMain h1{
+        grid-column: 1/3;
+        font-size: 2.5rem;
+    }
+
+    .contactSection{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+    .contactSection h3, .contactSection p{
+        text-align: left;
+        
+        
+    }
+    
 
 
-
-/*----------------------------------- DIRECTORY PAGE ------------------------------*/
+    /*----------------------------------- DIRECTORY PAGE ------------------------------*/
 
 
     .directoryList img{

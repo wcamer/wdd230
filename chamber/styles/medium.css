@@ -302,22 +302,6 @@
 
     }
 
-    /* #textarea{
-        resize: none;
-        height: auto;
-    } */
-    /* .bname, .bposition{
-        width: 50%;
-    }
-
-    .bdescription{
-        width: 75%;
-    } */
-
-    /* textarea{
-        width: 80%;
-    } */
-
 
 
 
@@ -329,46 +313,81 @@
 
 
     }
+
+    /*-----------------Contact Us------------------*/
+    #contactUsMain{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
     
 
+    .contactForm{
+        grid-row: 2/3;
+    }
 
+    .contactSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+    }
 
-/*---------------------DIRECTORY PAGE-----------------*/
+    .contactSection h3, p{
+        text-align: center;
+        
+        
+    }
 
-
-
-
-.directoryList{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    .contactSection h2{
+        display: block;
+        grid-column: 1/4;
+    }
     
-}
+    .advisory{
+        grid-column: 2/3;
+    }
+    .advisory p{
+        text-align: left;
+    }
 
-.directoryList section{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
-}
 
-.directoryList h2{
-    font-size: 1rem;
-}
+    /*---------------------DIRECTORY PAGE-----------------*/
 
 
 
 
+    .directoryList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
 
-.directoryGrid{
-    
-    grid-template-columns: 1fr 1fr;
-    
-}
+    .directoryList section{
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .directoryList h2{
+        font-size: 1rem;
+    }
+
+
+
+
+
+    .directoryGrid{
+        
+        grid-template-columns: 1fr 1fr;
+        
+    }
 
 
 
@@ -377,12 +396,12 @@
 
 
 
-/*------------WIRE FRAME PAGE------------------*/
+    /*------------WIRE FRAME PAGE------------------*/
 
-.wireMain div{
-    flex-direction: row;
-    font-size: 1.5rem;
-}
+    .wireMain div{
+        flex-direction: row;
+        font-size: 1.5rem;
+    }
 
 
 
