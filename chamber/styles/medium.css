@@ -34,6 +34,10 @@
        
     }
 
+    #welcome{
+        font-size: 4rem;
+    }
+
     #heroSection, #weatherSection, #newsSection, #spotlightSection{
         grid-column: 1/ span 3;
         
