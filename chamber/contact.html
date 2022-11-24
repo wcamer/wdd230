@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Cameron">
+    <meta name="description" content="This is the contact page for the Happy Valley Chamber of Commerce where a form can be completed for the chamber to reach out.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Happy Valley Chamber of Commerce Contact Page</title>
+</head>
+<body>
+    
+       <header id="top">
+        <div id="meeting">
+            <p ><span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</span></p>
+        </div>
+        <div id="topPart" >
+            
+            <div id="headLogo">
+                <img id ="topLogo" src="images/hpvLogo.webp" alt="Logo for Happy Valley Chamber of Commerce">
+                
+
+                <div id="name">
+                    <p id="city">Happy Valley</p>
+                    <p id="title">Chamber of Commerce</p>
+
+                </div>
+
+            </div>
+
+
+            <div id="socialLinks">
+                <img id="fbLink" src="images/facebook_icon.png" alt="Facebook icon">
+                <img id="inLink" src="images/linkedin_icon.png" alt="LinkedIn icon">
+            </div>
+            
+            <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+            <nav>
+                
+                <div id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a class="active" href="contact.html">Contact</a>
+
+                </div>
+                
+        
+            </nav>
+        </div>
+
+
+
+
+
+        <div id="bottomPart">
+
+            <div id="headerDate">
+                <p id="todayDate"></p>
+            </div>
+
+        </div>
+        
+
+
+        </header>
+        
+        
+        <main id="contactUsMain">
+            <h1>Contact Us</h1>
+            <div class="contactSection">
+                <h2>Contact Us</h2>
+                <div>
+                    <h3 class="chamberAddress">Address</h3>
+                    <p>50 S University Ave<br> Provo, UT 84601</p>
+                </div>
+                
+                <div class="chamberPhone">
+                    <h3>Phone</h3>
+                    <p>123-456-7890</p>
+                    
+                </div>
+                
+                <div class="chamberEmail">
+                    <h3>Email</h3>
+                    <p>info@happyvalley.org</p>
+                </div>
+                
+                <div class="advisory">
+                    <h3>Advisory</h3>
+                    <p>Please allow up to 5-10 business days for processing and responses.  Weekends and holidays do not count as business days.</p>
+                </div>
+
+            </div>
+   
+           <form method="get" action="thankyou.html" class="contactForm">
+               <fieldset>
+                   <legend>Contact Information</legend>
+                   <label class="required">*Required Field</label>
+                   <label class="contact">First Name*<br><input type="text" name="fname" required></label>
+                   <label class="contact">Last Name*<br><input type="text" name="lname" required></label>
+                   <label class="contact">Business Name (if applicable)<br><input type="text" name="bname"></label>
+                   <label class="contact">Phone*<br><input type="tel" name="phone" required placeholder="1231231234"></label>
+                   <label class="contact">Email*<br><input type="email" name="email" placeholder="youremail@gmail.com" required></label>
+                   <label class="bdescription">What you wish to address with the Happy Valley Chamber*<br><textarea id="textarea" name="bdescription"  placeholder="Examples: How do I join the chamber? Are there any upcoming special events?" rows="5" cols="33" required></textarea></label>
+
+                </fieldset>
+               
+               <input type="submit" value="Send Information" class="submitBtn">
+               <input type="hidden" id="timeStamp" value="1">
+       
+           </form>
+
+        
+       
+                 
+               
+        </main>
+        
+           <footer>
+        
+            <div id="topFooter">
+                <div id="topFootFirst">
+                    <img id="footerLogo" src="images/hpvLogo.webp" alt="Logo for Happy Valley Chamber of Commerce">
+                    <div id="footerLogoName">
+                        <h1 id="nameFooter">Happy Valley Chamber of Commerce</h1>
+                        <a id="address">50 S University Ave, Provo, UT 84601</a>
+                    </div>
+    
+                </div>
+    
+                <div id="topFootSecond">
+                    <p id="email">info@happyvalley.org</p>
+                    <p id="phone">(123)-456-7890</p>
+                    <a id="map" href="https://www.google.com/maps/place/Provo+City+Center+Temple/@40.232676,-111.6615056,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9753f01c3b83:0x5d2cd1f074758bb7!8m2!3d40.232676!4d-111.6593169"><span class="material-icons">pin_drop</span>Location map</a>
+                        
+                </div>
+                
+                
+    
+            </div>
+            
+    
+            <div id="bottomFooter">
+                <p id="footerTitle"><span id="footerDate"></span> Happy Valley Chamber</p>
+                <p id="footerName">William Cameron</p>
+                <p id="projectName">WDD 230 Project</p>
+                <p id="lastUpdated"></p>
+            </div>
+    
+        </footer>
+    
+        <script src="scripts/join.js"></script>
+    
+</body>
+</html>
