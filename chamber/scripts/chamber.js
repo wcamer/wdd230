@@ -11,42 +11,15 @@ const weekDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October', 'November', 'December']
 const dayName = weekDay[dayIndex];
 const monthName = monthList[monthIndex]
-
 const x = document.getElementById('hamburgerButton')
-
 const listSwitchGrabber = document.querySelector('#listSwitch')
 const gridSwitchGrabber = document.querySelector('#gridSwitch')
-
 const companyURL = 'https://wcamer.github.io/wdd230/chamber/data.json'
-//const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?q=Provo,&units=imperial,&appid=7060c635b6a1fcc5f33f2a1f6092c70c'
-
-
-
-
-//console.log(dayName)
-//console.log(dayNumber)
-
-//console.log(currentYear);
 const currentDate = `${dayName}, ${dayNumber} ${monthName} ${currentYear}`
-//console.log(currentDate)
-
 const directorySign = document.querySelector('#directory')
-//console.log(directorySign,'this is the sign')
-//const gridButton = document.querySelector('.directoryGrid')
-//const listButton = document.querySelector('.directoryList')
-
-//listButton.onclick() = directorySwitch
-//console.log('this is girdButton',gridButton)
-//console.log('this is girdButton',listButton)
 
 
-
-//document.querySelector("#footerLocation").textContent = authorLocation;
 document.querySelector("#lastUpdated").textContent = `Last Updated: ${modifiedDate}`;
-// document.querySelector('#dayName').textContent = dayName;
-// document.querySelector('#dayNum').textContent = dayNumber;
-// document.querySelector('#monthName').textContent = monthName;
-// document.querySelector('#year').textContent = currentYear;
 document.querySelector("#todayDate").textContent = currentDate
 
 

@@ -1,4 +1,8 @@
 /* font-family: 'Bitter', serif; */
+/*color:#003049;
+color:#d62828;
+color:#eae2b7;
+color:#fcbf49; */
 
 
 
@@ -6,11 +10,11 @@
 body{
     margin: 0 auto;
     background-color: #eae2b7; 
-    /* display: grid; */
-    /*This part was stretching the body*/
-    /* grid-template-rows: 1fr 7fr 1fr;  */
     font-family: 'Bitter',serif;
     text-align: center;
+    
+    
+
     
 }
  
@@ -30,13 +34,8 @@ body{
 }
 
 #top{
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; */
     margin: 2%;
     padding: 2%;
-    
-    
     margin-bottom: .3rem;
     background-color: #fcbf49;
     
@@ -45,30 +44,19 @@ body{
 
 #topPart {
     display: grid; 
-    /*This is for the button is on the far right*/
-    /*grid-template-columns: 3fr 1fr 1fr ; */
-    /*This isf for when the button is on the far left.  Be sure to change it's position in the container*/
     grid-template-columns: 1fr 3fr 1fr;
-    
-    
     padding: 1%;
-    
-    
     justify-content: center;
     align-items: center;
-
-
 }
 
 
 
 #topLogo{
-   
     display: block;
     align-items: center;
     justify-content: center;
     max-height: 70px;
-
 }
 
 
@@ -94,11 +82,8 @@ body{
 
 #socialLinks{
     display: flex;
-    
-    
     justify-content: center;
     align-items: center;
-    
 }
 
 #socialLinks img{
@@ -111,10 +96,7 @@ nav {
     display: block;
     grid-column: 1/5; 
     text-align: center;
-    background-color: #d62828;
-    
-    
-    
+    background-color: #d62828;   
 }
 
 nav div{display:none;}
@@ -122,18 +104,11 @@ nav div.open{display: flex; flex-direction: column;}
 
 
 #top button{
-    
-    /*This is for putting button on the right side*/
-    /*grid-column: 3/4; *?
-    
-    /*This is for putting the button on the left side*/
     grid-column: 1/2; 
     grid-row:1/2;
-
     margin: .2rem 2vw;
     font-size: 2rem;
     background: transparent;
-    /* background-color: blue; */
     align-items: center;
     justify-content: center;
 
@@ -173,7 +148,6 @@ nav a.active{
 
 
 #bottompart{
-    /* grid-row: 2/3; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,28 +157,11 @@ nav a.active{
 #headerDate{
     display: block;
     padding: .5rem;
-    margin: .5rem;
-    /* grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-
-    
-    /* grid-column: 2/4; */
+    margin: .5rem;    
     text-align: center;
     background-color: #003049;
     color: #eae2b7;
-    
-    
-
 }
-
-
-
-
-
-
 
 /*----------------Main-------------*/
 
@@ -215,7 +172,6 @@ nav a.active{
     border-style: solid;
     border-color: black;
     gap: 10px;
-    /* margin-bottom: 40px; */
     margin: 2%;
     padding: 2%;
     
@@ -224,18 +180,12 @@ nav a.active{
 
 
 #eventSection, #weatherSection, #newsSection, #spotlightSection{
-    
     display: grid;
     grid-template-columns: 1fr;
-    
     border: 3px;
     border-style: solid;
     border-color: black;
     background-color: #fcbf49;
-    
-    
-    
-
 }
 
 
@@ -251,24 +201,17 @@ nav a.active{
 .heroImg{
     width: 100%;
     height: auto;
-    
     z-index: 1;
-    
-    
 }
 
 #heroImg{
     width: 100%;
     height: auto;
-    
     z-index: 1;
-    
-    
 }
 
 #heroSection h2{
     z-index: 2;
-    
     text-align: left;
     position: absolute;
     margin: 10px;
@@ -320,12 +263,6 @@ nav a.active{
 #clickMoreInfo.active span:nth-child(3) {display: block; font-size: .7em;}
 
 
-
-
-
-
-
-
 /*-------Join Section---------*/
 
 
@@ -334,15 +271,6 @@ nav a.active{
 }
 
 /*-------------------Weather Section----------------*/
-
-/* #weatherContainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    
-} */
 
 .weatherContainerTop{
     display: grid;
@@ -368,13 +296,7 @@ nav a.active{
 
 
 #weatherHeader, #degree, #windSpeed, #windChill,#speedValue, #chillValue{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
     font-size: 1.5em;
-    
-    
 }
 
 #weatherDescription{
@@ -402,33 +324,17 @@ nav a.active{
     font-size: 1.25em;
 }
 
-
-
-
-
-
-
-
 /*--------------------SpotlightSection--------------*/
 
 #spotlightSection {
-    
-    /* display:grid;
-    grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
     border: 3px;
     border-style: solid;
     border-color: black;
     background-color: #eae2b7; 
-    
     gap: 10px;
     font-size: 1.25em;
-    
-    
-    
-
-
 }
 
 
@@ -438,29 +344,17 @@ nav a.active{
     grid-template-columns: 1fr;
     border: 2px solid black;
     background-color: #fcbf49;
-    
-   
-  
-    
 }
 
 
 
 #spotOne img, #spotTwo img{
-    /* max-height: 300px; */
     width: 100%;
 }
-
-
-
 
 #spotThree {
     display:none;
 }
-
-
-
-
 
 /*-------------Footer--------------*/
 
@@ -489,8 +383,6 @@ footer{
     
 }
 
-
-
 #bottomFooter{
  border-top: 2px #eae2b7 solid;
  line-height: .5rem;
@@ -508,7 +400,6 @@ footer{
 
 
 /*------------------Discover page---------*/
-
 
 #discoverContent{
     display: grid;
@@ -530,8 +421,6 @@ footer{
     color:#fcbf49;
 }
 
-
-
 .jobInfo{
     border: 5px solid black;
     
@@ -550,13 +439,9 @@ footer{
     flex-direction: column;
 }
 
-
-
 .stats{
     border: 5px solid black;
     margin: 10px 0px 10px 0px;
-    
-    /* background-color: green; */
     align-items: center;
     text-align: center;
     
@@ -601,7 +486,6 @@ footer{
 #basicInfo3.active span:nth-child(1){display: none;}
 #basicInfo3.active span:nth-child(2){display: block;}
 #basicInfo3.active span:nth-child(3){display: block;}
-
 
 
 .description{
@@ -650,17 +534,11 @@ footer{
 
 
 /*--------------------JOIN PAGE---------------------------*/
-/* #joinPageMain{
-    display: flex;
-} */
+
 
 #joinPageMain{
     display: grid;
     grid-template-columns: 1fr;
-    /* flex-direction: column;
-    justify-content: space-between;
-    border: unset; */
-
     gap: 2px;
 }
 
@@ -670,21 +548,14 @@ form{
     grid-column: 1/2;
     background-color: #fcbf49;
 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    
 }
 
 form label, form legend{
     text-align: left;
     background-color:#eae2b7;
-    
-    /* padding: .5rem; */
-    
+        
 }
 
-/*---controls the input field--*/
 form input{
     height: 40px;
     width: 95%;
@@ -715,7 +586,6 @@ fieldset{
 }
 
 .sbs{
-    /* background-color:#d62828; */
     
     display: flex;
     align-items: center;
@@ -730,49 +600,20 @@ fieldset{
 
 }
 
-/* Controls the size of the radio buttons */
 input[type="radio"]{
     height: 44px;
     width: 44px;
 }
 
-/* .sbs .checkmark{
-    width: calc(100% -6px);
-    height: calc(100% -6px);
-    background-color: pink;
-    display: none;
-
-}
-
-
-
-.sbs input:checked + .checkmark  {
-    display: inline-block;
-    background-color: lime;
-} */
 
 .sbs ,.top{
     
     height: 70px;
     width: 90%;
-    /* border: 5px solid black;
-    border-radius: 10px; */
+    
 
     
 }
-
-
-
-/* fieldset:nth-child(3) label{
-    appearance: none;
-    background-color: pink;
-    height: 100px;
-    width: 100px;
-}
-
-input{
-    height: 200px;
-} */
 
 
 label{
@@ -797,16 +638,12 @@ label{
 }
 
 
-
-
-
 .memberLevels {
     background-color: #fcbf49; 
     color:#003049;
     border: 5px solid black;
     display: flex;
     flex-direction: column;
-    /* background-color: lime; */
     
 }
 
@@ -841,8 +678,6 @@ label{
 }
 
 
-
-
 /*-----------------------Contact Page----------------------*/
 
 
@@ -856,18 +691,11 @@ label{
     
 }
 
-
-
 .contact{
     height: 70px;
     width: 90%;
     
 }
-
-
-
-
-
 
 /*-----------------------DIRECTORY PAGE-------------------------*/
 #directoryMain{

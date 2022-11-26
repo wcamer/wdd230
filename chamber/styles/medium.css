@@ -1,11 +1,5 @@
 @media only screen and (min-width: 35rem){
-    /* body{
-        background-color: white;
-        
-        
-
-    }
- */
+  
 
     #city{
         font-size: 2.5rem;
@@ -16,22 +10,13 @@
         font-size: 1.2rem;
     }
 
- 
     /*---------Main---------*/
- 
-
-
     .homeMain{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    
-
         border: 5px;
         border-style: solid;
         border-color: black;
-        
-        
-       
     }
 
     #welcome{
@@ -52,7 +37,6 @@
         order:6;
         grid-column: 3/ span 1;
         
-        
     }
 
     #heroSection{
@@ -67,8 +51,6 @@
     #spotlightSection{
         order: 3;
         flex-direction: row;
-        /* grid-template-columns: 1fr 1fr; */
-
 
     }
 
@@ -86,8 +68,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
         
     }
 
@@ -116,34 +96,6 @@
 
     /*---------Footer---------*/
 
-    /* footer{
-        display: grid;
-        background-color: blue;
-
-
-    }
-
-    #topFooter{
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-
-    }
-
-    #footerLogo{
-        display: block;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    #nameFooter, #address{
-        grid-column: 2/3;
-        margin: 0;
-        text-align: left;
-        align-items: center;
-    } */
-    
-    
-
     #topFooter{
         display:  grid;
         grid-template-columns: 1fr 1fr;
@@ -169,13 +121,6 @@
         align-items: center;
     
     }
-
-    
-    
-
-
-
-
 
     #bottomFooter{
         display: grid;
@@ -208,9 +153,6 @@
 
     /*---------Discover Page--------*/
 
-    /* .stats{
-        background-color: lime;
-    } */
     .slide{
         transition: .5s;
         z-index: 1;
@@ -238,24 +180,6 @@
     /*----------------JOIN PAGE-----------*/
     /*-------THIS NEEDS TO BE IT'S OWN ID AND UNIQUE TO THIS PAGE AND SIMILAR CHANGES HAVE TO HAPPEN ON OTHER PAGES
     ------*/
-    /* main{  
-        display: block;
-    } */
-    
-
-    /* form{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    } */
-
-    /* fieldset{
-        height: 420px;
-    } */
-
-    /* form h1 {
-        grid-column: 1/3;
-    } */
 
     .sbs{
         
@@ -294,12 +218,6 @@
         
     }
 
-    /* fieldset:nth-child(2) input {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } */
-
     .bdescription {
         grid-column: 1/3;
         
@@ -311,10 +229,6 @@
 
     .submitBtn{
         grid-column: 1/3;
-        
-
-        
-
 
     }
 
@@ -358,9 +272,6 @@
 
     /*---------------------DIRECTORY PAGE-----------------*/
 
-
-
-
     .directoryList{
         display: flex;
         flex-direction: column;
@@ -369,10 +280,6 @@
     }
 
     .directoryList section{
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 3rem; */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
@@ -383,22 +290,10 @@
         font-size: 1rem;
     }
 
-
-
-
-
     .directoryGrid{
-        
         grid-template-columns: 1fr 1fr;
         
     }
-
-
-
-
-
-
-
 
     /*------------WIRE FRAME PAGE------------------*/
 

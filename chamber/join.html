@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="William Cameron">
     <meta name="description" content="This is the join page for the Happy Valley Chamber of Commerce where an application can be made for a specific membership level">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -16,16 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
-    
-    
     <title>Happy Valley Chamber of Commerce Join Page</title>
-
-
-
-
-
-
-
 </head>
 <body>
     
@@ -69,32 +59,21 @@
             </nav>
         </div>
 
-
-
-
-
         <div id="bottomPart">
 
             <div id="headerDate">
-                <!-- <p id="dayName"></p></p><p id="dayNum"></p><p id="monthName"></p><p id="year"></p>
-                 -->
                 <p id="todayDate"></p>
 
             </div>
 
         </div>
         
-
-
         </header>
-        
-        
-        <!-- <main class="joinMain"> -->
+                
         <main id="joinPageMain">
             <h1>Chamber Membership Application</h1>
 
            <form method="get" action="thankyou.html" class="joinMain">
-               <!-- <h1>Chamber Membership Application</h1> -->
                <fieldset>
                    <legend>Applicant Information</legend>
                    <label class="required">*Required Field</label>
@@ -104,32 +83,20 @@
                    <label class="top">Email*<br><input type="email" name="email" placeholder="yourbusiness@gmail.com" required></label>
                </fieldset>
 
-
-
-
                <fieldset>
                    <legend>Business Information</legend>
                    <label class="bname">Business Name*<br><input type="text" name="bname" required placeholder="Business inc" ></label>
                    <label class="bposition">Title/Position*<br><input type="text" pattern="[A-Za-z -]{7,}" name="bposition"   placeholder="Chief Executive Office" ></label>
-                   <!-- <label class="top">Business Description<input type="textarea" name="bdescription" placeholder="Give a brief description of your business"></label> -->
                    <label class="bdescription">Business Description<br><textarea id="textarea" name="bdescription"  placeholder="Give a brief description of your business" rows="5" cols="33"></textarea></label>
-
                </fieldset>
 
-
-
-
-       
                <fieldset>
                    <legend>Membership Selection</legend>
-                   
                    <label class="sbs"><input type="radio" name="membership" value="nonProfit"> Non-Profit Membership<span class="checkmark"></span></label>
                    <label class="sbs"><input type="radio" name="membership"  value="bronze" checked> Bronze Membership<span class="checkmark"></span></label>
                    <label class="sbs"><input type="radio" name="membership"  value="silver"> Silver Membership<span class="checkmark"></span></label>
                    <label class="sbs"><input type="radio" name="membership"  value="gold"> Gold Membership<span class="checkmark"></span></label>
                    <label class="sbs"><input type="radio" name="membership"  value="platinum"> Platinum Membership<span class="checkmark"></span></label>
-
-                   
                </fieldset>
 
                <input type="submit" value="Send Application" class="submitBtn">
@@ -248,13 +215,6 @@
                     </div>
 
                 </div>
-       
-       
-       
-           
-               
-       
-                 
                
         </main>
         
@@ -276,25 +236,14 @@
                     <a id="map" href="https://www.google.com/maps/place/Provo+City+Center+Temple/@40.232676,-111.6615056,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9753f01c3b83:0x5d2cd1f074758bb7!8m2!3d40.232676!4d-111.6593169"><span class="material-icons">pin_drop</span>Location map</a>
                         
                 </div>
-                
-                
     
             </div>
             
-    
             <div id="bottomFooter">
-                <!-- &copy;  -->
                 <p id="footerTitle"><span id="footerDate"></span> Happy Valley Chamber</p>
-    
                 <p id="footerName">William Cameron</p>
                 <p id="projectName">WDD 230 Project</p>
-                <!-- <p>&copy; 2015 RapidTables.com</p> -->
-    
                 <p id="lastUpdated"></p>
-    
-                <!-- <p id="footerDate"></p> -->
-               
-    
             </div>
     
         </footer>

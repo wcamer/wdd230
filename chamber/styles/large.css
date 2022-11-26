@@ -1,13 +1,4 @@
 @media only screen and (min-width: 64rem){
-    /* body{
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        
-        margin: 1%;
-
-
-    } */
-
     #top{
         grid-template-rows: 1fr 1fr;
     }
@@ -23,11 +14,6 @@
         
     }
 
-    /* main{
-        grid-column: 2/3;
-        grid-row: 2/3
-    } */
-
     footer{
         grid-row: 3/4;
         grid-column: 1/4;
@@ -35,13 +21,7 @@
 
 
     #topPart{
-
-
         grid-template-columns: 2fr 3fr 1fr;
-        /* display: flex;
-
-        justify-content: space-between; */
-
     }
 
     #topLogo{
@@ -84,39 +64,6 @@
 
     }
 
-    /* #socialLinks{
-        grid-column: 3/4;
-    } */
-
-
-/*
-    nav #primaryNav{
-        grid-column: 2/3;
-        display:flex;
-
-    }
-
-    #socialLinks{
-        display: flex;
-    }
-
-    #fblink, #inLink{
-        grid-column: 3/4;
-        display: inline;
-    }
-
-    nav a{
-        padding: .5rem 1rem;
-    }
-
-
-    nav button{
-        display: none;
-    } */
-
-
-
-
     #hamburgerButton{
         display: none;;
     }
@@ -124,13 +71,6 @@
 
 #hamburgerButton span:nth-child(1) {display: none;}
 #hamburgerButton span:nth-child(2) {display: block; color: red;}
-
-
-/* #primaryNav{
-
-    display: flex;
-
-} */
 
 
 #bottomPart{
@@ -150,7 +90,6 @@
 
     .homeMain{
         grid-template-columns: 1fr 3fr 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr; */
         gap: 5px;
     }
 
@@ -181,11 +120,9 @@
 
 
     #spotlightSection{
-        /* flex-direction: column; */
         order: 3;
         grid-column: 3/4;
         grid-row: 1/4;
-        /* grid-template-columns: 1fr; */
         flex-direction: column;
 
     }
@@ -194,10 +131,6 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    /* #spotThree img{
-        width: 100%;
-    } */
 
     #weatherSection{
         order: 4;
@@ -218,10 +151,6 @@
         grid-row: 3/4;
     }
 
-
-
-
-
     /*----------------------footer--------------*/
 
 
@@ -233,8 +162,6 @@
     #topFootFirst{
         display: grid;
         grid-template-columns: 1fr 2fr;
-
-
     }
 
 
@@ -253,7 +180,6 @@
 
     #footerTitle{
         grid-column: 1/2;
-        /* border-right: 10px solid lime; */
         text-align: right;
     }
 
@@ -271,14 +197,6 @@
         letter-spacing: normal;
         grid-column: 4/5;
     }
-
-
-
-
-
-
-
-
 
     /*-----------Discover Page----------*/
 
@@ -301,16 +219,9 @@
         flex-direction: column;
     }
 
-
-
-
     /*-------------------JOIN PAGE---------------*/
 
-    /* #joinPageMain{
-        grid-column: 1/4;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    } */
+
 
     form{
         grid-row: 2/3;
