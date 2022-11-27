@@ -244,30 +244,46 @@
         grid-row: 2/3;
     }
 
-    .contactSection{
+    .contactInfo{
+        background-color: #eae2b7;
+    }
+
+    .contactInfo{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(4,1fr);
         
         
     }
 
-    .contactSection h3, p{
+    .contactInfo h3, .contactInfo p, .pointsOfContact h3, .pointsOfContact p{
         text-align: center;
         
         
     }
 
-    .contactSection h2{
+    .contactInfo h2{
         display: block;
-        grid-column: 1/4;
+        grid-column: 1/5;
     }
     
     .advisory{
-        grid-column: 2/3;
+        grid-column: 2/4;
     }
     .advisory p{
         text-align: left;
     }
+
+    .pointsOfContact{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        background-color: #fcbf49;
+    }
+
+    .pointsOfContact h2{ 
+        grid-column: 1/5;
+    }
+
+  
 
 
     /*---------------------DIRECTORY PAGE-----------------*/

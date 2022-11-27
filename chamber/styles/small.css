@@ -136,12 +136,15 @@ nav a{
 
 
 nav a:hover{
-    background-color: #003049;
+    background-color: #eae2b7;
+    color: #d62828;
 }
 
+
+
 nav a.active{
-    background-color: #eae2b7;
-    color:#d62828;
+    background-color: #003049;
+    color:#eae2b7;
 }
 
 
@@ -679,23 +682,45 @@ label{
 
 
 /*-----------------------Contact Page----------------------*/
+#contactUsMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+}
 
+.contactInfo{
+    border: 2px solid black;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #fcbf49;
+}
 
-.contactSection h2{
+.contactInfo h2{
     display: none;
 }
 
-.contactSection h3, .contactSection p{
+.contactInfo h3, .contactInfo p, .pointsOfContact h3, .pointsOfContact p{
     text-align: left;
     margin: 1.5rem;
     
+    
 }
 
-.contact{
+.pointsOfContact{
+    
+    color: #003049;
+    border: 2px solid black;
+    margin-bottom: 2%;
+}
+
+
+.contactInput{
     height: 70px;
     width: 90%;
     
 }
+
 
 /*-----------------------DIRECTORY PAGE-------------------------*/
 #directoryMain{
