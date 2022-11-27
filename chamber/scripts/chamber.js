@@ -21,13 +21,7 @@ const directorySign = document.querySelector('#directory')
 
 document.querySelector("#lastUpdated").textContent = `Last Updated: ${modifiedDate}`;
 document.querySelector("#todayDate").textContent = currentDate
-
-
-// footer section
-//document.querySelector("#footerTitle").innerHTML = copyWrite;
-//document.querySelector("#footerTitle").textContent = `${currentYear} Happy Valley Chamber of Commerce`;
 document.querySelector("#footerName").textContent = author;
-
 document.querySelector("#footerDate").innerHTML = copyWrite + currentYear; //`${copyYear} ${author}`;
 
 function toggleMenu() {
@@ -66,7 +60,6 @@ function directoryListSwitch(){
 
 
 if (document.querySelector('#directoryMain') || document.querySelector('#spotlightSection') ){
-    //console.log('this id is present')
 
     async function companyDataGetter(){
         const companyResponse= await fetch(companyURL)
@@ -84,8 +77,7 @@ if (document.querySelector('#directoryMain') || document.querySelector('#spotlig
             for (i = 0; i < companies.length; i++){
                 if (companies[i].membership == 'Platinum'){
                     drawing.push(companies[i])
-                    //drawing.pop(randomEliminator)
-                    //console.log(drawing,'this should have 4')
+        
                 }
                 
             }
@@ -200,17 +192,11 @@ if (document.querySelector('#directoryMain') || document.querySelector('#spotlig
 
 
 
-
-
-
 if (gridSwitchGrabber !== null && listSwitchGrabber !== null){
     listSwitchGrabber.onclick = directoryListSwitch;
     gridSwitchGrabber.onclick = directoryGridSwitch;
-    //console.log('listSwitchGrabber or gridSwitchGrabber is  present')
+    
 }
-// else{
-//     console.log('listSwitchGrabber or gridSwitchGrabber are not present')
-// }
    
 
 
@@ -219,17 +205,14 @@ if(dayName == 'Monday' || dayName == 'Tuesday'){
 }
 
 const clickMoreInfoGet = document.getElementById('clickMoreInfo')
-//console.log(clickMoreInfoGet,'here is clickmoreinfoget')
 
 if (clickMoreInfoGet != null){
     clickMoreInfoGet.onclick = moreInfoSwitch
  }
-//else{
-//     console.log(clickMoreInfoGet,'here is clickmoreinfoget and it is null')
-// }
 
 
-//clickMoreInfoGet.onclick = moreInfoSwitch
+
+
 
 x.onclick = toggleMenu;
 
@@ -254,7 +237,7 @@ if (document.querySelector('#weatherSection')){
         currentTemp = document.createElement('p')
         currentTemp.id = 'degree'
         currentTemp.innerHTML = `<strong>${tempK.toFixed(0)} &#x2109;</strong>`
-        //currentTempC.innerHTML = `${tempC} &#x2103;`
+        
 
         weatherDescription = weatherInfo.weather[0].description.toUpperCase()
         weatherCurrentDescription = document.createElement('p')
@@ -265,64 +248,40 @@ if (document.querySelector('#weatherSection')){
         weatherIconSrc = `https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`;
         weatherImage.setAttribute('alt', weatherDescription)
         weatherImage.setAttribute('src', weatherIconSrc)
-        //weatherImage.setAttribute('load','lazy')
+        weatherImage.setAttribute('loading','lazy')
+        
         
         windSpeed = weatherInfo.wind.speed
         if (tempK <= 50 && windSpeed > 3){
             windChillValue = 35.74 + (0.6215 * tempK) - (35.75*(windSpeed ** 0.16)) + (0.4275*(tempK*(windSpeed ** .16)))
             windChill = windChillValue.toFixed(0)
-            //windChill = weatherInfo.wind.deg.toFixed(0)
 
         }else{
             windChill = 'N/A'
         }
 
         
-
         weatherTop = document.querySelector('.weatherContainerTop')
         weatherHeader = document.createElement('h2')
         weatherHeader.id = 'weatherHeader'
         weatherHeader.innerHTML = '<strong>Weather</strong>'
-
         weatherTop.appendChild(weatherHeader)
         weatherTop.appendChild(weatherImage)
         weatherTop.appendChild(currentTemp)
         weatherTop.appendChild(weatherCurrentDescription)
-
         weatherBottom = document.querySelector('.weatherContainerBottom')
-        
-        //actualWind = document.querySelector('#actualWindSpeed')
-        //actualWind.textContent = windSpeed
         speed = document.createElement('P')
         speed.id = 'windSpeed'
-        speed.innerHTML=`<strong>Wind Speed</strong>`
-        
-        // speedValue = document.createElement('span')
-        //speedValue.innerHTML = windSpeed
-        //speed.appendChild(speedValue)
+        speed.innerHTML=`<strong>Wind Speed</strong>`  
         speedValue = document.createElement('p')
         speedValue.id = 'speedValue'
         speedValue.innerHTML = `<strong>${windSpeed} MPH</strong>`
-        
-        
         chill = document.createElement('p')
         chill.id = 'windChill'
         chill.innerHTML= `<strong>Wind Chill:</strong>`
-        
-        // chillValue= document.createElement('span')
-        // chillValue.innerHTML = windChill
-        // chill.appendChild(chillValue)
-
         chillValue = document.createElement('p')
         chillValue.id = 'chillValue'
         chillValue.innerHTML = `<strong>${windChill}&#x2109;</strong>`
-
-        
-        //actualChill = document.querySelector('#actualWindChill')
-        //actualChill.textContent = windChill
-
-        
-
         weatherTop.appendChild(weatherHeader)
         weatherTop.appendChild(weatherImage)
         weatherTop.appendChild(currentTemp)
@@ -330,30 +289,12 @@ if (document.querySelector('#weatherSection')){
         weatherTop.append(speed,speedValue)
         weatherTop.append(chill,chillValue)
 
-
-
-         
-        
-
     }
 
     weatherGetter()
 
 }
 
-
-//Spotlight card construction
-// if (document.querySelector('#spotlightSection')){
-//     console.log('SpoltlightSection is present')
-//     spotOne = document.createElement('div')
-//     spotOne.id = 'spotOne'
-//     spotTwo = document.createElement('div')
-//     spotTwo.id = 'spotTwo'
-//     spotThree = document.createElement('div')
-//     spotThree.id = 'spotThree'
-
-
-// }
 
 
 
