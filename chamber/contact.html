@@ -78,8 +78,13 @@
         
         <main id="contactUsMain">
             <h1>Contact Us</h1>
-            <div class="contactSection">
+            <div class="contactInfo">
                 <h2>Contact Us</h2>
+                <div class="operations">
+                    <h3>Hours of Operation</h3>
+                    <p>Monday - Friday<br> 9 a.m. - 5 p.m.</p>
+                </div>
+
                 <div>
                     <h3 class="chamberAddress">Address</h3>
                     <p>50 S University Ave<br> Provo, UT 84601</p>
@@ -101,17 +106,51 @@
                     <p>Please allow up to 5-10 business days for processing and responses.  Weekends and holidays do not count as business days.</p>
                 </div>
 
+                
+
+            </div>
+
+            <div class ="pointsOfContact">
+                <h2>Points Of Contact</h2>
+                <div>
+                    <h3>President/CEO</h3>
+                    <p>Armando Albuquerque</p>
+                    <p>123-456-7890 ext. 101</p>
+
+                </div>
+
+                <div>
+                    <h3>Vice President</h3>
+                    <p>Jill Valentine</p>
+                    <p>123-456-7890  ext. 102</p>
+                </div>
+
+                <div>
+                    <h3>Operations Manager</h3>
+                    <p>Virgil Hawkins</p>
+                    <p>123-456-7890  ext. 103</p>
+
+                </div>
+
+                <div>
+                    <h3>Executive Secretary</h3>
+                    <p>Alexandria Armstrong</p>
+                    <p>123-456-7890  ext. 104</p>
+
+                </div>
+                
+
             </div>
    
            <form method="get" action="thankyou.html" class="contactForm">
                <fieldset>
                    <legend>Contact Information</legend>
                    <label class="required">*Required Field</label>
-                   <label class="contact">First Name*<br><input type="text" name="fname" required></label>
-                   <label class="contact">Last Name*<br><input type="text" name="lname" required></label>
-                   <label class="contact">Business Name (if applicable)<br><input type="text" name="bname"></label>
-                   <label class="contact">Phone*<br><input type="tel" name="phone" required placeholder="1231231234"></label>
-                   <label class="contact">Email*<br><input type="email" name="email" placeholder="youremail@gmail.com" required></label>
+                   <label class="contactInput">First Name*<br><input type="text" name="fname" required></label>
+                   <label class="contactInput">Last Name*<br><input type="text" name="lname" required></label>
+                   <label class="contactInput">Business Name (if applicable)<br><input type="text" name="bname"></label>
+                   <label class="contactInput">Phone*<br><input type="tel" name="phone" required placeholder="1231231234"></label>
+                   <label class="contactInput">Email*<br><input type="email" name="email" placeholder="youremail@gmail.com" required></label>
                    <label class="bdescription">What you wish to address with the Happy Valley Chamber*<br><textarea id="textarea" name="bdescription"  placeholder="Examples: How do I join the chamber? Are there any upcoming special events?" rows="5" cols="33" required></textarea></label>
 
                 </fieldset>
