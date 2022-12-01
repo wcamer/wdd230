@@ -7,6 +7,7 @@ body{
     background-color: #E6E6EA;
     margin: 5%;
     text-align: center;
+    
    
 
 }
@@ -82,19 +83,13 @@ nav a:nth-child(even):hover{
 
 #pageTitles{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-   
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #pageTitles h3{
     text-align: center;
 }
-#pageTitles img{
-    grid-column: 2/3;
-    
-}
+
 
 #typoChart{
     display: grid;
