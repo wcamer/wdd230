@@ -1,0 +1,161 @@
+/* font-family: 'IBM Plex Serif', serif;
+font-family: 'Rubik', sans-serif; */
+
+body{
+    
+    /* background-color: #F4F4F9; */
+    background-color: #E6E6EA;
+    margin: 5%;
+    text-align: center;
+   
+
+}
+
+
+
+header{
+    border-bottom: 5px solid black;
+}
+
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+nav a{
+    margin: 1.5rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    color: #f4f4f9;
+}
+
+nav a:nth-child(odd){
+    background-color: #fe4a46;
+}
+
+nav a:nth-child(even){
+    background-color: #009FB7;
+}
+
+nav a:hover{
+    background-color: #FED766;
+    
+}
+
+nav a:nth-child(odd):hover{
+    color: #fe4a46;
+}
+
+nav a:nth-child(even):hover{
+    color: #009FB7;
+}
+
+#introWindow{
+    font-size: 2rem;
+}
+
+#introWindow p{
+    font-size: 1.3rem;
+}
+
+#scenarios{
+    text-align: center;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+#pageTitles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+#pageTitles h3{
+    text-align: center;
+}
+#pageTitles img{
+    grid-column: 2/3;
+}
+
+#typoChart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid black;
+}
+
+.ibm{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.rubik{
+    font-family: 'Rubik'
+}
+
+#sampleTable{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 5px solid black;
+    background-color: gray;
+}
+
+#sampleTable div{
+    margin: 2%;
+    border: 2px solid black;
+}
+
+.to{
+    background-color: #fe4a46;
+    color: white;
+}
+
+.oyc{
+    background-color: #FED766;
+}
+
+.pb{
+    background-color: #009FB7;
+    color: white;
+}
+
+.gb{
+    background-color: #E6E6EA;
+}
+
+.gw{
+    background-color: #f4f4f9;
+}
+
+
+#views{
+    display: flex;
+    flex-direction: column;
+}
+
+#views div{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
