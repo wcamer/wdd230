@@ -5,7 +5,8 @@ body{
     
     /* background-color: #F4F4F9; */
     background-color: #E6E6EA;
-    margin: 5%;
+    margin: 2%;
+    padding: 2%;
     text-align: center;
     
    
@@ -37,15 +38,15 @@ header{
 nav{
     text-align: center;
     display: flex;
-    justify-content: space-between;
+   
     
     
 }
 
 
 nav a{
-    margin: 1.5rem;
-    padding: 1.2rem;
+    margin: 2%;
+    padding: 2%;
     font-size: 1.5rem;
     text-decoration: none;
     width: 100%;
@@ -84,6 +85,10 @@ nav a:nth-child(even):hover{
 #pageTitles{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pageTitles div{
+    margin: 5%;
 }
 
 #pageTitles h3{
