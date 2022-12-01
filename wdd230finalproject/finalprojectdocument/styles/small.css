@@ -11,6 +11,22 @@ body{
 
 }
 
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
 
 
 header{
@@ -56,25 +72,19 @@ nav a:nth-child(even):hover{
     color: #009FB7;
 }
 
-#introWindow{
-    font-size: 2rem;
-}
 
-#introWindow p{
-    font-size: 1.3rem;
-}
+
 
 #scenarios{
     text-align: center;
 }
 
-h3{
-    font-size: 1.4rem;
-}
 
 #pageTitles{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    text-align: center;
+   
     
 }
 
@@ -83,6 +93,7 @@ h3{
 }
 #pageTitles img{
     grid-column: 2/3;
+    
 }
 
 #typoChart{
@@ -144,18 +155,3 @@ h3{
     flex-direction: column;
 }
 
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-h3{
-    font-size: 1.8rem;
-}
-
-p{
-    font-size: 1.5rem;
-}
