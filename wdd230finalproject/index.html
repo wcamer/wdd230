@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="William Cameron">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Rubik&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -15,11 +19,357 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1>testings</h1>
-    
+    <header>
+
+        <div>
+            <img href="index.html" src="images/bountiful foods icon original 1280 w tiny.png">
+            <h1>Bountiful Foods</h1>
+
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="fresh.html">Order Fresh</a>
+            <a href="aboutUs.html">About Us</a>
+        </nav>
+
+
+    </header>
 
 
 
+
+
+    <main>
+        <h1>Home/Welcome Back</h1>
+
+
+        <!-- <img src="images/bountiful foods icon original 1280 w tiny.png"> -->
+<!--
+        <div>
+            <a href="https://www.google.com/maps/@33.1597198,-117.3488103,3a,75y,52.79h,85.6t/data=!3m9!1e1!3m7!1snhBppHNQOZICsl_PSSP2zA!2e0!7i16384!8i8192!9m2!1b1!2i17?hl=en-US">Bountiful Fruit Location</a>
+        </div> -->
+
+        <div class="hero">
+            <img src="images/marketoriginal1280.jpg" class="heroImg">
+            <p>Carlsbad is well known for the beaches it has but, one of the exciting staples to the community is the Carlsbad State Street Farmers' Market.The Farmers’ Market is a great place to experience local fresh produce which can be found in our store as well.  During the Farmers’ Market be sure to visit us and tryout some exclusive rotating specialty drink collaborations with our friends from the Farmers’ Market.  You can find more information about the Carlsbad State Street Farmers’ Market at <a href=”https://www.carlsbad-village.com/events/farmers-market”>the Carlsbad Village Association website.</a></p>
+        </div>
+
+
+
+        <form class="homeOrder" method="get" action="fresh.html">
+            <h2>Start Your Order</h2>
+            <h3> Pick Up to 3 flavors</h3>
+            <!-- <div class="flavorsAndIcons">
+                <label class="sFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
+                <img class="miniIcon" src="images/instagram_512w.png">
+                <label class="sFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
+                <img class="miniIcon" src="images/instagram_512w.png">
+                <label class="sFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label>
+                <img class="miniIcon" src="images/instagram_512w.png">
+
+
+            </div> -->
+
+            <fieldset>
+                <legend>Drink Selection</legend>
+                <!-- <label class="sFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
+                <label class="sFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
+                <label class="sFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label> -->
+                <div class="flavorsAndIcons">
+                    <!-- <label>Flavor 1*<br><input type="text" name="Ingredient1" class="sFlavor1" required></label> -->
+                    <div class="optionsContainer">
+                        <label>Flavor 1*
+                            <br>
+                            <select id="firstFlavor" name="Ingredient1" class="sFlavor1" required>
+                                <option value="">Pick A Flavor</option>
+
+
+                            </select>
+                        </label>
+                        <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                    </div>
+
+                    <div class="optionsContainer">
+                        <label>Flavor 2
+                            <br>
+                            <select id="secondFlavor" name="Ingredient1" class="sFlavor2" required>
+                                <option value="">Pick A Flavor</option>
+
+
+                            </select>
+                        </label>
+                        <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                    </div>
+
+                    <div class="optionsContainer">
+                        <label>Flavor 3
+                            <br>
+                            <select id="thirdFlavor" name="Ingredient1" class="sFlavor3" required>
+                                <option value="">Pick A Flavor</option>
+
+
+                            </select>
+                        </label>
+                        <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                    </div>
+                    
+
+
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label>Special Requests<br><textarea id="textarea" name="Instructions" rows="5" cols="33" placeholder="Ex: Please add extra ice.  Thank You!"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Continue Order" id="continueOrder">
+
+        </form>
+            <!-- <input type="submit" value="Continue Order" class="formButton"></input>
+
+
+        </form> -->
+
+
+
+        <!-- <form >
+            <h2>Random Drink Generator</h2>
+            <input type="submit" value="Generate A New Drink" class="formButton"></input>
+
+
+            <div class ="randomOrder">
+                <div>
+                    <h3 class="rFlavor1">flavor 1</h3>
+                    <p>test</p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+
+                </div>
+
+                <div>
+                    <h3 class="rFlavor2">flavor 2</h3>
+                    <p>test2</p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+                </div>
+
+                <div>
+                    <h3 class="rflavor3"> flavor 3</h3>
+                    <p>test 3</p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Order This Drink" class="formButton"></input>
+                <input type="submit" value="Make Your Own Drink" class="formButton"></input>
+
+
+            </div>
+
+
+
+        </form> -->
+        <form id="freshRandom" class="reveal" method="get" action="fresh.html">
+            <h2>Random Drink Generator</h2>
+            <input id="randomize" type="button" value="Generate A New Drink" class="formButton" ></input>
+
+
+            <div class ="randomOrder">
+                <div>
+                    <h3 >Flavor 1</h3>
+                    <p class="rFlavor1"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+
+                </div>
+
+                <div>
+                    <h3>Flavor 2</h3>
+                    <p class="rFlavor2"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+                </div>
+
+                <div>
+                    <h3> Flavor 3</h3>
+                    <p class="rFlavor3"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Order This Drink" id="randomSubmit" class="formButton"></input>
+
+
+
+            </div>
+
+
+
+        </form>
+
+
+
+
+
+        <form class="previousOrderContainer" method="get" action="fresh.html">
+        
+            <h2>Previous Order</h2>
+            <div class ="previousOrder">
+                <div>
+                    <h3>Flavor 1</h3>
+                    <p class="pFlavor1"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+
+                <div>
+                    <h3>Flavor 2</h3>
+                    <p class="pFlavor2"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+                </div>
+
+                <div>
+                    <h3> Flavor 3</h3>
+                    <p class="pFlavor3"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+            </div>
+
+            <div class="totalOrders">
+                <h3>Total Number of Orders Made</h3>
+                <p class="totalNumberOfOrders">0</p>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Order This Drink Again" id="prevSubmit" class="formButton"></input>
+                <input type="submit" value="Make A New Drink" class="formButton"></input>
+
+            </div>
+
+
+        </form>
+
+
+
+        <div class="weatherCard">
+            <h2>Weather</h2>
+
+
+            <div class="mainDisplay">
+                <div>
+                    <h3>Today's Weather</h3>
+                    <p>Today's Date</p>
+                </div>
+
+                <div class="iconDisplay">
+
+                    <!-- <img id="mainWeatherIcon" class="icon" src="images/instagram_512w.png"> -->
+                    <!-- <p class="degree">35</p> -->
+                </div>
+
+                <div class="weatherInfo">
+                    <h3>Temperature</h3>
+                    <p class="temp"></p>
+                    <h3>Description</h3>
+                    <p class="weatherDescription"></p>
+                    <h3>Humidity</h3>
+                    <p class="humidity"></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="secondaryDisplay">
+                <h3>3 Day Forecast</h3>
+                <div class="forecast">
+
+
+                    <!-- <div id="tomorrowDiv" class="forecastDisplay">
+                        <img id="tomorrowIcon" class="miniIcon" src="images/instagram_512w.png">
+                        <p>name</p>
+                        <p class="tomorrowTemp">5</p>
+
+                    </div>
+                    <div id="twoDaysDiv"  class="forecastDisplay">
+                        <img id="twoDaysIcon" class="miniIcon" src="images/instagram_512w.png">
+                        <p>name</p>
+                        <p class="twoDaysTemp">5</p>
+
+                    </div>
+                    <div id="threeDaysDiv" class="forecastDisplay">
+                        <img iclass="miniIcon" src="images/instagram_512w.png">
+                        <p>name</p>
+                        <p class="threeDaysTemp">5</p>
+
+                    </div> -->
+
+                    <div id="tomorrowDiv" class="miniForecastDisplay">
+
+
+                    </div>
+                    <div id="twoDaysDiv"  class="miniForecastDisplay">
+
+                    </div>
+                    <div id="threeDaysDiv" class="miniForecastDisplay">
+
+                    </div>
+
+                </div>
+                <p>Based of temps at noon</p>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="companyInfo">
+            <h1>Bountiful Foods</h1>
+            <p>2992 State Street Carlsbad, CA 92008</p>
+            <p>555-555-5555</p>
+
+        </div>
+
+
+        <a href="index.html"><img  src="images/bountiful foods icon original 1280 w tiny.png"></a>
+
+
+
+        <div class="socials">
+            <img src="images/facebook_512w.png">
+            <img src="images/instagram_512w.png">
+            <img src="images/snapchat_512w.png">
+
+
+        </div>
+        <div class="lastMod">
+            <p>Last motified</p>
+
+        </div>
+
+    </footer>
 
     <script src="scripts/finalProject.js"></script>
 </body>

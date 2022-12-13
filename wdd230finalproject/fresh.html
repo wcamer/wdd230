@@ -4,9 +4,364 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Author" content="William Cameron">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Fresh Order</title>
 </head>
 <body>
+    <header>
+
+        <div>
+            <img src="images/bountiful foods icon original 1280 w tiny.png" alt="Picture of Bountiful Foods logo">
+            <h1>Bountiful Foods</h1>
+
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="fresh.html">Order Fresh</a>
+            <a href="aboutUs.html">About Us</a>
+        </nav>
+
+
+
+
+
+
+
+    </header>
+    <main>
+        <h1>Order Fresh</h1>
+
+
+    <form class="freshOrder" method="get" target="_self">
+        <label>*Required field</label>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>Name*<br><input id=orderName type="text" name="name"  required></label>
+            <label>Phone*<br><input id="orderPhone"  type="tel" name="phone" required placeholder="1234567899"></label>
+            <label>email*<br><input id="orderEmail" type="email" name="email" required placeholder="youremail@email.com"></label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Drink Selection</legend>
+            <!-- <label class="sFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
+            <label class="sFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
+            <label class="sFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label> -->
+            <div class="flavorsAndIcons">
+                <!-- <label>Flavor 1*<br><input type="text" name="Ingredient1" class="sFlavor1" required></label> -->
+                <div class="optionsContainer">
+                    <label>Flavor 1*
+                        <br>
+                        <select id="firstFlavor" name="Ingredient1" class="sFlavor1" required>
+                            <option class="list1" value="">Pick A Flavor</option>
     
+    
+                        </select>
+                    </label>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+
+                <div class="optionsContainer">
+                    <label>Flavor 2
+                        <br>
+                        <select id="secondFlavor" name="Ingredient1" class="sFlavor2" required>
+                            <option class="list2" value="dookie">Pick A Flavor</option>
+    
+    
+                        </select>
+                    </label>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+
+                <div class="optionsContainer">
+                    <label>Flavor 3
+                        <br>
+                        <select id="thirdFlavor" name="Ingredient1" class="sFlavor3" required>
+                            <option class="list3" value="crapa">Pick A Flavor</option>
+    
+    
+                        </select>
+                    </label>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+                <!-- <label>Flavor 1*
+                    <br>
+                    <select type="text" name="Ingredient1" class="sFlavor1" required>
+                        <option value="poop">Pick A Flavor</option>
+                        <option value="poop">bricks</option>
+
+
+                    </select>
+                    <img class="miniIcon, hidden" src="images/instagram_512w.png">
+                </label> -->
+                
+
+                <!-- <label >Flavor 2
+                    <br>
+                    <select name="Ingredient1" class="sFlavor1" required>
+                        <option value="poop">Pick A Flavor</option>
+                        <option value="poop">bricks</option>
+
+
+                    </select>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+                </label>
+                
+
+                <label >Flavor 3
+                    <br>
+                    <select type="text" name="Ingredient1" class="sFlavor1" required>
+                        <option value="poop">Pick A Flavor</option>
+                        <option value="poop">bricks</option>
+
+
+                    </select>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </label> -->
+
+
+                <!-- <img class="miniIcon" src="images/instagram_512w.png">
+                <label>Flavor 2<br><input type="text" name="Ingredient2"class="sFlavor2"></label>
+                <img class="miniIcon" src="images/instagram_512w.png">
+                <label>Flavor 3<br><input type=text name="Ingredient3" class="sFlavor3"> </label>
+                <img class="miniIcon" src="images/instagram_512w.png"> -->
+
+
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <label>Special Requests<br><textarea id="textArea" name="Instructions" rows="5" cols="33" placeholder="Ex: Please add extra ice.  Thank You!"></textarea></label>
+        </fieldset>
+
+        <input type="button" value="Complete Order" id="selectionComplete">
+    </form>
+
+    <form class="freshPreviousOrderContainer" method="get" target="_self"></form>>
+        <!-- <h2>Previous Order</h2>
+
+        <label class="pFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
+        <label class="pFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
+        <label class="pFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label>
+
+        <button>Order Again</button>
+        <button>Make A New Drink</button> -->
+
+            <h2>Previous Order</h2>
+            
+            <div class ="previousOrder">
+                <div>
+                    <h3>Flavor 1</h3>
+                    <p class="pFlavor1"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+
+                <div>
+                    <h3>Flavor 2</h3>
+                    <p class="pFlavor2"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+                </div>
+
+                <div>
+                    <h3> Flavor 3</h3>
+                    <p class="pFlavor3"></p>
+                    <img class="miniIcon" src="images/instagram_512w.png">
+
+
+                </div>
+            </div>
+            <div class="totalOrders">
+                <h3>Total Number of Orders Made</h3>
+                <p class="totalNumberOfOrders"></p>
+            </div>
+            <div class="buttons">
+                <input id="prevSubmit" type="submit" value="Order This Drink Again" class="formButton">
+
+
+            </div>
+
+        
+
+
+    </form>
+
+    <div id="freshRandom" class="reveal">
+        <h2>Random Drink Generator</h2>
+        <input id="randomize" type="submit" value="Generate A New Drink" class="formButton">
+
+
+        <div class ="randomOrder">
+            <div>
+                <h3 >Flavor 1</h3>
+                <p class="rFlavor1"></p>
+                <img class="miniIcon" src="images/instagram_512w.png">
+
+
+
+            </div>
+
+            <div>
+                <h3>Flavor 2</h3>
+                <p class="rFlavor2"></p>
+                <img class="miniIcon" src="images/instagram_512w.png">
+
+            </div>
+
+            <div>
+                <h3> Flavor 3</h3>
+                <p class="rFlavor3"></p>
+                <img class="miniIcon" src="images/instagram_512w.png">
+
+
+            </div>
+        </div>
+        <div class="buttons">
+            <input id="fRS" type="submit" value="Order This Drink" class="formButton">
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="optionsHolder">
+        <h2>Options</h2>
+        <div class="options">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="orderOutput" class="reveal">
+        <div>
+            <h2>Order Summary </h2>
+            <p class="orderDate">The Date goes here</p>
+            <div id="orderInfo">
+
+                <!-- <label>Name*<br><p></p></label>
+                <label>Phone*<br><p>555-555-5555</p></label>
+                <label>email*<br><p>this yo email.com</p></label> -->
+                <h3>Name</h3>
+                <p class="confirmName"></p>
+                <h3>Phone</h3>
+                <p class="confirmPhone"></p>
+                <h3>Email</h3>
+                <p class="confirmEmail"></p>
+
+            </div>
+
+            <div class="outputFlavors">
+                <!-- <label class="sFlavor1">Flavor 1*<br><p>blah</p></label>
+
+                <label class="sFlavor2">Flavor 2<br><p>blah</p></label>
+                <label class="sFlavor3">Flavor 3<br><p>blah</p></label> -->
+                <h3>Flavor 1</h3>
+                <p class="confirmedFlavor1"></p>
+                <h3>Flavor 2</h3>
+                <p class="confirmedFlavor2"></p>
+                <h3>Flavor 3</h3>
+                <p class="confirmedFlavor3"></p>
+
+
+            </div>
+
+            <h3>Special Instructions</h3>
+            <p class="specialInstructions"></p>
+        </div>
+        <div class="nutrition">
+            <h2>Nutrional Information</h2>
+            <div>
+                <h3>Total Carbs</h3>
+                <p class="carbs">5</p>
+            </div>
+            <div>
+                <h3>Total Protein</h3>
+                <p class="protein">5</p>
+            </div>
+            <div>
+                <h3>Total Fat</h3>
+                <p class="fats">5</p>
+            </div>
+            <div>
+                <h3>Total Sugar</h3>
+                <p class="sugar">5</p>
+            </div>
+            <div>
+                <h3>Total Calories</h3>
+                <p class="calories">5</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    </main>
+
+    <footer>
+        <div class="companyInfo">
+            <h1>Bountiful Foods</h1>
+            <p>2992 State Street Carlsbad, CA 92008</p>
+            <p>555-555-5555</p>
+
+        </div>
+
+
+        <a href="index.html"><img  src="images/bountiful foods icon original 1280 w tiny.png"></a>
+
+
+
+        <div class="socials">
+            <img src="images/facebook_512w.png">
+            <img src="images/instagram_512w.png">
+            <img src="images/snapchat_512w.png">
+
+
+        </div>
+        <div class="lastMod">
+            <p>Last motified</p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="scripts/finalProject.js"></script>
 </body>
 </html>
