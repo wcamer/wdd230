@@ -1,32 +1,79 @@
 body{
-    margin: 2%;
-    padding: 2%;
-    border: 10px solid black;
-    background-color: lightgray;
+    /* margin: 2%;
+    padding: 2%; */
+    /* border: 10px solid black; */
+    background-color: #009fb7;
+    background-color: #f4f4f8;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    /* background-color: #fe4a49; */
+    
+}
+
+h1 ,h2 , h3{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+
 }
 
 header{
-    border: 10px solid lime;
+    /* border: 10px solid lime; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    /* background-color: #fed766;
+    background-color: #fe4a49; */
+    background-color: #009fb7;
     /* margin: 2%;
     padding: 2%; */
 }
 
 main{
-    border: 10px solid pink;
+    border: 2px solid black;
     text-align: center;
+
+    background-color: #fed766;
+    margin: 3%;
+
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: #fe4a49;
+    background-color: #f4f4f8;
+    background-color: #fed766; */
 
 }
 
+
+
+/* main h1 , .freshOrder, .freshRandom, .orderOutput{
+    background-color: #fed766;
+} */
+
+
+
+
+
+
+
 footer{
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 2%;
     padding: 2%;
+    background-color: #Fe4a49;
+    color: #e6e6ea;
+
+}
+
+footer p {
+    font-size: 1.2rem;
 }
 
 /* footer div, footer a, footer p{
@@ -39,7 +86,9 @@ nav{
     font-size: 2rem;
     padding: 2%;
     text-align: center;
-    background-color: pink;
+    /* background-color: pink; */
+    
+
 
 
 }
@@ -50,27 +99,38 @@ nav a{
     /* background-color: red; */
     align-items: center;
     justify-content: center;
+    color:#f4f4f8;
+    background-color: #Fe4a49;
+    border-radius: 10px;
+    margin: 3%;
 
 }
 
 nav a:hover {
-    background-color: lime;
+    background-color: #fed766;
+    color: black;
 
 
 }
 
-
-img{
-    width: 150px;
-}
 
 .hero{
     border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    padding: 2%;
 }
 
-.heroImg{
-    width: 300px;
-}
+/* .hero p{
+    font-size: 1.2rem;
+} */
+
+
+
 
 
 
@@ -79,7 +139,7 @@ img{
 
 
 .homeOrder, .freshOrder{ /*order*/
-    border: 5px solid blue;
+    border: 5px solid black;
    display: grid;
    grid-template-columns: 1fr ;
    place-items: center;
@@ -98,11 +158,11 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    
+
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    
+
 }
 
 option{
@@ -135,13 +195,13 @@ select{
 .previousOrder, .randomOrder{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+
 
 }
 
 
 .weatherCard{
-    border: 10px solid limegreen;
+    border: 5px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -154,7 +214,7 @@ select{
 
 .iconDisplay{
     position: relative;
-    border: 5px solid purple;
+    border: 5px solid black;
 }
 .icon{
     /* grid-column: 1/2;
@@ -206,7 +266,7 @@ select{
 
 .miniIcon{
     width: 50px;
-    background-color: lime;
+    /* background-color: lime; */
 }
 
 
@@ -218,18 +278,8 @@ footer a{
 
 }
 
-footer a img{
-    width: 140px
-}
 
-.socials img{
-    width: 50px;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: center; */
-}
+
 
 .socials{
     /* display: flex;
@@ -246,7 +296,7 @@ footer a img{
 
 .lastMod{
     grid-column: 1/3;
-    background-color: lime;
+    /* background-color: lime; */
 }
 
 
@@ -265,10 +315,10 @@ footer a img{
     width: 50px;
 }
 
-form {
+/* form {
     width: 100%;
-    
-}
+
+} */
 fieldset{
     width: 90%;
 }
@@ -283,12 +333,12 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     gap: 5%;
-    
-    
-    
-    
+
+
+
+
 }
 
 input{
@@ -301,15 +351,16 @@ input{
     justify-content: center;
     align-items: center;
     gap: 5%;
-    color:red;
+    
 }
 
 
 
-.homeOrder, .freshOrder{ 
+.homeOrder, .freshOrder{
     /*.order*/
     text-align: left;
-    background-color: lime;
+    /* background-color: lime; */
+
 }
 
 .homeOrder fieldset{ /*order*/
@@ -324,15 +375,19 @@ input{
 }
 
 .optionsHolder{
-    width: 100%;
+    
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
 }
 
 .options{
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    
+
     /* width: 100%;
     height: 50%; */
 }
@@ -347,13 +402,17 @@ input{
 
 #orderInfo{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+}
+
+#orderInfo h3:nth-child(2){
+    grid-column: 2/3;
 }
 
 
 
 #orderOutput{
-    border: 5px solid lime;
+    border: 5px solid black;
 }
 
 #orderOutput.hidden{
@@ -366,6 +425,10 @@ input{
     display: block;
     display: flex;
     flex-direction: column;
+}
+
+#freshRandom{
+    border: 5px solid black;
 }
 
 #freshRandom.hidden{
@@ -390,25 +453,32 @@ input{
 
 /*-------------About us page--------------*/
 .storeInfo{
-    border: 5px solid violet;
+    border: 5px solid black;
     margin-bottom: 5%;
     font-size: 1.5rem;
 }
 
 .story{
-    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: 5px solid black;
+    padding: 3%;
     margin-bottom: 5%;
     font-size: 1.5rem;
+
 }
 
 .randomFruit{
-    border: 5px solid lawngreen;
+    border: 5px solid black;
     margin-bottom: 5%;
     font-size: 1.5rem;
 
 }
 
 .story img{
-    width: 300px;
-    border: 5px solid black;
+    
+    border: 5px solid #Fe4a49;
 }

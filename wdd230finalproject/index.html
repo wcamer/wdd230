@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="bffavicon.ico">
+
 
 
     <title>Home Page</title>
@@ -22,7 +24,16 @@
     <header>
 
         <div>
-            <img href="index.html" src="images/bountiful foods icon original 1280 w tiny.png">
+            <a href="index.html">
+                <picture>
+
+                    <source media="(min-width: 501px) and (max-width: 1000px)" srcset="images/bflogo200w.jpg">
+                    <source media="(min-width: 1001px)" srcset="images/bflogo200w.jpg">
+                    <img src="images/bflogo150w.jpg" alt="Logo for Bountiful Foods">
+                </picture>
+
+            </a>
+    
             <h1>Bountiful Foods</h1>
 
         </div>
@@ -51,7 +62,11 @@
         </div> -->
 
         <div class="hero">
-            <img src="images/marketoriginal1280.jpg" class="heroImg">
+            <picture>
+                <source media="(min-width: 502px) and (max-width: 1000px)" srcset="images/carlsbad400w.jpg">
+                <source media="(min-width: 1001px)" srcset="images/carlsbad700w.jpg">
+                <img src="images/carlsbad300w.jpg" alt="Eagle's eye view of a part of Carlsbad California" loading="lazy">
+            </picture>
             <p>Carlsbad is well known for the beaches it has but, one of the exciting staples to the community is the Carlsbad State Street Farmers' Market.The Farmers’ Market is a great place to experience local fresh produce which can be found in our store as well.  During the Farmers’ Market be sure to visit us and tryout some exclusive rotating specialty drink collaborations with our friends from the Farmers’ Market.  You can find more information about the Carlsbad State Street Farmers’ Market at <a href=”https://www.carlsbad-village.com/events/farmers-market”>the Carlsbad Village Association website.</a></p>
         </div>
 
@@ -81,13 +96,13 @@
                     <div class="optionsContainer">
                         <label>Flavor 1*
                             <br>
-                            <select id="firstFlavor" name="Ingredient1" class="sFlavor1" required>
+                            <select id="firstFlavor" name="Ingredient1" class="sFlavor1" >
                                 <option value="">Pick A Flavor</option>
 
 
                             </select>
                         </label>
-                        <img class="miniIcon" src="images/instagram_512w.png">
+                        <img class="sMiniIcon1 miniIcon" src="images/instagram_512w.png" loading="lazy">
 
 
                     </div>
@@ -95,13 +110,13 @@
                     <div class="optionsContainer">
                         <label>Flavor 2
                             <br>
-                            <select id="secondFlavor" name="Ingredient1" class="sFlavor2" required>
+                            <select id="secondFlavor" name="Ingredient1" class="sFlavor2" >
                                 <option value="">Pick A Flavor</option>
 
 
                             </select>
                         </label>
-                        <img class="miniIcon" src="images/instagram_512w.png">
+                        <img class="sMiniIcon2 miniIcon" src="images/instagram_512w.png" loading="lazy">
 
 
                     </div>
@@ -109,13 +124,13 @@
                     <div class="optionsContainer">
                         <label>Flavor 3
                             <br>
-                            <select id="thirdFlavor" name="Ingredient1" class="sFlavor3" required>
+                            <select id="thirdFlavor" name="Ingredient1" class="sFlavor3" >
                                 <option value="">Pick A Flavor</option>
 
 
                             </select>
                         </label>
-                        <img class="miniIcon" src="images/instagram_512w.png">
+                        <img class="sMiniIcon3 miniIcon" src="images/instagram_512w.png" loading="lazy">
 
 
                     </div>
@@ -189,7 +204,7 @@
                 <div>
                     <h3 >Flavor 1</h3>
                     <p class="rFlavor1"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon1 miniIcon" src="images/instagram_512w.png">
 
 
 
@@ -198,14 +213,14 @@
                 <div>
                     <h3>Flavor 2</h3>
                     <p class="rFlavor2"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon2 miniIcon" src="images/instagram_512w.png">
 
                 </div>
 
                 <div>
                     <h3> Flavor 3</h3>
                     <p class="rFlavor3"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon3 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -228,11 +243,12 @@
         <form class="previousOrderContainer" method="get" action="fresh.html">
         
             <h2>Previous Order</h2>
+            <p class="pOrderDate">pOrderDate</p>
             <div class ="previousOrder">
                 <div>
                     <h3>Flavor 1</h3>
                     <p class="pFlavor1"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon1 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -240,14 +256,14 @@
                 <div>
                     <h3>Flavor 2</h3>
                     <p class="pFlavor2"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon2 miniIcon" src="images/instagram_512w.png">
 
                 </div>
 
                 <div>
                     <h3> Flavor 3</h3>
                     <p class="pFlavor3"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon3 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -275,7 +291,7 @@
             <div class="mainDisplay">
                 <div>
                     <h3>Today's Weather</h3>
-                    <p>Today's Date</p>
+                    <p class="currentDate">Today's Date</p>
                 </div>
 
                 <div class="iconDisplay">
@@ -352,20 +368,39 @@
 
         </div>
 
+        
+        <a href="index.html">
+            <picture>
 
-        <a href="index.html"><img  src="images/bountiful foods icon original 1280 w tiny.png"></a>
+                <source media="(min-width: 501px) and (max-width: 1000px)" srcset="images/bflogo200w.jpg">
+                <source media="(min-width: 1001px)" srcset="images/bflogo200w.jpg">
+                <img src="images/bflogo150w.jpg" alt="Logo for Bountiful Foods">
+            </picture>
+
+        </a>
+
 
 
 
         <div class="socials">
-            <img src="images/facebook_512w.png">
-            <img src="images/instagram_512w.png">
-            <img src="images/snapchat_512w.png">
+            <a href="https://facebook.com">
+                <img src="images/facebook50w.jpg" alt="Icon for Facebook" loading="lazy">
+
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram50w.jpg" alt="Icon for Instagram" loading="lazy">
+
+
+            </a>
+
+            <a href="https://snapchat.com">
+                <img src="images/snapchat50w.jpg" alt="Icon for Snapchat" loading="lazy">
+            </a>
 
 
         </div>
         <div class="lastMod">
-            <p>Last motified</p>
+            <p class="modDate"></p>
 
         </div>
 

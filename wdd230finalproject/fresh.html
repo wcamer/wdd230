@@ -14,13 +14,23 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="bffavicon.ico">
+
     <title>Fresh Order</title>
 </head>
 <body>
     <header>
 
         <div>
-            <img src="images/bountiful foods icon original 1280 w tiny.png" alt="Picture of Bountiful Foods logo">
+            <a href="index.html">
+                <picture>
+
+                    <source media="(min-width: 501px) and (max-width: 1000px)" srcset="images/bflogo200w.jpg">
+                    <source media="(min-width: 1001px)" srcset="images/bflogo200w.jpg">
+                    <img src="images/bflogo150w.jpg" alt="Logo for Bountiful Foods">
+                </picture>
+
+            </a>
             <h1>Bountiful Foods</h1>
 
         </div>
@@ -68,7 +78,7 @@
     
                         </select>
                     </label>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="sMiniIcon1 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -77,12 +87,12 @@
                     <label>Flavor 2
                         <br>
                         <select id="secondFlavor" name="Ingredient1" class="sFlavor2" required>
-                            <option class="list2" value="dookie">Pick A Flavor</option>
+                            <option class="list2" value="">Pick A Flavor</option>
     
     
                         </select>
                     </label>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="sMiniIcon2 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -91,12 +101,12 @@
                     <label>Flavor 3
                         <br>
                         <select id="thirdFlavor" name="Ingredient1" class="sFlavor3" required>
-                            <option class="list3" value="crapa">Pick A Flavor</option>
+                            <option class="list3" value="">Pick A Flavor</option>
     
     
                         </select>
                     </label>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="sMiniIcon3 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -157,7 +167,7 @@
         <input type="button" value="Complete Order" id="selectionComplete">
     </form>
 
-    <form class="freshPreviousOrderContainer" method="get" target="_self"></form>>
+    <form class="freshPreviousOrderContainer" method="get" target="_self">
         <!-- <h2>Previous Order</h2>
 
         <label class="pFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
@@ -168,12 +178,12 @@
         <button>Make A New Drink</button> -->
 
             <h2>Previous Order</h2>
-            
+            <p class="pOrderDate">pOrderDate</p>
             <div class ="previousOrder">
                 <div>
                     <h3>Flavor 1</h3>
                     <p class="pFlavor1"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon1 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -181,14 +191,14 @@
                 <div>
                     <h3>Flavor 2</h3>
                     <p class="pFlavor2"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon2 miniIcon" src="images/instagram_512w.png">
 
                 </div>
 
                 <div>
                     <h3> Flavor 3</h3>
                     <p class="pFlavor3"></p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon3 miniIcon" src="images/instagram_512w.png">
 
 
                 </div>
@@ -217,7 +227,7 @@
             <div>
                 <h3 >Flavor 1</h3>
                 <p class="rFlavor1"></p>
-                <img class="miniIcon" src="images/instagram_512w.png">
+                <img class="rMiniIcon1 miniIcon" src="images/instagram_512w.png">
 
 
 
@@ -226,14 +236,14 @@
             <div>
                 <h3>Flavor 2</h3>
                 <p class="rFlavor2"></p>
-                <img class="miniIcon" src="images/instagram_512w.png">
+                <img class="rMiniIcon2 miniIcon" src="images/instagram_512w.png">
 
             </div>
 
             <div>
                 <h3> Flavor 3</h3>
                 <p class="rFlavor3"></p>
-                <img class="miniIcon" src="images/instagram_512w.png">
+                <img class="rMiniIcon3 miniIcon" src="images/instagram_512w.png">
 
 
             </div>
@@ -276,8 +286,8 @@
                 <label>Phone*<br><p>555-555-5555</p></label>
                 <label>email*<br><p>this yo email.com</p></label> -->
                 <h3>Name</h3>
-                <p class="confirmName"></p>
                 <h3>Phone</h3>
+                <p class="confirmName"></p>
                 <p class="confirmPhone"></p>
                 <h3>Email</h3>
                 <p class="confirmEmail"></p>
@@ -285,15 +295,11 @@
             </div>
 
             <div class="outputFlavors">
-                <!-- <label class="sFlavor1">Flavor 1*<br><p>blah</p></label>
-
-                <label class="sFlavor2">Flavor 2<br><p>blah</p></label>
-                <label class="sFlavor3">Flavor 3<br><p>blah</p></label> -->
                 <h3>Flavor 1</h3>
-                <p class="confirmedFlavor1"></p>
                 <h3>Flavor 2</h3>
-                <p class="confirmedFlavor2"></p>
                 <h3>Flavor 3</h3>
+                <p class="confirmedFlavor1"></p>
+                <p class="confirmedFlavor2"></p>
                 <p class="confirmedFlavor3"></p>
 
 
@@ -342,19 +348,37 @@
         </div>
 
 
-        <a href="index.html"><img  src="images/bountiful foods icon original 1280 w tiny.png"></a>
+        <a href="index.html">
+            <picture>
+
+                <source media="(min-width: 501px) and (max-width: 1000px)" srcset="images/bflogo200w.jpg">
+                <source media="(min-width: 1001px)" srcset="images/bflogo200w.jpg">
+                <img src="images/bflogo150w.jpg" alt="Logo for Bountiful Foods">
+            </picture>
+
+        </a>
 
 
 
         <div class="socials">
-            <img src="images/facebook_512w.png">
-            <img src="images/instagram_512w.png">
-            <img src="images/snapchat_512w.png">
+            <a href="https://facebook.com">
+                <img src="images/facebook50w.jpg" alt="Icon for Facebook" loading="lazy">
+
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram50w.jpg" alt="Icon for Instagram" loading="lazy">
+
+
+            </a>
+
+            <a href="https://snapchat.com">
+                <img src="images/snapchat50w.jpg" alt="Icon for Snapchat" loading="lazy">
+            </a>
 
 
         </div>
         <div class="lastMod">
-            <p>Last motified</p>
+            <p class="modDate">Last motified</p>
 
         </div>
 
