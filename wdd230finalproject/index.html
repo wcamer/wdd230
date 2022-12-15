@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="William Cameron">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Rubik&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -55,11 +53,7 @@
         <h1>Home/Welcome Back</h1>
 
 
-        <!-- <img src="images/bountiful foods icon original 1280 w tiny.png"> -->
-<!--
-        <div>
-            <a href="https://www.google.com/maps/@33.1597198,-117.3488103,3a,75y,52.79h,85.6t/data=!3m9!1e1!3m7!1snhBppHNQOZICsl_PSSP2zA!2e0!7i16384!8i8192!9m2!1b1!2i17?hl=en-US">Bountiful Fruit Location</a>
-        </div> -->
+
 
         <div class="hero">
             <picture>
@@ -75,24 +69,11 @@
         <form class="homeOrder" method="get" action="fresh.html">
             <h2>Start Your Order</h2>
             <h3> Pick Up to 3 flavors</h3>
-            <!-- <div class="flavorsAndIcons">
-                <label class="sFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
-                <img class="miniIcon" src="images/instagram_512w.png">
-                <label class="sFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
-                <img class="miniIcon" src="images/instagram_512w.png">
-                <label class="sFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label>
-                <img class="miniIcon" src="images/instagram_512w.png">
-
-
-            </div> -->
+         
 
             <fieldset>
                 <legend>Drink Selection</legend>
-                <!-- <label class="sFlavor1">Flavor 1*<br><input type="text" name="Ingredient1" required></label>
-                <label class="sFlavor2">Flavor 2<br><input type="text" name="Ingredient2" ></label>
-                <label class="sFlavor3">Flavor 3<br><input type=text name="Ingredient3"> </label> -->
                 <div class="flavorsAndIcons">
-                    <!-- <label>Flavor 1*<br><input type="text" name="Ingredient1" class="sFlavor1" required></label> -->
                     <div class="optionsContainer">
                         <label>Flavor 1*
                             <br>
@@ -102,7 +83,7 @@
 
                             </select>
                         </label>
-                        <img class="sMiniIcon1 miniIcon" src="images/instagram_512w.png" loading="lazy">
+                        <img class="sMiniIcon1 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark."  loading="lazy">
 
 
                     </div>
@@ -116,7 +97,7 @@
 
                             </select>
                         </label>
-                        <img class="sMiniIcon2 miniIcon" src="images/instagram_512w.png" loading="lazy">
+                        <img class="sMiniIcon2 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark."  loading="lazy">
 
 
                     </div>
@@ -130,7 +111,7 @@
 
                             </select>
                         </label>
-                        <img class="sMiniIcon3 miniIcon" src="images/instagram_512w.png" loading="lazy">
+                        <img class="sMiniIcon3 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark."  loading="lazy">
 
 
                     </div>
@@ -148,63 +129,17 @@
             <input type="submit" value="Continue Order" id="continueOrder">
 
         </form>
-            <!-- <input type="submit" value="Continue Order" class="formButton"></input>
-
-
-        </form> -->
-
-
-
-        <!-- <form >
-            <h2>Random Drink Generator</h2>
-            <input type="submit" value="Generate A New Drink" class="formButton"></input>
-
-
-            <div class ="randomOrder">
-                <div>
-                    <h3 class="rFlavor1">flavor 1</h3>
-                    <p>test</p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
-
-
-
-                </div>
-
-                <div>
-                    <h3 class="rFlavor2">flavor 2</h3>
-                    <p>test2</p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
-
-                </div>
-
-                <div>
-                    <h3 class="rflavor3"> flavor 3</h3>
-                    <p>test 3</p>
-                    <img class="miniIcon" src="images/instagram_512w.png">
-
-
-                </div>
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Order This Drink" class="formButton"></input>
-                <input type="submit" value="Make Your Own Drink" class="formButton"></input>
-
-
-            </div>
-
-
-
-        </form> -->
+            
         <form id="freshRandom" class="reveal" method="get" action="fresh.html">
             <h2>Random Drink Generator</h2>
-            <input id="randomize" type="button" value="Generate A New Drink" class="formButton" ></input>
+            <input id="randomize" type="button" value="Generate A New Drink" class="formButton" >
 
 
             <div class ="randomOrder">
                 <div>
                     <h3 >Flavor 1</h3>
                     <p class="rFlavor1"></p>
-                    <img class="rMiniIcon1 miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon1 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
 
 
@@ -213,20 +148,20 @@
                 <div>
                     <h3>Flavor 2</h3>
                     <p class="rFlavor2"></p>
-                    <img class="rMiniIcon2 miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon2 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
                 </div>
 
                 <div>
                     <h3> Flavor 3</h3>
                     <p class="rFlavor3"></p>
-                    <img class="rMiniIcon3 miniIcon" src="images/instagram_512w.png">
+                    <img class="rMiniIcon3 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
 
                 </div>
             </div>
             <div class="buttons">
-                <input type="submit" value="Order This Drink" id="randomSubmit" class="formButton"></input>
+                <input type="submit" value="Order This Drink" id="randomSubmit" class="formButton">
 
 
 
@@ -248,7 +183,7 @@
                 <div>
                     <h3>Flavor 1</h3>
                     <p class="pFlavor1"></p>
-                    <img class="pMiniIcon1 miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon1 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
 
                 </div>
@@ -256,14 +191,14 @@
                 <div>
                     <h3>Flavor 2</h3>
                     <p class="pFlavor2"></p>
-                    <img class="pMiniIcon2 miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon2 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
                 </div>
 
                 <div>
                     <h3> Flavor 3</h3>
                     <p class="pFlavor3"></p>
-                    <img class="pMiniIcon3 miniIcon" src="images/instagram_512w.png">
+                    <img class="pMiniIcon3 miniIcon" src="images/icons/question50.jpg" alt="An icon of question mark." >
 
 
                 </div>
@@ -274,8 +209,8 @@
                 <p class="totalNumberOfOrders">0</p>
             </div>
             <div class="buttons">
-                <input type="submit" value="Order This Drink Again" id="prevSubmit" class="formButton"></input>
-                <input type="submit" value="Make A New Drink" class="formButton"></input>
+                <input type="submit" value="Order This Drink Again" id="prevSubmit" class="formButton">
+                <input type="submit" value="Make A New Drink" class="formButton">
 
             </div>
 
@@ -296,8 +231,6 @@
 
                 <div class="iconDisplay">
 
-                    <!-- <img id="mainWeatherIcon" class="icon" src="images/instagram_512w.png"> -->
-                    <!-- <p class="degree">35</p> -->
                 </div>
 
                 <div class="weatherInfo">
@@ -316,26 +249,6 @@
             <div class="secondaryDisplay">
                 <h3>3 Day Forecast</h3>
                 <div class="forecast">
-
-
-                    <!-- <div id="tomorrowDiv" class="forecastDisplay">
-                        <img id="tomorrowIcon" class="miniIcon" src="images/instagram_512w.png">
-                        <p>name</p>
-                        <p class="tomorrowTemp">5</p>
-
-                    </div>
-                    <div id="twoDaysDiv"  class="forecastDisplay">
-                        <img id="twoDaysIcon" class="miniIcon" src="images/instagram_512w.png">
-                        <p>name</p>
-                        <p class="twoDaysTemp">5</p>
-
-                    </div>
-                    <div id="threeDaysDiv" class="forecastDisplay">
-                        <img iclass="miniIcon" src="images/instagram_512w.png">
-                        <p>name</p>
-                        <p class="threeDaysTemp">5</p>
-
-                    </div> -->
 
                     <div id="tomorrowDiv" class="miniForecastDisplay">
 
