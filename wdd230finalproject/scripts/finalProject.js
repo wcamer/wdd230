@@ -250,7 +250,7 @@ async function fruitGetter(){
             gfruitName.innerHTML= spotlight.name
             ggenus.innerHTML =  spotlight.genus
             gfamily.innerHTML =  spotlight.family
-           gorder.innerHTML =  spotlight.order
+            gorder.innerHTML =  spotlight.order
             gcarbs.innerHTML =  `${spotlight. nutritions.carbohydrates}<strong>g</strong>`
             gprotein.innerHTML =  `${spotlight.nutritions.protein}<strong>g</strong>`
             gfats.innerHTML =  `${spotlight.nutritions.fat}<strong>g</strong>`
@@ -282,24 +282,10 @@ async function fruitGetter(){
            fruitIconHolder.appendChild(pictureTag)
 
 
-        //    iconSRC = `images/icons/${spotlight.name}50.jpg`
-        //    console.log(iconSRC,'here is the img src')
-        //    //fruitIcon.setAttribute('src',iconSRC)
-        //    icon.setAttribute('src',iconSRC)
-        //    fruitIconHolder.appendChild(icon)
-
-           //gfruitName.appendChild(icon)
-
-
-            //fruitIcon.setAttribute('src',`images/icons/${spotlight.name.toLowerCase()}50.jpg`)
-
-            console.log(gcalories.innerHTML, 'here is caloriesese')
-            console.log(spotlight.name, 'here is caloriesese')
-
 
         }
 
-        console.log(fruitList)
+ 
 
         if(document.querySelector('.freshOrder') || document.querySelector('.homeOrder')){
 
@@ -447,10 +433,10 @@ async function fruitGetter(){
                     console.log(startingFlavor2.value,'here is sf2 in neutralllllllllllllllllllllllllll')
                     console.log(startingFlavor3.value,'here is sf3 in neutralllllllllllllllllllllllllllll')
 
-                    if (startingFlavor1.value === null || startingFlavor1.value == ''){
+                    if (startingFlavor1.value === null || startingFlavor1.value == '' || startingFlavor1.value == "Joy"){
                         startingFlavor1.value = 'Joy'
                         startingFlavor1.innerHTML = 'Joy'
-                        console.log(pf1.value,'here is the null condition')
+                        //console.log(pf1.value,'here is the null condition')
                         document.querySelector('.sMiniIcon1').setAttribute('src',`images/icons/question50.jpg`)
                         document.querySelector('.sMiniIcon1').setAttribute('alt','Icon of a question mark.')
                         document.querySelector('.sMiniIcon1').setAttribute('loading','lazy')
@@ -483,7 +469,7 @@ async function fruitGetter(){
 
 
                     }
-                    if(startingFlavor2.value === null){
+                    if(startingFlavor2.value === null || startingFlavor2.value == '' || startingFlavor2.value == 'Love'){
                         startingFlavor2.value = 'Love'
                         startingFlavor2.innerHTML = 'Love'
                         //localStorage.setItem('previousFlavor2','Love')
@@ -518,7 +504,7 @@ async function fruitGetter(){
 
 
                     }
-                    if(startingFlavor3.value === null){
+                    if(startingFlavor3.value === null || startingFlavor3.value == '' || startingFlavor3.value == 'Happiness'){
                         startingFlavor3.value = 'Happiness'
                         startingFlavor3.innerHTML = 'Happiness'
                     // localStorage.setItem('previousFlavor3','Happiness')
@@ -583,7 +569,7 @@ async function fruitGetter(){
 
                     console.log(sF1,'here are there the list 1',sF1.value,' and here is the value valuseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
 
-                    if(sF1.value == ''){
+                     ////////// if(sF1.value == ''){
                         document.querySelector('.sMiniIcon1').setAttribute('src',`images/icons/question50.jpg`)
                         document.querySelector('.sMiniIcon1').setAttribute('alt','Icon of a question mark.')
                         document.querySelector('.sMiniIcon1').setAttribute('loading','lazy')
@@ -592,9 +578,9 @@ async function fruitGetter(){
                         document.querySelector('.pMiniIcon1').setAttribute('alt','Icon of a smiley face.')
                         document.querySelector('.pMiniIcon1').setAttribute('loading','lazy')
 
-                    }
+                    //////////  }
 
-                    if(sF2.value == ''){
+                    //////////  if(sF2.value == ''){
                         document.querySelector('.sMiniIcon2').setAttribute('src',`images/icons/question50.jpg`)
                         document.querySelector('.sMiniIcon2').setAttribute('alt','Icon of a question mark.')
                         document.querySelector('.sMiniIcon2').setAttribute('loading','lazy')
@@ -603,9 +589,9 @@ async function fruitGetter(){
                         document.querySelector('.pMiniIcon2').setAttribute('alt','Icon of a smiley face.')
                         document.querySelector('.pMiniIcon2').setAttribute('loading','lazy')
 
-                    }
+                    //////////  }
 
-                    if(sF3.value == ''){
+                   ////////// if(sF3.value == ''){
                         document.querySelector('.sMiniIcon3').setAttribute('src',`images/icons/question50.jpg`)
                         document.querySelector('.sMiniIcon3').setAttribute('alt','Icon of a question mark.')
                         document.querySelector('.sMiniIcon3').setAttribute('loading','lazy')
@@ -614,7 +600,7 @@ async function fruitGetter(){
                         document.querySelector('.pMiniIcon3').setAttribute('alt','Icon of a smiley face.')
                         document.querySelector('.pMiniIcon3').setAttribute('loading','lazy')
 
-                    }
+                    ////////// }
 
 
 
@@ -651,7 +637,7 @@ async function fruitGetter(){
                     sMiniIcon3.setAttribute('alt', `Icon for ${startingFlavor3.value}.`)
                     sMiniIcon3.setAttribute('loading','lazy')
 
-
+                    console.log('reandom was activeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
                     localStorage.setItem('randomPriority','not active')
 
 
@@ -671,6 +657,11 @@ async function fruitGetter(){
                     sMiniIcon1 = document.querySelector('.sMiniIcon1')
                     sMiniIcon2 = document.querySelector('.sMiniIcon2')
                     sMiniIcon3 = document.querySelector('.sMiniIcon3')
+
+                    pMiniIcon1 = document.querySelector('.pMiniIcon1')
+                    pMiniIcon2 = document.querySelector('.pMiniIcon2')
+                    pMiniIcon3 = document.querySelector('.pMiniIcon3')
+
 
                     // startingFlavor1.value = localStorage.getItem('previousFlavor1')
                     // startingFlavor1.innerHTML = localStorage.getItem('previousFlavor1')
@@ -717,9 +708,18 @@ async function fruitGetter(){
                         console.log('startingflavor1 value is being rewritten to Joyyyyyyyyyyyyyyyyy',startingFlavor1.value)
                         localStorage.setItem('previousFlavor1',startingFlavor1.value)
                     // startingFlavor1.value = 'Joy'
-                    sMiniIcon1.setAttribute('src','images/icons/smile50.jpg')
+                        sMiniIcon1.setAttribute('src','images/icons/smile50.jpg')
                         sMiniIcon1.setAttribute('alt','A smile because of Joy.')
                         sMiniIcon1.setAttribute('loading','lazy')
+
+                        pMiniIcon1.setAttribute('src','images/icons/smile50.jpg')
+                        pMiniIcon1.setAttribute('alt','A smile because of Joy.')
+                        pMiniIcon1.setAttribute('loading','lazy')
+
+                        console.log('loook at the resetttttttttttttttttttttt')
+
+                        
+
                     }
 
 
@@ -746,9 +746,13 @@ async function fruitGetter(){
                         startingFlavor2.innerHTML = 'Love'
                         console.log('startingflavor1 value is being rewritten to loveeeeeeeeeeeeeeeeeeeee',startingFlavor2.value)
                         localStorage.setItem('previousFlavor2',startingFlavor2.value)
-                    sMiniIcon2.setAttribute('src','images/icons/smile50.jpg')
-                        sMiniIcon2.setAttribute('alt','A smile because of Joy.')
+                        sMiniIcon2.setAttribute('src','images/icons/smile50.jpg')
+                        sMiniIcon2.setAttribute('alt','A smile because of Love.')
                         sMiniIcon2.setAttribute('loading','lazy')
+                        
+                        pMiniIcon2.setAttribute('src','images/icons/smile50.jpg')
+                        pMiniIcon2.setAttribute('alt','A smile because of Love.')
+                        pMiniIcon2.setAttribute('loading','lazy')
                     }
 
 
@@ -777,9 +781,13 @@ async function fruitGetter(){
                         startingFlavor3.innerHTML = 'Happiness'
                         console.log('startingflavor3 value is being rewritten to happinesssssssssssssss',startingFlavor3.value)
                         localStorage.setItem('previousFlavor3',startingFlavor3.value)
-                    sMiniIcon3.setAttribute('src','images/icons/smile50.jpg')
-                        sMiniIcon3.setAttribute('alt','A smile because of Joy.')
+                        sMiniIcon3.setAttribute('src','images/icons/smile50.jpg')
+                        sMiniIcon3.setAttribute('alt','A smile because of Happiness.')
                         sMiniIcon3.setAttribute('loading','lazy')
+
+                        pMiniIcon3.setAttribute('src','images/icons/smile50.jpg')
+                        pMiniIcon3.setAttribute('alt','A smile because of Happiness.')
+                        pMiniIcon3.setAttribute('loading','lazy')
                     }
 
 
@@ -863,7 +871,7 @@ async function fruitGetter(){
                     //localStorage.setItem('previousPriority',0)
 
                 // }
-
+                localStorage.getItem('previousPriority','not active')
             }
             initialMenu()
 
@@ -1197,6 +1205,64 @@ async function fruitGetter(){
 
                 //Number(window.localStorage.getItem('totalDrinks'))
                 console.log(cf1,cf2,cf3,'here are the confirmed flavors')
+
+                outputFlavors = document.querySelector('.outputFlavors')
+
+                if(document.querySelector('#confirmedFlavorIcon1')){
+                    outputIcon1.setAttribute('src',`images/icons/${fflav}50.jpg`)
+                    outputIcon1.setAttribute('alt',`Icon for ${fflav}.`)
+                    outputIcon1.setAttribute('loading','lazy')
+
+
+                }else{
+                    
+                    outputIcon1 = document.createElement('img')
+                    outputIcon1.id = 'confirmedFlavorIcon1'
+                    outputIcon1.setAttribute('src',`images/icons/${fflav}50.jpg`)
+                    outputIcon1.setAttribute('alt',`Icon for ${fflav}.`)
+                    outputIcon1.setAttribute('loading','lazy')
+                    outputFlavors.append(outputIcon1)
+
+
+                }
+
+                if(document.querySelector('#confirmedFlavorIcon2')){
+                    outputIcon2.setAttribute('src',`images/icons/${sflav}50.jpg`)
+                    outputIcon2.setAttribute('alt',`Icon for ${sflav}.`)
+                    outputIcon2.setAttribute('loading','lazy')
+
+
+                }else{
+                    outputIcon2 = document.createElement('img')
+                    outputIcon2.id = 'confirmedFlavorIcon2'
+                    outputIcon2.setAttribute('src',`images/icons/${sflav}50.jpg`)
+                    outputIcon2.setAttribute('alt',`Icon for ${sflav}.`)
+                    outputIcon2.setAttribute('loading','lazy')
+
+                    outputFlavors.append(outputIcon2)
+    
+
+                }
+
+                if(document.querySelector('#confirmedFlavorIcon3')){
+                    outputIcon3.setAttribute('src',`images/icons/${tflav}50.jpg`)
+                    outputIcon3.setAttribute('alt',`Icon for ${tflav}.`)
+                    outputIcon3.setAttribute('loading','lazy')
+                    
+
+                }else{
+                    outputIcon3 = document.createElement('img')
+                    outputIcon3.id = 'confirmedFlavorIcon3'
+                    outputIcon3.setAttribute('src',`images/icons/${tflav}50.jpg`)
+                    outputIcon3.setAttribute('alt',`Icon for ${tflav}.`)
+                    outputIcon3.setAttribute('loading','lazy')
+
+                    outputFlavors.append(outputIcon3)
+
+                }
+               
+                
+                //outputFlavors.append(outputIcon1,outputIcon2,outputIcon3)
 
 
             }
