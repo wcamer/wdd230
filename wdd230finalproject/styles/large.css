@@ -1,7 +1,6 @@
 @media only screen and (min-width: 1001px){
 
 body{
-    /* background-color: yellow; */
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     gap: unset;
