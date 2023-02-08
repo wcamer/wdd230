@@ -237,8 +237,9 @@ async function fruitGetter(){
                 document.querySelector('#secondFlavor').appendChild(optionTag2)
                 document.querySelector('#thirdFlavor').appendChild(optionTag3)
 
+                
                 image = document.createElement('img')
-                image.setAttribute('src',`images/icons/${fruitInfo[i].name}50.jpg`)
+                image.setAttribute('src',`images/icons/${(fruitInfo[i].name).toLowerCase()}50.jpg`)
                 image.setAttribute('alt',`This is the icon for a ${fruitInfo[i].name}.`)
                 image.setAttribute('loading','lazy')
                 image.classList= 'fruitIcon'
