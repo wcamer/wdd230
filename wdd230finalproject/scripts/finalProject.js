@@ -924,13 +924,13 @@ async function fruitGetter(){
                 document.querySelector('.rFlavor1').innerHTML = fruitList[r1].name
                 document.querySelector('.rFlavor1').value = fruitList[r1].name
         
-                document.querySelector('.rMiniIcon1').setAttribute('src',`images/icons/${fruitList[r1].name}50.jpg`)
+                document.querySelector('.rMiniIcon1').setAttribute('src',`images/icons/${(fruitList[r1].name).toLowerCase()}50.jpg`)
                 document.querySelector('.rMiniIcon1').setAttribute('alt',`Icon for ${fruitInfo[r1].name}.`)
                 document.querySelector('.rMiniIcon1').setAttribute('loading','lazy')
                 if(r2 != r1){
                     document.querySelector('.rFlavor2').innerHTML= fruitList[r2].name
                     document.querySelector('.rFlavor2').value= fruitList[r2].name
-                    document.querySelector('.rMiniIcon2').setAttribute('src',`images/icons/${fruitList[r2].name}50.jpg`)
+                    document.querySelector('.rMiniIcon2').setAttribute('src',`images/icons/${(fruitList[r2].name).toLowerCase()}50.jpg`)
                     document.querySelector('.rMiniIcon2').setAttribute('alt',`Icon for ${fruitInfo[r2].name}.`)
                     document.querySelector('.rMiniIcon2').setAttribute('loading','lazy')
 
@@ -939,7 +939,7 @@ async function fruitGetter(){
                     r2 = Math.floor(Math.random() * 39)
                     document.querySelector('.rFlavor2').innerHTML= fruitList[r2].name
                     document.querySelector('.rFlavor2').value= fruitList[r2].name
-                    document.querySelector('.rMiniIcon2').setAttribute('src',`images/icons/${fruitList[r2].name}50.jpg`)
+                    document.querySelector('.rMiniIcon2').setAttribute('src',`images/icons/${(fruitList[r2].name).toLowerCase()}50.jpg`)
                     document.querySelector('.rMiniIcon2').setAttribute('alt',`Icon for ${fruitInfo[r2].name}.`)
                     document.querySelector('.rMiniIcon2').setAttribute('loading','lazy')
 
@@ -949,7 +949,7 @@ async function fruitGetter(){
 
                     document.querySelector('.rFlavor3').innerHTML= fruitList[r3].name
                     document.querySelector('.rFlavor3').value = fruitList[r3].name
-                    document.querySelector('.rMiniIcon3').setAttribute('src',`images/icons/${fruitList[r3].name}50.jpg`)
+                    document.querySelector('.rMiniIcon3').setAttribute('src',`images/icons/${(fruitList[r3].name).toLowerCase()}50.jpg`)
                     document.querySelector('.rMiniIcon3').setAttribute('alt',`Icon for ${fruitInfo[r3].name}.`)
                     document.querySelector('.rMiniIcon3').setAttribute('loading','lazy')
 
@@ -958,7 +958,7 @@ async function fruitGetter(){
                     r3 = Math.floor(Math.random() * 39)
                     document.querySelector('.rFlavor3').innerHTML= fruitList[r3].name
                     document.querySelector('.rFlavor3').value = fruitList[r3].name
-                    document.querySelector('.rMiniIcon3').setAttribute('src',`images/icons/${fruitList[r3].name}50.jpg`)
+                    document.querySelector('.rMiniIcon3').setAttribute('src',`images/icons/${(fruitList[r3].name).toLowerCase()}50.jpg`)
                     document.querySelector('.rMiniIcon3').setAttribute('alt',`Icon for ${fruitInfo[r3].name}.`)
                     document.querySelector('.rMiniIcon3').setAttribute('loading','lazy')
 
